@@ -30,7 +30,10 @@ function getCode(resource, preElement) {
             preElement.textContent = cleanData;
 
             // Añadir números de línea después de cargar el código
-            addLineNumber(preElement);
+            if ( preElement.getAttribute("data-ln") )
+            {
+                addLineNumber(preElement);
+            }
         })
         .catch(error => {
             console.error('Error al cargar el archivo:', error);
