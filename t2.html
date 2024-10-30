@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorizar Código Ruby</title>
+    
+    <!-- Enlace a la hoja de estilos de Prism.js -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/themes/prism.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/plugins/line-numbers/prism-line-numbers.min.css" rel="stylesheet" />
+
+    <!-- Estilos personalizados -->
+    <style>
+        .code-container {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .copy-button {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            padding: 5px 10px;
+            font-size: 12px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+        }
+
+        .copy-button:active {
+            background-color: #0056b3;
+        }
+
+        .copy-button.copied {
+            background-color: #28a745;
+        }
+
+        .copy-button.copied::after {
+            content: ' Copiado!';
+        }
+
+        /* Sobrescribir los estilos de Prism.js con mayor especificidad */
+        .code-container pre[class*="language-"],
+        .code-container code[class*="language-"] {
+            font: normal normal 14px/16px "Courier New", Courier, Monospace !important;
+            background-color: #f5f5f5; /* Fondo ligeramente gris */
+            padding: 10px;
+            border-radius: 5px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+
+        /* Asegurar que el código hereda correctamente los estilos de pre */
+        .code-container code {
+            font: inherit !important;
+        }
+
+        pre {
+            background: #f4f4f4;
+            border: 1px solid #ddd;
+            border-left: 3px solid #f36d33;
+            color: #666;
+            page-break-inside: avoid;
+            font: normal normal 14px/16px "Courier New", Courier, Monospace;
+            line-height: 1.0;
+            margin-bottom: 1.6em;
+            max-width: 100%;
+            padding: .5em 1em;
+            display: block;
+            word-wrap: break-word;
+            margin-left: 20px;
+            overflow: auto;
+            overflow-x: auto;
+            white-space: pre-wrap;
+            counter-reset: line;
+        }
+
+        code {
+            border-radius: 5px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            border: 1px solid #bcbec0;
+            padding: 2px;
+            font: normal normal 14px / 16px "Courier New", Courier, Monospace;
+        }
+
+        pre code {
+            border-radius: 0px;
+            -moz-border-radius: 0px;
+            -webkit-border-radius: 0px;
+            border: 0px;
+            padding: 0px;
+            font: normal normal 14px / 16px "Courier New", Courier, Monospace;
+        }
+
+        pre .line-number {
+            user-select: none;
+            float: left;
+            margin: 0 1em 0 -1em;
+            border-right: 1px solid;
+            text-align: right;
+        }
+
+        pre .line-number span {
+            display: block;
+            padding: 0 .5em 0 1em;
+        }
+
+        pre .cl {
+            display: block;
+            clear: both;
+        }
+</style>
+</head>
+<body>
+
+<div class="code-container">
+<pre data-ln="true">
+int a = 3;
+int b = 5;</pre>
+</div>
+        
+<!-- Contenedor para el nombre del archivo, el bloque de código y el botón de copiar -->
+<div class="code-container">
+    <span id="nombre-fichero"></span>
+    <button class="copy-button">Copiar</button>
+    <pre data-ln="true" data-code="https://raw.githubusercontent.com/CoderDojoMaj/recorridos/refs/heads/main/ruby/retos/d_dado/17d2.rb" class="language-ruby line-numbers">Cargando...</pre>
+</div>
+
+<!-- Script de Prism.js para resaltar la sintaxis -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/components/prism-ruby.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/components/prism-c.min.js"></script>
+
+<script>
+// Función para obtener el nombre del fichero desde la URL
+function obtenerNombreFichero(url) {
+    var partes = url.split('/');
+    return partes[partes.length - 1];  // Esto retorna el último elemento que sería el nombre del fichero
+}
+
+// Función para cargar código desde una URL
+function getCode(resource, preElement, buttonElement) {
+    fetch(resource)
+        .then(response => response.text())
+        .then(data => {
+            // Eliminar líneas en blanco al principio y al final
+            let cleanData = data.trim();
+
+            // Insertar el código limpio en el <pre>
+            preElement.textContent = cleanData;
+
+            // Aplicar resaltado de sintaxis con Prism.js
+            Prism.highlightElement(preElement);
+
+            var ln = preElement.getAttribute("data-ln");
+            if (ln && ln == "true") {
+                addLineNumber(preElement);
+            }
+
+            // Una vez el código está listo, registrar el listener del botón de copiar
+            buttonElement.addEventListener('click', () => copiarAlPortapapeles(preElement, buttonElement));
+        })
+        .catch(error => {
+            console.error('Error al cargar el archivo:', error);
+            preElement.textContent = 'Error al cargar el código.';
+        });
+}
+
+// Función para copiar el contenido del bloque de código sin los números de línea ni HTML
+function copiarAlPortapapeles(preElement, buttonElement) {
+    // Obtener el contenido del bloque <code> dentro del <pre>
+    const codeElement = preElement.querySelector('code') || preElement;
+    
+    // Extraer el texto visible dentro del <code>
+    const codeText = codeElement.innerText;
+
+    navigator.clipboard.writeText(codeText).then(() => {
+        // Cambiar el texto del botón para indicar que el código ha sido copiado
+        buttonElement.textContent = 'Copiado!';
+        buttonElement.classList.add('copied');
+
+        // Restablecer el botón después de 2 segundos
+        setTimeout(() => {
+            buttonElement.textContent = 'Copiar';
+            buttonElement.classList.remove('copied');
+        }, 2000); 
+    }).catch(err => {
+        console.error('Error al copiar el texto: ', err);
+    });
+}
+
+// Función para cargar códigos desde URLs en los elementos <pre> con atributo "data-code"
+function getCodes() {
+    var preElements = document.getElementsByTagName('pre');
+    for (var i = 0; i < preElements.length; i++) {
+        var code = preElements[i].getAttribute("data-code");
+        if (code) {
+            // Obtener el nombre del fichero y mostrarlo en el elemento con id "nombre-fichero"
+            var nombreFichero = obtenerNombreFichero(code);
+            document.getElementById("nombre-fichero").textContent = "Archivo: " + nombreFichero;
+
+            // Cargar el código desde la URL y registrar el evento del botón una vez cargado
+            const copyButton = preElements[i].parentNode.querySelector('.copy-button');
+            getCode(code, preElements[i], copyButton);
+        }
+    }
+}
+
+function addLineNumber(preElement) {
+    var numLines = preElement.textContent.split(/\n/).length;
+    var lineNumberHtml = '<span class="line-number"></span>' + preElement.innerHTML + '<span class="cl"></span>';
+
+    // Agregar la estructura de números de línea
+    preElement.innerHTML = lineNumberHtml;
+
+    // Añadir los números de línea
+    var lineNum = preElement.getElementsByTagName('span')[0];
+    for (var j = 0; j < numLines; j++) {
+        lineNum.innerHTML += '<span>' + (j + 1) + '</span>';
+    }
+}
+
+function addLinesNumber() {
+    var preElements = document.getElementsByTagName('pre');
+    for (var i = 0; i < preElements.length; i++) {
+        var ln = preElements[i].getAttribute("data-ln");
+        if (ln && ln == "true") {
+            addLineNumber(preElements[i]);
+        }
+    }
+}
+
+// Función principal que se ejecuta al cargar la página
+function go() {
+    // Cargar códigos remotos en los elementos con data-code
+    getCodes();
+    addLinesNumber();
+}
+
+go();
+</script>
+</body>
+</html>
