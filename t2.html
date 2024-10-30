@@ -14,12 +14,14 @@
         .code-container {
             position: relative;
             margin-bottom: 20px;
+            margin-left: 20px;
+            background: #f4f4f4;
         }
 
         .copy-button {
             position: absolute;
-            right: 10px;
-            top: 10px;
+            right: 0px;
+            top: 0px;
             padding: 5px 10px;
             font-size: 12px;
             cursor: pointer;
@@ -59,7 +61,7 @@
 
         pre {
             background: #f4f4f4;
-            border: 1px solid #ddd;
+            border: 0px solid #ddd;
             border-left: 3px solid #f36d33;
             color: #666;
             page-break-inside: avoid;
@@ -116,17 +118,14 @@
 </head>
 <body>
 
-<div class="code-container">
-<pre data-ln="true">
-int a = 3;
+<pre data-ln="false">int a = 3;
 int b = 5;</pre>
-</div>
         
 <!-- Contenedor para el nombre del archivo, el bloque de código y el botón de copiar -->
 <div class="code-container">
     <span id="nombre-fichero"></span>
     <button class="copy-button">Copiar</button>
-    <pre data-ln="true" data-code="https://raw.githubusercontent.com/CoderDojoMaj/recorridos/refs/heads/main/ruby/retos/d_dado/17d2.rb" class="language-ruby line-numbers">Cargando...</pre>
+    <pre data-ln="false" data-code="https://raw.githubusercontent.com/CoderDojoMaj/recorridos/refs/heads/main/ruby/retos/d_dado/17d2.rb" class="language-ruby">Cargando...</pre>
 </div>
 
 <!-- Script de Prism.js para resaltar la sintaxis -->
