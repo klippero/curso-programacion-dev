@@ -32,6 +32,8 @@
 
 /* Sobrescribir los estilos de Prism.js con mayor especificidad */
 .code-container pre[class*="language-"],
+pre.code-container[class*="language-"],
+pre[class*="language-"],
 .code-container code[class*="language-"] {
     font: normal normal 14px/16px "Courier New", Courier, Monospace !important;
     background-color: #f5f5f5; /* Fondo ligeramente gris */
@@ -40,8 +42,6 @@
     white-space: pre-wrap;
     word-wrap: break-word;
 }
-pre.code-container[class*="language-"]
-pre[class*="language-"]
 
 /* Asegurar que el código hereda correctamente los estilos de pre */
 .code-container code {
