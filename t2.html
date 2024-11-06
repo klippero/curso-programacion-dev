@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dos Bloques Pre Lado a Lado</title>
+    <style>
+        /* Contenedor principal */
+        .container {
+            display: flex;
+            flex-direction: row; /* Asegura la disposición en fila */
+            gap: 10px; /* Espacio entre los bloques */
+            max-width: 100%;
+            margin: 0 auto; /* Centra el contenedor */
+        }
+
+        /* Estilo de cada bloque <pre> */
+        .container pre {
+            flex: 1; /* Cada bloque ocupa el mismo ancho disponible */
+            padding: 10px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            overflow: auto; /* Permite scroll si el contenido es muy largo */
+            white-space: pre-wrap; /* Envuelve el texto largo en líneas */
+            min-width: 0; /* Evita que el contenido fuerce el ancho del bloque */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <pre>
+Bloque de texto preformateado #1
+Este es el primer bloque de texto en formato &lt;pre&gt;. Puedes incluir código
+o texto que necesite estar en este formato específico. Con esta versión,
+debería ajustarse al ancho del contenedor y envolver líneas largas.
+    </pre>
+
+    <pre>
+Bloque de texto preformateado #2
+Este es el segundo bloque de texto en formato &lt;pre&gt;. Ambos bloques están 
+alineados uno al lado del otro usando flexbox en CSS. Puedes incluir cualquier 
+contenido necesario y ambos se mantendrán uno al lado del otro correctamente.
+    </pre>
+</div>
+
+</body>
+</html>

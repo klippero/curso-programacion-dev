@@ -2,7 +2,7 @@ function getCode(resource, preElement) {
     fetch(resource)
         .then(response => response.text())
         .then(data => {
-            let cleanData = data.trim();
+            let cleanData = data.trimEnd();
             preElement.textContent = cleanData;
 
             var colorize = preElement.getAttribute("data-colorize");
