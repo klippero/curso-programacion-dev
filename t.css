@@ -40,6 +40,8 @@
     white-space: pre-wrap;
     word-wrap: break-word;
 }
+pre.code-container[class*="language-"]
+pre[class*="language-"]
 
 /* Asegurar que el código hereda correctamente los estilos de pre */
 .code-container code {
