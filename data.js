@@ -50,7 +50,18 @@ let reto = retos[parametros.get("reto")];
 let lenguaje = parametros.get("lenguaje");
 
 insert("title",reto.label);
-insert("enunciado",recorridos[reto.recorrido].github + reto.path + reto.enunciado);
+
+let resource = recorridos[reto.recorrido].github + reto.path + reto.enunciado;
+fetch(resource)
+    .then(response => response.text())
+    .then(data => {
+        let cleanData = data.trimEnd();
+        element = document.getElementById("enunciado");
+        element.innerHTML = cleanData;
+    })
+    .catch(error => {
+        console.error('Error al cargar el archivo:', error);
+    });
 
 document.getElementById("test").setAttribute("data-code",recorridos[reto.recorrido].github + reto.path + reto.lenguajes[lenguaje].test);
 insert("test-fileName",reto.lenguajes[lenguaje].test);
