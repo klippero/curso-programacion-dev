@@ -20,7 +20,7 @@ const retos =
             label: "Pipo el gato",
             recorrido: "POO",
             tema: "Clases y objetos",
-            enunciado: "Mi gato se llama Pipo. Crea la clase Gato e instancia un objeto que represente a mi gato.",
+            enunciado: "1an.html",
             path: "retos/animales/",
             lenguajes:
             {
@@ -50,10 +50,15 @@ let reto = retos[parametros.get("reto")];
 let lenguaje = parametros.get("lenguaje");
 
 insert("title",reto.label);
-insert("enunciado",reto.enunciado);
+insert("enunciado",recorridos[reto.recorrido].github + reto.path + reto.enunciado);
 
 document.getElementById("test").setAttribute("data-code",recorridos[reto.recorrido].github + reto.path + reto.lenguajes[lenguaje].test);
+insert("test-fileName",reto.lenguajes[lenguaje].test);
 document.getElementById("out").setAttribute("data-code",recorridos[reto.recorrido].github + reto.path + reto.lenguajes[lenguaje].out);
 
-insert("out",reto.lenguajes[lenguaje].out);
-alert("hola")
+insert("sol-fileName",reto.lenguajes[lenguaje].sol);
+document.getElementById("sol").setAttribute("data-code",recorridos[reto.recorrido].github + reto.path + reto.lenguajes[lenguaje].sol);
+
+insert("recorrido",recorridos[reto.recorrido].label);
+insert("lenguaje",lenguaje);
+insert("tema",reto.tema);
