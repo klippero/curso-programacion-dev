@@ -1,9 +1,8 @@
-const recorridos =
-{
+const recorridos = {
     "POO":
     {
         label: "Programación Orientada a Objetos",
-        github: "https://raw.githubusercontent.com/klippero/code-snippet-in-web/refs/heads/main/POO/"
+        github: "https://raw.githubusercontent.com/klippero/code-snippet-in-web/refs/heads/main/POO/retos/"
     }
 };
 
@@ -13,29 +12,55 @@ const temas = [
     "Métodos"
 ];
 
-const retos =
-{
-    1:
+const colecciones = {
+    'animales': {
+        label: 'Animales'
+    },
+    'estadistica': {
+        label: 'Estadística'
+    }
+};
+
+const retos = {
+    'r1an': {
+        label: "Pipo el gato",
+        recorrido: "POO",
+        tema: "Clases y objetos",
+        coleccion: "animales",
+        lenguajes:
         {
-            label: "Pipo el gato",
-            recorrido: "POO",
-            tema: "Clases y objetos",
-            enunciado: "1an.html",
-            path: "retos/animales/",
-            lenguajes:
-            {
-                "Ruby": {
-                    test: "1an_test.rb",
-                    sol: "1an.rb",
-                    out: "1an_test.rb.txt"
-                },
-                "Python": {
-                    test: "_1an_test.py",
-                    sol: "_1an.py",
-                    out: "_1an_test.py.txt"
-                }
+            "Ruby": {
+                test: "1an_test.rb",
+                sol: "1an.rb",
+                out: "1an_test.rb.txt"
+            },
+            "Python": {
+                test: "_1an_test.py",
+                sol: "_1an.py",
+                out: "_1an_test.py.txt"
             }
         }
+    },
+    '22est-media': {
+        label: "Media",
+        recorrido: "POO",
+        tema: "Listas",
+        enunciado: "22est-media.html",
+        path: "retos/estadistica/",
+        lenguajes:
+        {
+            "Ruby": {
+                test: "22est-media_test.rb",
+                sol: "22est-media.rb",
+                out: "22est-media_test.rb.txt"
+            },
+            "Python": {
+                test: "_22est-media_test.py",
+                sol: "_22est-media.py",
+                out: "_22est-media_test.py.txt"
+            }
+        }
+    }
 };
 
 function insert(id,content)
@@ -46,12 +71,13 @@ function insert(id,content)
 
 const url = new URL(window.location.href);
 const parametros = url.searchParams;
-let reto = retos[parametros.get("reto")];
+let id = parametros.get("reto");
+let reto = retos[id];
 let lenguaje = parametros.get("lenguaje");
 
 insert("title",reto.label);
 
-let resource = recorridos[reto.recorrido].github + reto.path + reto.enunciado;
+let resource = recorridos[reto.recorrido].github + reto.coleccion + '/' + id + '.html';
 fetch(resource)
     .then(response => response.text())
     .then(data => {
