@@ -3,7 +3,7 @@ const recorridos =
     "POO":
     {
         label: "Programación Orientada a Objetos",
-        github: "https://raw.githubusercontent.com/CoderDojoMaj/recorridos/refs/heads/main/"
+        github: "https://raw.githubusercontent.com/klippero/code-snippet-in-web/refs/heads/main/POO/"
     }
 };
 
@@ -21,7 +21,7 @@ const retos =
             recorrido: "POO",
             tema: "Clases y objetos",
             enunciado: "Mi gato se llama Pipo. Crea la clase Gato e instancia un objeto que represente a mi gato.",
-            path: "ruby/retos/an_animales/",
+            path: "retos/animales/",
             lenguajes:
             {
                 "Ruby": {
@@ -52,7 +52,8 @@ let lenguaje = parametros.get("lenguaje");
 insert("title",reto.label);
 insert("enunciado",reto.enunciado);
 
-document.getElementById("test").setAttribute("data-code",recorridos[reto.recorrido].github + reto.lenguajes[lenguaje].test);
+document.getElementById("test").setAttribute("data-code",recorridos[reto.recorrido].github + reto.path + reto.lenguajes[lenguaje].test);
+document.getElementById("out").setAttribute("data-code",recorridos[reto.recorrido].github + reto.path + reto.lenguajes[lenguaje].out);
 
 insert("out",reto.lenguajes[lenguaje].out);
 alert("hola")
