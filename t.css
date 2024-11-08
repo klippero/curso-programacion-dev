@@ -61,11 +61,11 @@ pre {
     max-width: 100%;
     padding: .5em 1em;
     display: block;
-    word-wrap: break-word;
+    word-wrap: normal;
     margin-left: 20px;
     overflow: auto;
     overflow-x: auto;
-    white-space: pre-wrap;
+    white-space: pre;
     counter-reset: line;
 }
 
