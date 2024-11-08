@@ -22,10 +22,12 @@ const colecciones = {
 };
 
 const lenguajes = {
-    'Ruby': {
+    'rb': {
+        label: 'Ruby',
         extension: 'rb'
     },
-    'Python': {
+    'py': {
+        label: 'Python',
         extension: 'py'
     }
 };

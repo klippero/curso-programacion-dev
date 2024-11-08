@@ -37,5 +37,5 @@ insert("sol-fileName",'sol.' + lenguajes[lenguaje].extension);
 document.getElementById("sol").setAttribute("data-code",path_code + 'sol.' + lenguajes[lenguaje].extension );
 
 insert("recorrido",recorridos[reto.recorrido].label);
-insert("lenguaje",lenguaje);
+insert("lenguaje",lenguajes[lenguaje].label);
 insert("tema",reto.tema);
