@@ -45,6 +45,12 @@ const retos = {
         recorrido: "POO",
         tema: "Listas",
         coleccion: "estadistica"
+    },
+    '22est-mediana': {
+        label: "Mediana",
+        recorrido: "POO",
+        tema: "Listas",
+        coleccion: "estadistica"
     }
 };
 

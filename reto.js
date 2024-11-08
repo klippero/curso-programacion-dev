@@ -39,3 +39,4 @@ document.getElementById("sol").setAttribute("data-code",path_code + 'sol.' + len
 insert("recorrido",recorridos[reto.recorrido].label);
 insert("lenguaje",lenguajes[lenguaje].label);
 insert("tema",reto.tema);
+insert("coleccion",colecciones[reto.coleccion].label);
