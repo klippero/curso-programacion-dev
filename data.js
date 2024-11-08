@@ -53,13 +53,13 @@ const retos = {
         coleccion: "estadistica"
     },
     '27est-moda1': {
-        label: "Moda",
+        label: "Moda1",
         recorrido: "POO",
         tema: "Diccionarios",
         coleccion: "estadistica"
     },
     '27est-moda2': {
-        label: "Mediana",
+        label: "Moda2",
         recorrido: "POO",
         tema: "Diccionarios",
         coleccion: "estadistica"
