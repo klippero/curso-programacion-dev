@@ -10,3 +10,11 @@ class ListaEnteros:
 
     def media(self):
         return self.suma() / float(len(self.__numeros))
+
+    def mediana(self):
+        self.__numeros.sort()
+        if len(self.__numeros) % 2 == 1:
+            result = self.__numeros[len(self.__numeros)//2]
+        else:
+            result = ( self.__numeros[len(self.__numeros)//2-1] + self.__numeros[len(self.__numeros)//2] ) / 2
+        return result
