@@ -22,7 +22,16 @@ fetch(resource)
 
 document.getElementById("test").setAttribute("data-code", path_code + 'test.' + lenguajes[lenguaje].extension );
 insert("test-fileName",'test.' + lenguajes[lenguaje].extension);
-document.getElementById("out").setAttribute("data-code",path_code + 'test.' + lenguajes[lenguaje].extension + '.txt ');
+
+if ( reto.out_por_lenguaje && reto.out_por_lenguaje == true )
+{
+    document.getElementById("out").setAttribute("data-code",path_code + 'test.' + lenguajes[lenguaje].extension + '.txt ');
+}
+else
+{
+    document.getElementById("out").setAttribute("data-code",path + 'test.txt ');
+}
+
 
 insert("sol-fileName",'sol.' + lenguajes[lenguaje].extension);
 document.getElementById("sol").setAttribute("data-code",path_code + 'sol.' + lenguajes[lenguaje].extension );

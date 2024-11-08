@@ -35,9 +35,10 @@ const retos = {
         label: "Pipo el gato",
         recorrido: "POO",
         tema: "Clases y objetos",
-        coleccion: "animales"
+        coleccion: "animales",
+        out_por_lenguaje: true
     },
-    'r22est-media': {
+    '22est-media': {
         label: "Media",
         recorrido: "POO",
         tema: "Listas",
@@ -49,24 +50,4 @@ function insert(id,content)
 {
     element = document.getElementById(id);
     element.textContent = content;
-}
-
-function test(id,lenguaje)
-{
-    return id + '_test.' + lenguajes[lenguaje].extension;
-}
-
-function out(id,lenguaje)
-{
-    return test(id,lenguaje) + '.txt';
-}
-
-function sol(id,lenguaje)
-{
-    return id + '.' + lenguajes[lenguaje].extension;
-}
-
-function test()
-{
-    return path_code + 'test.' + lenguajes[lenguaje].extension;
 }
