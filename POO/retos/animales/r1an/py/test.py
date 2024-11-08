@@ -1,4 +1,4 @@
-from _1an import *
+from sol import *
 
 pipo = Gato()
 print(pipo)

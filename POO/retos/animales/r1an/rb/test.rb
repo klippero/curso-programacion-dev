@@ -1,4 +1,4 @@
-require_relative '1an'
+require_relative 'sol'
 
 pipo = Gato.new
 puts pipo
