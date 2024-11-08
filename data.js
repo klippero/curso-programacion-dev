@@ -31,7 +31,7 @@ const lenguajes = {
 };
 
 const retos = {
-    'r1an': {
+    '1an': {
         label: "Pipo el gato",
         recorrido: "POO",
         tema: "Clases y objetos",
@@ -64,4 +64,9 @@ function out(id,lenguaje)
 function sol(id,lenguaje)
 {
     return id + '.' + lenguajes[lenguaje].extension;
+}
+
+function test()
+{
+    return path_code + 'test.' + lenguajes[lenguaje].extension;
 }

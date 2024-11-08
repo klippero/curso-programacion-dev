@@ -20,12 +20,12 @@ fetch(resource)
         console.error('Error al cargar el archivo:', error);
     });
 
-document.getElementById("test").setAttribute("data-code",path_code + 'test.' + lenguajes[lenguaje].extension );
-insert("test-fileName",test(id,lenguaje));
-document.getElementById("out").setAttribute("data-code",path + out(id,lenguaje));
+document.getElementById("test").setAttribute("data-code", path_code + 'test.' + lenguajes[lenguaje].extension );
+insert("test-fileName",'test.' + lenguajes[lenguaje].extension);
+document.getElementById("out").setAttribute("data-code",path_code + 'test.' + lenguajes[lenguaje].extension + '.txt ');
 
-insert("sol-fileName",sol(id,lenguaje));
-document.getElementById("sol").setAttribute("data-code",path + sol(id,lenguaje));
+insert("sol-fileName",'sol.' + lenguajes[lenguaje].extension);
+document.getElementById("sol").setAttribute("data-code",path_code + 'sol.' + lenguajes[lenguaje].extension );
 
 insert("recorrido",recorridos[reto.recorrido].label);
 insert("lenguaje",lenguaje);
