@@ -51,6 +51,18 @@ const retos = {
         recorrido: "POO",
         tema: "Listas",
         coleccion: "estadistica"
+    },
+    '27est-moda1': {
+        label: "Moda",
+        recorrido: "POO",
+        tema: "Diccionarios",
+        coleccion: "estadistica"
+    },
+    '27est-moda2': {
+        label: "Mediana",
+        recorrido: "POO",
+        tema: "Diccionarios",
+        coleccion: "estadistica"
     }
 };
 
