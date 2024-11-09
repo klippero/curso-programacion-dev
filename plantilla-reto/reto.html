@@ -1,0 +1,61 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/themes/prism.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/plugins/line-numbers/prism-line-numbers.min.css" rel="stylesheet" />
+    <link href="t.css" rel="stylesheet" />
+    <style>
+        /* Contenedor principal */
+        .container {
+            display: flex;
+            flex-direction: row; /* Asegura la disposición en fila */
+            gap: 10px; /* Espacio entre los bloques */
+            max-width: 100%;
+            margin: 0 auto; /* Centra el contenedor */
+        }
+
+        /* Estilo de cada bloque <pre> */
+        .container pre {
+            flex: 1; /* Cada bloque ocupa el mismo ancho disponible */
+            padding: 10px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            overflow: auto; /* Permite scroll si el contenido es muy largo */
+            white-space: pre; /* Envuelve el texto largo en líneas */
+            min-width: 0; /* Evita que el contenido fuerce el ancho del bloque */
+            word-wrap: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title"></h1>
+    <div id="enunciado"></div>
+
+    <p></p>
+    <div id="test-fileName"></div>
+    <div class="container">
+        <pre id="test"></pre>
+        <pre id="out"></pre>
+    </div>
+
+    Ver solución
+    <div id="sol-fileName"></div>
+    <pre id="sol" data-ln="true" data-colorize="true" class="language-ruby"></pre>
+
+    <p></p>
+
+    <div id="recorrido"></div>
+    <div id="lenguaje"></div>
+    <div id="tema"></div>
+    <div id="coleccion"></div>
+
+    <script src="data.js"></script>
+    <script src="reto.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/components/prism-ruby.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/components/prism-c.min.js"></script>
+    <script src="t.js"></script>
+    </body>
+</html>

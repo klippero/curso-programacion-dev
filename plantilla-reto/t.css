@@ -1,0 +1,126 @@
+.code-container {
+    position: relative;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    background: #f4f4f4;
+}
+
+.copy-button {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    padding: 5px 10px;
+    font-size: 12px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+.copy-button:active {
+    background-color: #0056b3;
+}
+
+.copy-button.copied {
+    background-color: #28a745;
+}
+
+.copy-button.copied::after {
+    content: ' Copiado!';
+}
+
+/* Sobrescribir los estilos de Prism.js con mayor especificidad */
+.code-container pre[class*="language-"],
+pre.code-container[class*="language-"],
+pre[class*="language-"],
+.code-container code[class*="language-"] {
+    font: normal normal 14px/16px "Courier New", Courier, Monospace !important;
+    background-color: #f5f5f5; /* Fondo ligeramente gris */
+    padding: 10px;
+    border-radius: 5px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    margin-left: 20px;
+}
+
+/* Asegurar que el código hereda correctamente los estilos de pre */
+.code-container code {
+    font: inherit !important;
+}
+
+pre {
+    background: #f4f4f4;
+    border: 0px solid #ddd;
+    border-left: 3px solid #f36d33;
+    color: #666;
+    page-break-inside: avoid;
+    font: normal normal 14px/16px "Courier New", Courier, Monospace;
+    line-height: 1.0;
+    margin-bottom: 1.6em;
+    max-width: 100%;
+    padding: .5em 1em;
+    display: block;
+    word-wrap: normal;
+    margin-left: 20px;
+    overflow: auto;
+    overflow-x: auto;
+    white-space: pre;
+    counter-reset: line;
+}
+
+code {
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: 1px solid #bcbec0;
+    padding: 2px;
+    font: normal normal 14px / 16px "Courier New", Courier, Monospace;
+}
+
+pre code {
+    border-radius: 0px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border: 0px;
+    padding: 0px;
+    font: normal normal 14px / 16px "Courier New", Courier, Monospace;
+}
+
+pre .line-number {
+    user-select: none;
+    float: left;
+    margin: 0 1em 0 -1em;
+    border-right: 1px solid;
+    text-align: right;
+}
+
+pre .line-number span {
+    display: block;
+    padding: 0 .5em 0 1em;
+}
+
+pre .cl {
+    display: block;
+    clear: both;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    flex-direction: row; /* Asegura la disposición en fila */
+    gap: 10px; /* Espacio entre los bloques */
+    max-width: 100%;
+    margin: 0 auto; /* Centra el contenedor */
+}
+
+/* Estilo de cada bloque <pre> */
+.container pre {
+    flex: 1; /* Cada bloque ocupa el mismo ancho disponible */
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    overflow: auto; /* Permite scroll si el contenido es muy largo */
+    white-space: pre-wrap; /* Envuelve el texto largo en líneas */
+    min-width: 0; /* Evita que el contenido fuerce el ancho del bloque */
+}
