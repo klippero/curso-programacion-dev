@@ -1,19 +1,17 @@
 const url = new URL(window.location.href);
 const parametros = url.searchParams;
-let id = parametros.get("reto");
-let reto = retos[id];
+let id = parametros.get("recorrido");
+let recorrido = recorridos[id];
 let lenguaje = parametros.get("lenguaje");
-let path = recorridos[reto.recorrido].github + 'retos/' + reto.coleccion + '/' + id + '/';
-let path_code = path + lenguajes[lenguaje].extension + '/';
 
-insert("title",reto.label);
+insert("title",recorrido.label);
 
-let resource = path + 'index.html';
+let resource = recorrido.github + 'index.html';
 fetch(resource)
     .then(response => response.text())
     .then(data => {
         let cleanData = data.trimEnd();
-        element = document.getElementById("enunciado");
+        element = document.getElementById("presentacion");
         element.innerHTML = cleanData;
     })
     .catch(error => {
