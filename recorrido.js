@@ -18,23 +18,15 @@ fetch(resource)
         console.error('Error al cargar el archivo:', error);
     });
 
-document.getElementById("test").setAttribute("data-code", path_code + 'test.' + lenguajes[lenguaje].extension );
-insert("test-fileName",'test.' + lenguajes[lenguaje].extension);
-
-if ( reto.out_por_lenguaje && reto.out_por_lenguaje == true )
+ol = document.getElementById("temas");
+for(let i=0; i<recorrido.temas.length; i++ )
 {
-    document.getElementById("out").setAttribute("data-code",path_code + 'test.' + lenguajes[lenguaje].extension + '.txt ');
+    a = document.createElement("a");
+    a.href = "tema.html?recorrido=" + id + "&lenguaje=" + lenguaje + "&tema=" + i;
+    a.textContent = recorrido.temas[i].label
+    li = document.createElement("li");
+    li.appendChild(a);
+    ol.appendChild(li);
 }
-else
-{
-    document.getElementById("out").setAttribute("data-code",path + 'test.txt ');
-}
 
-
-insert("sol-fileName",'sol.' + lenguajes[lenguaje].extension);
-document.getElementById("sol").setAttribute("data-code",path_code + 'sol.' + lenguajes[lenguaje].extension );
-
-insert("recorrido",recorridos[reto.recorrido].label);
 insert("lenguaje",lenguajes[lenguaje].label);
-insert("tema",reto.tema);
-insert("coleccion",colecciones[reto.coleccion].label);

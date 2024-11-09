@@ -106,32 +106,32 @@ const retos = {
     '1an': {
         label: "Pipo el gato",
         recorrido: "POO",
-        tema: "Clases y objetos",
+        tema: 1,
         coleccion: "animales",
         out_por_lenguaje: true
     },
     '22est-media': {
         label: "Media",
         recorrido: "POO",
-        tema: "Listas",
+        tema: 22,
         coleccion: "estadistica"
     },
     '22est-mediana': {
         label: "Mediana",
         recorrido: "POO",
-        tema: "Listas",
+        tema: 22,
         coleccion: "estadistica"
     },
     '27est-moda1': {
         label: "Moda1",
         recorrido: "POO",
-        tema: "Diccionarios",
+        tema: 27,
         coleccion: "estadistica"
     },
     '27est-moda2': {
         label: "Moda2",
         recorrido: "POO",
-        tema: "Diccionarios",
+        tema: 27,
         coleccion: "estadistica"
     }
 };
@@ -140,4 +140,15 @@ function insert(id,content)
 {
     element = document.getElementById(id);
     element.textContent = content;
+}
+
+function insertA(id,content,link)
+{
+    element = document.getElementById(id);
+
+    a = document.createElement("a");
+    a.href = link;
+    a.textContent = content;
+
+    element.appendChild(a);
 }
