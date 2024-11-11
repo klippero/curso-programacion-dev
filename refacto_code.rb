@@ -1,3 +1,6 @@
+require 'fileutils'
+
+
 TEMAS = [
   {
     :label =>  'Entorno Ruby',
@@ -76,8 +79,14 @@ TEMAS = [
 
 
 class BibliotecaRetos
-  def initialize
+  def initialize(directorio)
     @retos = []
+
+    Dir.glob("#{directorio}/**/*").each do |ruta|
+      if File.file?(ruta)
+        self << ruta
+      end
+    end
   end
 
   def getReto(id)
@@ -114,6 +123,32 @@ class BibliotecaRetos
     end
     result
   end
+
+  def refacto
+    Dir.mkdir("target")
+    Dir.mkdir("target/retos")
+    path_target = "target/retos/"
+    @retos.each do |reto|
+      reto.paths.each do |source|
+        extension = source.rpartition(".").last
+        sol = path_target + reto.coleccion + "/" + reto.id + "/" + extension + "/" + 'sol' + "." + extension
+        test = path_target + reto.coleccion + "/" + reto.id + "/" + extension + "/" + 'test' + "." + extension
+        out = path_target + reto.coleccion + "/" + reto.id + "/" + extension + "/" + 'test' + "." + extension + ".txt"
+        FileUtils.mkdir_p(File.dirname(sol))
+        FileUtils.cp(source, sol)
+        FileUtils.cp(source, test)
+        FileUtils.cp(source, out)
+      end
+    end
+  end
+
+  def to_js
+    result = "const retos = {\n"
+    @retos.each do |reto|
+      result += reto.to_js
+    end
+    result += "};"
+  end
 end
 
 
@@ -125,6 +160,15 @@ class Reto
     @id = fileName.rpartition(".").first
     @tema = self.getTema
     @coleccion = data[-2].split('_')[-1]
+  end
+
+  def to_js
+    result = "'#{@id}': {\n"
+    result += "  label: \"#{@id}\",\n"
+    result += "  recorrido: \"POO\",\n"
+    result += "  tema: #{@tema},\n"
+    result += "  coleccion: \"#{@coleccion}\"\n"
+    result += "},\n"
   end
 
   def to_s
@@ -149,12 +193,6 @@ class Reto
 end
 
 
-directorio = "source"
-retos = BibliotecaRetos.new
-
-Dir.glob("#{directorio}/**/*").each do |ruta|
-  if File.file?(ruta)
-    retos << ruta
-  end
-end
-puts retos
+retos = BibliotecaRetos.new("source")
+# retos.refacto
+puts retos.to_js
