@@ -1,0 +1,221 @@
+1an;animales;1;Clases y objetos;source/py/an_animales/1an.py;source/rb/an_animales/1an.rb
+10b;bonobús;10;Lectura por teclado;source/py/b_bonobús/10b.py;source/rb/b_bonobús/10b.rb
+11b;bonobús;11;return;source/py/b_bonobús/11b.py;source/rb/b_bonobús/11b.rb
+12b;bonobús;12;to_s;source/py/b_bonobús/12b.py;source/rb/b_bonobús/12b.rb
+4b;bonobús;4;Atributos;source/py/b_bonobús/4b.py;source/rb/b_bonobús/4b.rb
+8b;bonobús;8;Parámetros de un constructor;source/py/b_bonobús/8b.py;source/rb/b_bonobús/8b.rb
+9b;bonobús;9;Valores por defecto para parámetros;source/py/b_bonobús/9b.py;source/rb/b_bonobús/9b.rb
+4c;cuenta;4;Atributos;source/py/c_cuenta/4c.py;source/rb/c_cuenta/4c.rb
+5c;cuenta;5;Expresión #{};source/py/c_cuenta/5c.py;source/rb/c_cuenta/5c.rb
+6c1;cuenta;6;Métodos que modifican el estado;source/py/c_cuenta/6c1.py;source/rb/c_cuenta/6c1.rb
+6c2;cuenta;6;Métodos que modifican el estado;source/py/c_cuenta/6c2.py;source/rb/c_cuenta/6c2.rb
+7c;cuenta;7;Parámetros de un método;source/py/c_cuenta/7c.py;source/rb/c_cuenta/7c.rb
+8c-cuenta;cuenta;8;Parámetros de un constructor;source/py/c_cuenta/8c-cuenta.py;source/rb/c_cuenta/8c-cuenta.rb
+8c;cuenta;8;Parámetros de un constructor;source/py/c_cuenta/8c.py;source/rb/c_cuenta/8c.rb
+9c;cuenta;9;Valores por defecto para parámetros;source/py/c_cuenta/9c.py;source/rb/c_cuenta/9c.rb
+12d;dado;12;to_s;source/py/d_dado/12d.py;source/rb/d_dado/12d.rb
+13d;dado;13;Consultar un atributo;source/py/d_dado/13d.py;source/rb/d_dado/13d.rb
+6d;dado;6;Métodos que modifican el estado;source/py/d_dado/6d.py;source/rb/d_dado/6d.rb
+13f;combi;13;Consultar un atributo;source/py/f_frigo_combi/13f.py;source/rb/f_frigo_combi/13f.rb
+6f;combi;6;Métodos que modifican el estado;source/py/f_frigo_combi/6f.py;source/rb/f_frigo_combi/6f.rb
+7f;combi;7;Parámetros de un método;source/py/f_frigo_combi/7f.py;source/rb/f_frigo_combi/7f.rb
+8f;combi;8;Parámetros de un constructor;source/py/f_frigo_combi/8f.py;source/rb/f_frigo_combi/8f.rb
+9f;combi;9;Valores por defecto para parámetros;source/py/f_frigo_combi/9f.py;source/rb/f_frigo_combi/9f.rb
+11g;grados;11;return;source/py/g_grados/11g.py;source/rb/g_grados/11g.rb
+11i;círculo;11;return;source/py/i_círculo/11i.py;source/rb/i_círculo/11i.rb
+10io-t;entradasalida;10;Lectura por teclado;source/py/io_entradasalida/10io-t.py;source/rb/io_entradasalida/10io-t.rb
+13j;juego;13;Consultar un atributo;source/py/j_juego/13j.py;source/rb/j_juego/13j.rb
+12m;primitiva;12;to_s;source/py/m_primitiva/12m.py;source/rb/m_primitiva/12m.rb
+13m;primitiva;13;Consultar un atributo;source/py/m_primitiva/13m.py;source/rb/m_primitiva/13m.rb
+12p;punto;12;to_s;source/py/p_punto/12p.py;source/rb/p_punto/12p.rb
+8p1;punto;8;Parámetros de un constructor;source/py/p_punto/8p1.py;source/rb/p_punto/8p1.rb
+8p2;punto;8;Parámetros de un constructor;source/py/p_punto/8p2.py;source/rb/p_punto/8p2.rb
+8p3;punto;8;Parámetros de un constructor;source/py/p_punto/8p3.py;source/rb/p_punto/8p3.rb
+8p4;punto;8;Parámetros de un constructor;source/py/p_punto/8p4.py;source/rb/p_punto/8p4.rb
+9p1;punto;9;Valores por defecto para parámetros;source/py/p_punto/9p1.py;source/rb/p_punto/9p1.rb
+9p2;punto;9;Valores por defecto para parámetros;source/py/p_punto/9p2.py;source/rb/p_punto/9p2.rb
+11u;cuadrado;11;return;source/py/u_cuadrado/11u.py;source/rb/u_cuadrado/11u.rb
+12u;cuadrado;12;to_s;source/py/u_cuadrado/12u.py;source/rb/u_cuadrado/12u.rb
+13u;cuadrado;13;Consultar un atributo;source/py/u_cuadrado/13u.py;source/rb/u_cuadrado/13u.rb
+20a1;linea;20;while;source/rb/a_linea/20a1.rb
+20a2;linea;20;while;source/rb/a_linea/20a2.rb
+21a;linea;21;times / each;source/rb/a_linea/21a.rb
+23a-relacionales;linea;23;Implementando operadores;source/rb/a_linea/23a-relacionales.rb
+23a;linea;23;Implementando operadores;source/rb/a_linea/23a.rb
+24a;linea;24;Asignación abreviada;source/rb/a_linea/24a.rb
+15b;bonobús;15;Operadores aritméticos;source/rb/b_bonobús/15b.rb
+17b;bonobús;17;if elsif else;source/rb/b_bonobús/17b.rb
+18b;bonobús;18;Operadores lógicos;source/rb/b_bonobús/18b.rb
+19b;bonobús;19;Métodos ? y return de expresiones lógicas;source/rb/b_bonobús/19b.rb
+15c-a;cuenta;15;Operadores aritméticos;source/rb/c_cuenta/15c-a.rb
+15c-b;cuenta;15;Operadores aritméticos;source/rb/c_cuenta/15c-b.rb
+15c-c;cuenta;15;Operadores aritméticos;source/rb/c_cuenta/15c-c.rb
+15c-d;cuenta;15;Operadores aritméticos;source/rb/c_cuenta/15c-d.rb
+15c-e;cuenta;15;Operadores aritméticos;source/rb/c_cuenta/15c-e.rb
+15c;cuenta;15;Operadores aritméticos;source/rb/c_cuenta/15c.rb
+17c;cuenta;17;if elsif else;source/rb/c_cuenta/17c.rb
+18c;cuenta;18;Operadores lógicos;source/rb/c_cuenta/18c.rb
+26cr1;registradora;26;Constantes;source/rb/cr_registradora/26cr1.rb
+26cr2;registradora;26;Constantes;source/rb/cr_registradora/26cr2.rb
+26cr3;registradora;26;Constantes;source/rb/cr_registradora/26cr3.rb
+26cr4;registradora;26;Constantes;source/rb/cr_registradora/26cr4.rb
+27cr;registradora;27;Diccionarios;source/rb/cr_registradora/27cr.rb
+28cr1;registradora;28;Parámetros requeridos, por defecto y opcionales;source/rb/cr_registradora/28cr1.rb
+28cr2;registradora;28;Parámetros requeridos, por defecto y opcionales;source/rb/cr_registradora/28cr2.rb
+28cr3;registradora;28;Parámetros requeridos, por defecto y opcionales;source/rb/cr_registradora/28cr3.rb
+17d1;dado;17;if elsif else;source/rb/d_dado/17d1.rb
+17d2;dado;17;if elsif else;source/rb/d_dado/17d2.rb
+6d_test;dado;6;Métodos que modifican el estado;source/rb/d_dado/6d_test.rb
+18e1;fechas;18;Operadores lógicos;source/rb/e_fechas/18e1.rb
+18e2;fechas;18;Operadores lógicos;source/rb/e_fechas/18e2.rb
+18e3;fechas;18;Operadores lógicos;source/rb/e_fechas/18e3.rb
+17edades;edades;17;if elsif else;source/rb/ed_edades/17edades.rb
+27ed1;edades;27;Diccionarios;source/rb/ed_edades/27ed1.rb
+27ed2;edades;27;Diccionarios;source/rb/ed_edades/27ed2.rb
+27ed3;edades;27;Diccionarios;source/rb/ed_edades/27ed3.rb
+27ed4;edades;27;Diccionarios;source/rb/ed_edades/27ed4.rb
+27ed5;edades;27;Diccionarios;source/rb/ed_edades/27ed5.rb
+27ed6;edades;27;Diccionarios;source/rb/ed_edades/27ed6.rb
+22est-media;estadística;22;Listas;source/rb/est_estadística/22est-media.rb
+22est-mediana;estadística;22;Listas;source/rb/est_estadística/22est-mediana.rb
+27est-moda1;estadística;27;Diccionarios;source/rb/est_estadística/27est-moda1.rb
+27est-moda2;estadística;27;Diccionarios;source/rb/est_estadística/27est-moda2.rb
+17f;combi;17;if elsif else;source/rb/f_frigo_combi/17f.rb
+19f;combi;19;Métodos ? y return de expresiones lógicas;source/rb/f_frigo_combi/19f.rb
+23fr;fracción;23;Implementando operadores;source/rb/fr_fracción/23fr.rb
+15g;grados;15;Operadores aritméticos;source/rb/g_grados/15g.rb
+0hw;hw;0;Entorno Ruby;source/rb/hw/0hw.rb
+15l1;elipse;15;Operadores aritméticos;source/rb/l_elipse/15l1.rb
+15l2;elipse;15;Operadores aritméticos;source/rb/l_elipse/15l2.rb
+22le-contar;listaenteros;22;Listas;source/rb/le_listaenteros/22le-contar.rb
+22le-contarPares;listaenteros;22;Listas;source/rb/le_listaenteros/22le-contarPares.rb
+22le-esta;listaenteros;22;Listas;source/rb/le_listaenteros/22le-esta.rb
+22le-hayPar;listaenteros;22;Listas;source/rb/le_listaenteros/22le-hayPar.rb
+22le-mayor;listaenteros;22;Listas;source/rb/le_listaenteros/22le-mayor.rb
+22le-par;listaenteros;22;Listas;source/rb/le_listaenteros/22le-par.rb
+22le-pos-item;listaenteros;22;Listas;source/rb/le_listaenteros/22le-pos-item.rb
+22le-pos-mayor;listaenteros;22;Listas;source/rb/le_listaenteros/22le-pos-mayor.rb
+22le-remove;listaenteros;22;Listas;source/rb/le_listaenteros/22le-remove.rb
+22le-removeDuplicates;listaenteros;22;Listas;source/rb/le_listaenteros/22le-removeDuplicates.rb
+22le-restaListas;listaenteros;22;Listas;source/rb/le_listaenteros/22le-restaListas.rb
+22le-restaListasDestr;listaenteros;22;Listas;source/rb/le_listaenteros/22le-restaListasDestr.rb
+22le-shufle;listaenteros;22;Listas;source/rb/le_listaenteros/22le-shufle.rb
+22le-shufleDest;listaenteros;22;Listas;source/rb/le_listaenteros/22le-shufleDest.rb
+22le-smallest;listaenteros;22;Listas;source/rb/le_listaenteros/22le-smallest.rb
+22le-suma;listaenteros;22;Listas;source/rb/le_listaenteros/22le-suma.rb
+22le-sumaListas;listaenteros;22;Listas;source/rb/le_listaenteros/22le-sumaListas.rb
+22le-sumaListasDestruct;listaenteros;22;Listas;source/rb/le_listaenteros/22le-sumaListasDestruct.rb
+23le-restaListas;listaenteros;23;Implementando operadores;source/rb/le_listaenteros/23le-restaListas.rb
+23le-sumaListas;listaenteros;23;Implementando operadores;source/rb/le_listaenteros/23le-sumaListas.rb
+23le-sumaListas2;listaenteros;23;Implementando operadores;source/rb/le_listaenteros/23le-sumaListas2.rb
+28le-suma;listaenteros;28;Parámetros requeridos, por defecto y opcionales;source/rb/le_listaenteros/28le-suma.rb
+22lp-firstandlast;listapalabras;22;Listas;source/rb/lp_listapalabras/22lp-firstandlast.rb
+22mbp1;primitiva;22;Listas;source/rb/m_primitiva/22mbp1.rb
+22mbp2;primitiva;22;Listas;source/rb/m_primitiva/22mbp2.rb
+22mbp3;primitiva;22;Listas;source/rb/m_primitiva/22mbp3.rb
+22mbp4;primitiva;22;Listas;source/rb/m_primitiva/22mbp4.rb
+22mp1;primitiva;22;Listas;source/rb/m_primitiva/22mp1.rb
+22mp2;primitiva;22;Listas;source/rb/m_primitiva/22mp2.rb
+26mp;primitiva;26;Constantes;source/rb/m_primitiva/26mp.rb
+27md-claves;midiccionario;27;Diccionarios;source/rb/md_midiccionario/27md-claves.rb
+27md-inverso;midiccionario;27;Diccionarios;source/rb/md_midiccionario/27md-inverso.rb
+27md-randomkey;midiccionario;27;Diccionarios;source/rb/md_midiccionario/27md-randomkey.rb
+27md-valores;midiccionario;27;Diccionarios;source/rb/md_midiccionario/27md-valores.rb
+17n-2;números;17;if elsif else;source/rb/n_números/17n-2.rb
+17n;números;17;if elsif else;source/rb/n_números/17n.rb
+19n;números;19;Métodos ? y return de expresiones lógicas;source/rb/n_números/19n.rb
+20n-factorial;números;20;while;source/rb/n_números/20n-factorial.rb
+20n;números;20;while;source/rb/n_números/20n.rb
+20n1;números;20;while;source/rb/n_números/20n1.rb
+20n2;números;20;while;source/rb/n_números/20n2.rb
+20n3;números;20;while;source/rb/n_números/20n3.rb
+20n4;números;20;while;source/rb/n_números/20n4.rb
+20np1;números;20;while;source/rb/n_números/20np1.rb
+20np2;números;20;while;source/rb/n_números/20np2.rb
+20np3;números;20;while;source/rb/n_números/20np3.rb
+20np4;números;20;while;source/rb/n_números/20np4.rb
+20np5;números;20;while;source/rb/n_números/20np5.rb
+20np6;números;20;while;source/rb/n_números/20np6.rb
+20np7-2;números;20;while;source/rb/n_números/20np7-2.rb
+20np7;números;20;while;source/rb/n_números/20np7.rb
+20np8;números;20;while;source/rb/n_números/20np8.rb
+20nw;números;20;while;source/rb/n_números/20nw.rb
+21n-a1;números;21;times / each;source/rb/n_números/21n-a1.rb
+21n-a2;números;21;times / each;source/rb/n_números/21n-a2.rb
+21n-a3;números;21;times / each;source/rb/n_números/21n-a3.rb
+21n-factorial;números;21;times / each;source/rb/n_números/21n-factorial.rb
+21np1;números;21;times / each;source/rb/n_números/21np1.rb
+21np2;números;21;times / each;source/rb/n_números/21np2.rb
+21np3;números;21;times / each;source/rb/n_números/21np3.rb
+21np4;números;21;times / each;source/rb/n_números/21np4.rb
+21np5;números;21;times / each;source/rb/n_números/21np5.rb
+21np6;números;21;times / each;source/rb/n_números/21np6.rb
+22n-divisores;números;22;Listas;source/rb/n_números/22n-divisores.rb
+15o1;o triángulo;15;Operadores aritméticos;source/rb/o triángulo/15o1.rb
+15o2;o triángulo;15;Operadores aritméticos;source/rb/o triángulo/15o2.rb
+21o;o triángulo;21;times / each;source/rb/o triángulo/21o.rb
+15p1;punto;15;Operadores aritméticos;source/rb/p_punto/15p1.rb
+15p1_dx;punto;15;Operadores aritméticos;source/rb/p_punto/15p1_dx.rb
+15p2;punto;15;Operadores aritméticos;source/rb/p_punto/15p2.rb
+15p2_dx;punto;15;Operadores aritméticos;source/rb/p_punto/15p2_dx.rb
+15p3;punto;15;Operadores aritméticos;source/rb/p_punto/15p3.rb
+15p3_dx;punto;15;Operadores aritméticos;source/rb/p_punto/15p3_dx.rb
+18p;punto;18;Operadores lógicos;source/rb/p_punto/18p.rb
+19p1;punto;19;Métodos ? y return de expresiones lógicas;source/rb/p_punto/19p1.rb
+19p2;punto;19;Métodos ? y return de expresiones lógicas;source/rb/p_punto/19p2.rb
+19p3;punto;19;Métodos ? y return de expresiones lógicas;source/rb/p_punto/19p3.rb
+23p;punto;23;Implementando operadores;source/rb/p_punto/23p.rb
+9.3;punto;9;Valores por defecto para parámetros;source/rb/p_punto/9.3.rb
+9p3;punto;9;Valores por defecto para parámetros;source/rb/p_punto/9p3.rb
+20.4.1.factores;primos;20;while;source/rb/primos/20.4.1.factores.rb
+20.4.2.factores;primos;20;while;source/rb/primos/20.4.2.factores.rb
+20n-primo1;primos;20;while;source/rb/primos/20n-primo1.rb
+20n-primo2;primos;20;while;source/rb/primos/20n-primo2.rb
+20n-primo3;primos;20;while;source/rb/primos/20n-primo3.rb
+20n-primo4;primos;20;while;source/rb/primos/20n-primo4.rb
+20n.siguientePrimo;primos;20;while;source/rb/primos/20n.siguientePrimo.rb
+27.4.3.factores;primos;27;Diccionarios;source/rb/primos/27.4.3.factores.rb
+27.5.desfactoriza;primos;27;Diccionarios;source/rb/primos/27.5.desfactoriza.rb
+27.6.factores-negativos;primos;27;Diccionarios;source/rb/primos/27.6.factores-negativos.rb
+27.7.mcm;primos;27;Diccionarios;source/rb/primos/27.7.mcm.rb
+27.s.1.MCD;primos;27;Diccionarios;source/rb/primos/27.s.1.MCD.rb
+27.s.2.a.fraccion;primos;27;Diccionarios;source/rb/primos/27.s.2.a.fraccion.rb
+27.s.2.b.canonica;primos;27;Diccionarios;source/rb/primos/27.s.2.b.canonica.rb
+27.s.2.c.propia;primos;27;Diccionarios;source/rb/primos/27.s.2.c.propia.rb
+27.s.2.d.getPropia;primos;27;Diccionarios;source/rb/primos/27.s.2.d.getPropia.rb
+27.s.2.e.unidades;primos;27;Diccionarios;source/rb/primos/27.s.2.e.unidades.rb
+27.s.2.f.sumar;primos;27;Diccionarios;source/rb/primos/27.s.2.f.sumar.rb
+27.s.2.f2.sumar;primos;27;Diccionarios;source/rb/primos/27.s.2.f2.sumar.rb
+27.s.2.g.restar;primos;27;Diccionarios;source/rb/primos/27.s.2.g.restar.rb
+27.s.2.h.multiplicar;primos;27;Diccionarios;source/rb/primos/27.s.2.h.multiplicar.rb
+27.s.2.i.dividir;primos;27;Diccionarios;source/rb/primos/27.s.2.i.dividir.rb
+27.s.3.a.mixtos;primos;27;Diccionarios;source/rb/primos/27.s.3.a.mixtos.rb
+27.s.3.b.simplificar;primos;27;Diccionarios;source/rb/primos/27.s.3.b.simplificar.rb
+27.s.3.c.canonica;primos;27;Diccionarios;source/rb/primos/27.s.3.c.canonica.rb
+27.s.3.d.to_fraccion;primos;27;Diccionarios;source/rb/primos/27.s.3.d.to_fraccion.rb
+27.s.3.e.to_mixto;primos;27;Diccionarios;source/rb/primos/27.s.3.e.to_mixto.rb
+27.s.3.f.sumar;primos;27;Diccionarios;source/rb/primos/27.s.3.f.sumar.rb
+27.s.3.g.restar;primos;27;Diccionarios;source/rb/primos/27.s.3.g.restar.rb
+15r;rectángulo;15;Operadores aritméticos;source/rb/r_rectángulo/15r.rb
+21r;rectángulo;21;times / each;source/rb/r_rectángulo/21r.rb
+23r;rectángulo;23;Implementando operadores;source/rb/r_rectángulo/23r.rb
+24r;rectángulo;24;Asignación abreviada;source/rb/r_rectángulo/24r.rb
+15t-dedos;aleatorio;15;Operadores aritméticos;source/rb/t_aleatorio/15t-dedos.rb
+20t1;aleatorio;20;while;source/rb/t_aleatorio/20t1.rb
+20t2;aleatorio;20;while;source/rb/t_aleatorio/20t2.rb
+20t3;aleatorio;20;while;source/rb/t_aleatorio/20t3.rb
+22t;aleatorio;22;Listas;source/rb/t_aleatorio/22t.rb
+23t;aleatorio;23;Implementando operadores;source/rb/t_aleatorio/23t.rb
+24tm1;tiempo;24;Asignación abreviada;source/rb/tm_tiempo/24tm1.rb
+24tm2;tiempo;24;Asignación abreviada;source/rb/tm_tiempo/24tm2.rb
+24tm3;tiempo;24;Asignación abreviada;source/rb/tm_tiempo/24tm3.rb
+24tm4;tiempo;24;Asignación abreviada;source/rb/tm_tiempo/24tm4.rb
+24tm5;tiempo;24;Asignación abreviada;source/rb/tm_tiempo/24tm5.rb
+24tm6;tiempo;24;Asignación abreviada;source/rb/tm_tiempo/24tm6.rb
+15u;cuadrado;15;Operadores aritméticos;source/rb/u_cuadrado/15u.rb
+20u;cuadrado;20;while;source/rb/u_cuadrado/20u.rb
+21u;cuadrado;21;times / each;source/rb/u_cuadrado/21u.rb
+23u0;cuadrado;23;Implementando operadores;source/rb/u_cuadrado/23u0.rb
+23u1;cuadrado;23;Implementando operadores;source/rb/u_cuadrado/23u1.rb
+23u2;cuadrado;23;Implementando operadores;source/rb/u_cuadrado/23u2.rb
+23u3;cuadrado;23;Implementando operadores;source/rb/u_cuadrado/23u3.rb
