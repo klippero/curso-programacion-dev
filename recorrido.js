@@ -3,11 +3,11 @@ const parametros = url.searchParams;
 let id = parametros.get("recorrido");
 let recorrido = recorridos[id];
 let lenguaje = parametros.get("lenguaje");
+const path = root_path + id + '/';
 
 insert("title",recorrido.label);
 
-let resource = recorrido.github + 'index.html';
-fetch(resource)
+fetch(path + 'index.html')
     .then(response => response.text())
     .then(data => {
         let cleanData = data.trimEnd();

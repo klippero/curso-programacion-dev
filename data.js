@@ -1,8 +1,9 @@
+const root_path = "https://raw.githubusercontent.com/klippero/code-snippet-in-web/refs/heads/main/";
+
 const recorridos = {
     "POO":
     {
         label: "Programación Orientada a Objetos",
-        github: "https://raw.githubusercontent.com/klippero/code-snippet-in-web/refs/heads/main/POO/",
         temas: 
         [
             { 
