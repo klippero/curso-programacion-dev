@@ -125,8 +125,8 @@ class BibliotecaRetos
   end
 
   def refacto
-    Dir.mkdir("target")
-    Dir.mkdir("target/retos")
+    Dir.mkdir("POO")
+    Dir.mkdir("POO/retos")
     path_target = "target/retos/"
     @retos.each do |reto|
       reto.paths.each do |source|
