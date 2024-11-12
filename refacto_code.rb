@@ -125,9 +125,9 @@ class BibliotecaRetos
   end
 
   def refacto
-    Dir.mkdir("POO")
+    Dir.mkdir("POO") unless Dir.exist?("POO")
     Dir.mkdir("POO/retos")
-    path_target = "target/retos/"
+    path_target = "POO/retos/"
     @retos.each do |reto|
       reto.paths.each do |source|
         extension = source.rpartition(".").last
