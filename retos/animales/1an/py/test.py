@@ -1,5 +1,4 @@
-class Gato:
-    pass
+from sol import *
 
 pipo = Gato()
 print(pipo)
