@@ -147,6 +147,7 @@ class BibliotecaRetos
     @retos.each do |reto|
       result += reto.to_js
     end
+    result = result[0..-3] + result[-1]
     result += "};"
   end
 end
@@ -163,12 +164,7 @@ class Reto
   end
 
   def to_js
-    result = "'#{@id}': {\n"
-    result += "  label: \"#{@id}\",\n"
-    result += "  recorrido: \"POO\",\n"
-    result += "  tema: #{@tema},\n"
-    result += "  coleccion: \"#{@coleccion}\"\n"
-    result += "},\n"
+    result = "  '#{@id}': { label: \"#{@id}\", recorrido: \"POO\", tema: #{@tema}, coleccion: \"#{@coleccion}\"},\n"
   end
 
   def to_s
@@ -194,5 +190,5 @@ end
 
 
 retos = BibliotecaRetos.new("source")
-# retos.refacto
-puts retos.to_js
+retos.refacto
+# puts retos.to_js

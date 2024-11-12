@@ -102,6 +102,7 @@ const lenguajes = {
     }
 };
 
+/*
 const retos = {
     '1an': {
         label: "Pipo el gato",
@@ -135,6 +136,7 @@ const retos = {
         coleccion: "estadistica"
     }
 };
+*/
 
 function insert(id,content)
 {
