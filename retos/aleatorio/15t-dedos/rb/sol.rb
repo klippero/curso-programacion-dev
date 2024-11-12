@@ -4,7 +4,7 @@ class Mano
     end
 
     def saca_dedos
-        @dedos = rand(0..5)
+        @dedos = rand(6)
     end
 
     def dedos
