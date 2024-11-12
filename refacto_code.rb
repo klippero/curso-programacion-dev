@@ -81,6 +81,7 @@ TEMAS = [
 class BibliotecaRetos
   def initialize(directorio)
     @retos = []
+    @colecciones = {}
 
     Dir.glob("#{directorio}/**/*").each do |ruta|
       if File.file?(ruta)
@@ -112,6 +113,9 @@ class BibliotecaRetos
         puts 'ERROR'
       else
         existente.paths << nuevo.paths[0]
+        if !@colecciones.has_key?(nuevo.coleccion)
+          @colecciones[nuevo.coleccion] = { 'label' => nuevo.coleccion }
+        end
       end
     end
   end
@@ -136,7 +140,6 @@ class BibliotecaRetos
         FileUtils.mkdir_p(File.dirname(sol))
         FileUtils.cp(source, sol)
         FileUtils.cp(source, test)
-        FileUtils.cp(source, out)
       end
     end
   end
@@ -148,6 +151,13 @@ class BibliotecaRetos
     end
     result = result[0..-3] + result[-1]
     result += "};"
+    result += "\n\nconst colecciones = {\n"
+    @colecciones.each do |key,coleccion|
+      result += "  '#{key}': { label: '#{coleccion["label"]}' },\n"
+    end
+    result = result[0..-3] + result[-1]
+    result += '};'
+    result
   end
 end
 
@@ -190,4 +200,4 @@ end
 
 retos = BibliotecaRetos.new("source")
 retos.refacto
-# puts retos.to_js
+puts retos.to_js

@@ -1,5 +1,4 @@
-class Gato
-end
 
-pipo = Gato.new
-puts pipo
+
+
+#<Gato:0x00000001003c9b68>

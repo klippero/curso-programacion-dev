@@ -1,5 +1,4 @@
-class Gato:
-    pass
 
-pipo = Gato()
-print(pipo)
+
+
+<_1an.Gato object at 0x102e5bf90>
