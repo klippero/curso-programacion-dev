@@ -124,3 +124,17 @@ pre .cl {
     white-space: pre-wrap; /* Envuelve el texto largo en líneas */
     min-width: 0; /* Evita que el contenido fuerce el ancho del bloque */
 }
+
+table {
+    border-collapse: collapse;
+    width: 50%;
+    margin: 20px auto;
+}
+th, td {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 8px;
+}
+th {
+    background-color: #f2f2f2;
+}

@@ -7,7 +7,7 @@ const recorridos = {
         temas: 
         [
             { 
-                label: 'Entorno Ruby',
+                label: 'Entorno',
                 secciones: [
                     { label: 'Intérprete' },
                     { label: 'IDE Visual Studio Code' },
@@ -173,10 +173,10 @@ const retos = {
     '27ed4': { label: "27ed4", recorrido: "POO", tema: 27, coleccion: "edades"},
     '27ed5': { label: "27ed5", recorrido: "POO", tema: 27, coleccion: "edades"},
     '27ed6': { label: "27ed6", recorrido: "POO", tema: 27, coleccion: "edades"},
-    '22est-media': { label: "22est-media", recorrido: "POO", tema: 22, coleccion: "estadística"},
-    '22est-mediana': { label: "22est-mediana", recorrido: "POO", tema: 22, coleccion: "estadística"},
-    '27est-moda1': { label: "27est-moda1", recorrido: "POO", tema: 27, coleccion: "estadística"},
-    '27est-moda2': { label: "27est-moda2", recorrido: "POO", tema: 27, coleccion: "estadística"},
+    '22est-media': { label: "22est-media", recorrido: "POO", tema: 22, coleccion: "estadistica"},
+    '22est-mediana': { label: "22est-mediana", recorrido: "POO", tema: 22, coleccion: "estadistica"},
+    '27est-moda1': { label: "27est-moda1", recorrido: "POO", tema: 27, coleccion: "estadistica"},
+    '27est-moda2': { label: "27est-moda2", recorrido: "POO", tema: 27, coleccion: "estadistica"},
     '17f': { label: "17f", recorrido: "POO", tema: 17, coleccion: "combi"},
     '19f': { label: "19f", recorrido: "POO", tema: 19, coleccion: "combi"},
     '23fr': { label: "23fr", recorrido: "POO", tema: 23, coleccion: "fracción"},
@@ -324,6 +324,7 @@ const retos = {
     'cuenta': { label: 'cuenta' },
     'dado': { label: 'dado' },
     'combi': { label: 'combi' },
+    'estadistica': { label: 'estadística' },
     'grados': { label: 'grados' },
     'círculo': { label: 'círculo' },
     'entradasalida': { label: 'entradasalida' },
@@ -332,7 +333,7 @@ const retos = {
     'punto': { label: 'punto' },
     'cuadrado': { label: 'cuadrado' }
     };
-  
+
 function insert(id,content)
 {
     element = document.getElementById(id);
