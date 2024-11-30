@@ -3,6 +3,7 @@ const parametros = url.searchParams;
 let recorrido = parametros.get("recorrido");
 let tema = parametros.get("tema");
 let lenguaje = parametros.get("lenguaje");
+const path = root_path + recorrido + '/temas/' + tema + '/';
 
 insert("title",recorridos[recorrido].temas[tema].label);
 
@@ -11,7 +12,7 @@ fetch(resource)
     .then(response => response.text())
     .then(data => {
         let cleanData = data.trimEnd();
-        element = document.getElementById("enunciado");
+        element = document.getElementById("tema");
         element.innerHTML = cleanData;
     })
     .catch(error => {
