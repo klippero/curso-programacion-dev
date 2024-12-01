@@ -3,7 +3,7 @@ const parametros = url.searchParams;
 let id = parametros.get("reto");
 let reto = retos[id];
 let lenguaje = parametros.get("lenguaje");
-let path = root_path + 'retos/' + reto.coleccion + '/' + id + '/';
+let path = root_path  + 'retos/' + reto.coleccion + '/' + id + '/';
 let path_code = path + lenguajes[lenguaje].extension + '/';
 
 insert("title",reto.label);
