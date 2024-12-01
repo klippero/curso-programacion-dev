@@ -15,6 +15,7 @@ fetch(resource)
         cleanData = cleanData.replace(/<lenguaje>/g, lenguaje);
         element = document.getElementById("tema");
         element.innerHTML = cleanData;
+        pres();
     })
     .catch(error => {
         console.error('Error al cargar el archivo:', error);
