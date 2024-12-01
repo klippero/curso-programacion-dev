@@ -1,0 +1,5 @@
+
+
+
+
+<__main__.Frigo object at 0x1065dff90>
