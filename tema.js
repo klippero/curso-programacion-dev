@@ -1,7 +1,7 @@
 const url = new URL(window.location.href);
 const parametros = url.searchParams;
 let recorrido = parametros.get("recorrido");
-let tema = parametros.get("tema");
+let tema = parseInt(parametros.get("tema"));
 let lenguaje = parametros.get("lenguaje");
 const path = root_path + recorrido + '/temas/' + tema + '/';
 
@@ -37,3 +37,4 @@ for (const retoId in retos)
 
 insertA("recorrido",recorridos[recorrido].label,"recorrido.html?recorrido=" + recorrido + "&lenguaje=" + lenguaje);
 insert("lenguaje",lenguajes[lenguaje].label);
+insertA("siguiente-tema",recorridos[recorrido].temas[tema+1].label,"tema.html?recorrido=" + recorrido + "&lenguaje=" + lenguaje + "&tema=" + (tema+1));
