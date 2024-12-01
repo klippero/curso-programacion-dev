@@ -12,6 +12,7 @@ fetch(resource)
     .then(response => response.text())
     .then(data => {
         let cleanData = data.trimEnd();
+        cleanData = cleanData.replace(/<lenguaje>/g, lenguaje);
         element = document.getElementById("tema");
         element.innerHTML = cleanData;
     })
