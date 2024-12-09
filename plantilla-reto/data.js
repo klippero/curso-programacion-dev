@@ -2,7 +2,7 @@ const recorridos = {
     "POO":
     {
         label: "Programación Orientada a Objetos",
-        github: "https://raw.githubusercontent.com/klippero/code-snippet-in-web/refs/heads/main/POO/retos/"
+        github: "https://raw.githubusercontent.com/klippero/code-snippet-in-web/refs/heads/main/retos/"
     }
 };
 
