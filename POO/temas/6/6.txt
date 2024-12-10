@@ -1,0 +1,3 @@
+Color: blanco | Puerta cerrada | 20ºC
+Color: blanco | Puerta abierta | 20ºC
+Color: blanco | Puerta cerrada | 20ºC

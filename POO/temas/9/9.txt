@@ -1,0 +1,4 @@
+Color: rojo | Puerta cerrada | 20ºC
+Color: blanco | Puerta cerrada | 20ºC
+Color: blanco | Puerta cerrada | 5ºC
+Color: blanco | Puerta cerrada | 7ºC
