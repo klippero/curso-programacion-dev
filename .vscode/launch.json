@@ -22,8 +22,8 @@
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/santiagoalvarezrojo/Documents/github/code-snippet-in-web",
-      "program": "/Users/santiagoalvarezrojo/Documents/github/code-snippet-in-web/build/Debug/outDebug"
+      "cwd": "/Users/santiagoalvarezrojo/Documents/github/code-snippet-in-web/POO/temas/1/cpp",
+      "program": "/Users/santiagoalvarezrojo/Documents/github/code-snippet-in-web/POO/temas/1/cpp/build/Debug/outDebug"
     }
   ]
 }

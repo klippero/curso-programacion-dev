@@ -1,8 +1,8 @@
 const url = new URL(window.location.href);
 const parametros = url.searchParams;
-let id = parametros.get("recorrido");
+let id = parametros.get("recorrido") || "POO";
 let recorrido = recorridos[id];
-let lenguaje = parametros.get("lenguaje");
+let lenguaje = parametros.get("lenguaje") || "rb";
 const path = root_path + id + '/';
 
 insert("title",recorrido.label);
