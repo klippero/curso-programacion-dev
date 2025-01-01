@@ -1,12 +1,3 @@
-3
--1
-20
-5
-1
-16
-5
-5.5
-5.5
-5.5
-1
-4.0
+dime tu edad: 10
+dime la edad de tu amigo: 9
+Tienes más años más que tu amigo
