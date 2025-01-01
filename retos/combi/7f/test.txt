@@ -1,0 +1,3 @@
+Frigo 20ºC cerrada | congelador 20ºC cerrada
+Frigo 4ºC cerrada | congelador 20ºC cerrada
+Frigo 4ºC cerrada | congelador -18ºC cerrada
