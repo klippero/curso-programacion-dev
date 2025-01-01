@@ -30,7 +30,7 @@ const recorridos = {
             { label: 'IRB: interactive Ruby' },
             { label: 'Operadores aritméticos' },
             { label: 'Operadores relacionales' },
-            { label: 'if elsif else' },
+            { label: 'if else' },
             { label: 'Operadores lógicos' },
             { label: 'Métodos ? y return de expresiones lógicas' },
             { label: 'while' },
