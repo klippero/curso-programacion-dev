@@ -13,21 +13,19 @@ class Frigo
         @puerta = "cerrada"
     end
 
-    def fija_temperatura(nueva_temperatura=7)
+    def fija_temperatura(nueva_temperatura=-18)
         @temperatura = nueva_temperatura
     end
 
-    def muestra_estado
-        puts "Color: #{@color} | Puerta #{@puerta} | #{@temperatura}ºC"
+    def to_s
+        return "Color: #{@color} | Puerta #{@puerta} | #{@temperatura}ºC (#{para_temperatura_recomendada}ºC)"
+    end
+
+    def para_temperatura_recomendada
+        return @temperatura - 7
     end
 end
 
 
-mi_frigo = Frigo.new("rojo")
-mi_frigo.muestra_estado
-
-print "Temperatura: "
-t = gets.chomp.to_i
-
-mi_frigo.fija_temperatura(t)
-mi_frigo.muestra_estado
+f = Frigo.new("rojo")
+puts f

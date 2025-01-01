@@ -1,2 +1,0 @@
-Temperatura: 6
-Color: rojo | Puerta cerrada | 6ºC

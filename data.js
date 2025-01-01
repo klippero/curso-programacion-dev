@@ -25,7 +25,7 @@ const recorridos = {
             { label: 'Valores por defecto para parámetros' },
             { label: 'Lectura por teclado' },
             { label: 'return' },
-            { label: 'to_s' },
+            { label: 'Convertir a string' },
             { label: 'Consultar un atributo' },
             { label: 'IRB: interactive Ruby' },
             { label: 'Operadores aritméticos' },
