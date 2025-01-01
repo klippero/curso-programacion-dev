@@ -13,14 +13,15 @@ class Frigo:
     def fija_temperatura(self,nueva_temperatura=7):
         self.__temperatura = nueva_temperatura
 
-    def muestra_estado(self):
-        print( f'Color: {self.__color} | Puerta {self.__puerta} | {self.__temperatura}ºC' )
+    def __str__(self):
+        return f'Color: {self.__color} | Puerta {self.__puerta} | {self.__temperatura}ºC ({self.para_temperatura_recomendada()})'
+
+    def para_temperatura_recomendada(self):
+        return self.__temperatura - 7
+
+    def temperatura(self):
+        return self.__temperatura
 
 
 mi_frigo = Frigo("rojo")
-mi_frigo.muestra_estado()
-
-t = int(input("Temperatura: "))
-
-mi_frigo.fija_temperatura(t)
-mi_frigo.muestra_estado()
+print( mi_frigo.temperatura() )
