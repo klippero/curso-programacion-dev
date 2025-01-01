@@ -7,8 +7,3 @@ class Cuenta:
 
     def liquidarIntereses(self):
         self.__saldo = self.__saldo * 1.1
-
-mi_cuenta = Cuenta()
-mi_cuenta.muestraSaldo()
-mi_cuenta.liquidarIntereses()
-mi_cuenta.muestraSaldo()

@@ -7,6 +7,3 @@ class Bonobus
         puts @viajes
     end
 end
-
-b = Bonobus.new
-b.muestraViajes

@@ -1,0 +1,5 @@
+Puerta frigo cerrada | puerta congelador cerrada
+Puerta frigo abierta | puerta congelador cerrada
+Puerta frigo cerrada | puerta congelador cerrada
+Puerta frigo cerrada | puerta congelador abierta
+Puerta frigo cerrada | puerta congelador cerrada

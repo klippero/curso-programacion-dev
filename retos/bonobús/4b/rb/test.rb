@@ -1,12 +1,4 @@
-class Bonobus
-    def initialize
-        @viajes = 10
-    end
-
-    def muestraViajes
-        puts @viajes
-    end
-end
+require_relative 'sol'
 
 b = Bonobus.new
 b.muestraViajes

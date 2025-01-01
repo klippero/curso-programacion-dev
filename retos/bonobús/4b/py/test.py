@@ -1,9 +1,4 @@
-class Bonobus:
-    def __init__(self):
-        self.__viajes = 10
-
-    def muestraViajes(self):
-        print(self.__viajes)
+from sol import *
 
 b = Bonobus()
 b.muestraViajes()

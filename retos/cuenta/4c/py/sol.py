@@ -4,6 +4,3 @@ class Cuenta:
  
     def muestraSaldo(self):
         print(self.__saldo)
-
-mi_cuenta = Cuenta()
-mi_cuenta.muestraSaldo()

@@ -162,7 +162,6 @@ const retos = {
     '28cr3': { label: "28cr3", recorrido: "POO", tema: 28, coleccion: "registradora"},
     '17d1': { label: "17d1", recorrido: "POO", tema: 17, coleccion: "dado"},
     '17d2': { label: "17d2", recorrido: "POO", tema: 17, coleccion: "dado"},
-    '6d_test': { label: "6d_test", recorrido: "POO", tema: 6, coleccion: "dado"},
     '18e1': { label: "18e1", recorrido: "POO", tema: 18, coleccion: "fechas"},
     '18e2': { label: "18e2", recorrido: "POO", tema: 18, coleccion: "fechas"},
     '18e3': { label: "18e3", recorrido: "POO", tema: 18, coleccion: "fechas"},

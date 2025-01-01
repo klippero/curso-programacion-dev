@@ -9,10 +9,3 @@ class Dado:
 
     def muestra_cara_superior(self):
         print(self.__cara_superior)
-
-
-d = Dado()
-d.muestra_cara_superior()
-
-d.tira()
-d.muestra_cara_superior()

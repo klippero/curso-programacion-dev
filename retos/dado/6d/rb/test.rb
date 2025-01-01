@@ -1,13 +1,7 @@
-class Dado
-    def initialize
-        @cara_superior = rand(1..6)
-    end
+require_relative 'sol'
 
-    def tira
-        @cara_superior = rand(1..6)
-    end
+d = Dado.new()
+d.muestra_cara_superior
 
-    def muestra_cara_superior
-        puts @cara_superior
-    end
-end
+d.tira
+d.muestra_cara_superior

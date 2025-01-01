@@ -4,6 +4,3 @@ class Bonobus:
 
     def muestraViajes(self):
         print(self.__viajes)
-
-b = Bonobus()
-b.muestraViajes()
