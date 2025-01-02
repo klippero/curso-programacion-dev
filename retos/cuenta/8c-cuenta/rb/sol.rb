@@ -18,9 +18,3 @@ class Cuenta
         puts "se retiran #{cantidad}€ y queda un saldo de #{@saldo}€"
     end
 end
-
-
-mi_cuenta = Cuenta.new(100)
-mi_cuenta.ingreso(25)
-mi_cuenta.reintegro(80)
-mi_cuenta.muestraSaldo

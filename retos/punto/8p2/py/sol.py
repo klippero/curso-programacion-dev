@@ -9,10 +9,3 @@ class Punto:
 
     def muestraPunto(self):
         print( f"({self.__x},{self.__y})" )
-
-
-q = Punto(1,-4)
-q.muestraPunto()
-
-q.mover(10,17)
-q.muestraPunto()

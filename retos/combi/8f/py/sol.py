@@ -34,7 +34,3 @@ class FrigorificoCombi:
 
     def fija_temperatura_congelador(self,nueva_temperatura):
         self.__temperatura_congelador = nueva_temperatura
-
-
-mi_frigo = FrigorificoCombi(21)
-mi_frigo.muestra_estado()

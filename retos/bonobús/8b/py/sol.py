@@ -13,8 +13,3 @@ class Bonobus:
 
     def info(self):
         print( f"Viajes disponibles: {self.__viajes}" )
-
-
-mi_bonobus = Bonobus(20)
-mi_bonobus.usar()
-mi_bonobus.recarga(10)

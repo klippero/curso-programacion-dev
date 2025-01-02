@@ -13,10 +13,3 @@ class Punto
         puts "(#{@x},#{@y})"
     end
 end
-
-
-q = Punto.new(1,-4)
-q.muestraPunto
-
-q.mover(10,17)
-q.muestraPunto

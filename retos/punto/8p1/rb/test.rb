@@ -1,14 +1,4 @@
-class Punto
-    def initialize(x,y)
-        @x = x
-        @y = y
-    end
-
-    def muestraPunto
-        puts "(#{@x},#{@y})"
-    end
-end
-
+require_relative 'sol'
 
 q = Punto.new(1,-4)
 q.muestraPunto

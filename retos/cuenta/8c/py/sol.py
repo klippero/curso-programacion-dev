@@ -13,7 +13,3 @@ class Cuenta:
 
     def reintegro(self,cantidad ):
         self.__saldo = self.__saldo - cantidad
-
-
-mi_cuenta = Cuenta(1000)
-mi_cuenta.muestraSaldo()

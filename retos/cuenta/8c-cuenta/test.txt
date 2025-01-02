@@ -1,0 +1,4 @@
+se abre la cuenta con 100€
+se ingresan 25€ y queda un saldo de 125€
+se retiran 80€ y queda un saldo de 45€
+Saldo: 45€

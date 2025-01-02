@@ -34,7 +34,3 @@ class FrigorificoCombi
         @temperatura_congelador = nueva_temperatura
     end
 end
-
-
-mi_frigo = FrigorificoCombi.new(21)
-mi_frigo.muestra_estado

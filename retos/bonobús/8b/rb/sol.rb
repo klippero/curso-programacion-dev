@@ -18,8 +18,3 @@ class Bonobus
         puts "Viajes disponibles: #{@viajes}"
     end
 end
-
-
-mi_bonobus = Bonobus.new(20)
-mi_bonobus.usar
-mi_bonobus.recarga(10)
