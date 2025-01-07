@@ -1,0 +1,6 @@
+Frigo 15ºC cerrada | congelador 15ºC cerrada
+Frigo 20ºC cerrada | congelador 20ºC cerrada
+Frigo 7ºC cerrada | congelador 20ºC cerrada
+Frigo 6ºC cerrada | congelador 20ºC cerrada
+Frigo 6ºC cerrada | congelador -18ºC cerrada
+Frigo 6ºC cerrada | congelador -17ºC cerrada

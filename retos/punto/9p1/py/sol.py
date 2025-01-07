@@ -24,10 +24,3 @@ class Punto:
 
     def vuelve(self):
         self.mover( self.__previa_x, self.__previa_y )
-
-
-p = Punto()
-p.muestraPunto()
-
-q = Punto(1,-4)
-q.muestraPunto()
