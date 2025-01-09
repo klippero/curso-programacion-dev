@@ -261,7 +261,6 @@ const retos = {
     '19p2': { label: "19p2", recorrido: "POO", tema: 19, coleccion: "punto"},
     '19p3': { label: "19p3", recorrido: "POO", tema: 19, coleccion: "punto"},
     '23p': { label: "23p", recorrido: "POO", tema: 23, coleccion: "punto"},
-    '9.3': { label: "9.3", recorrido: "POO", tema: 9, coleccion: "punto"},
     '9p3': { label: "9p3", recorrido: "POO", tema: 9, coleccion: "punto"},
     '20.4.1.factores': { label: "20.4.1.factores", recorrido: "POO", tema: 20, coleccion: "primos"},
     '20.4.2.factores': { label: "20.4.2.factores", recorrido: "POO", tema: 20, coleccion: "primos"},
