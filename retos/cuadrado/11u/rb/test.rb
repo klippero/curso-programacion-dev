@@ -1,13 +1,4 @@
-class Cuadrado
-    def initialize(lado=0)
-        @lado = lado
-    end
-
-    def area
-        return @lado * @lado
-    end
-end
-
+require_relative 'sol'
 
 c1 = Cuadrado.new(8)
 puts c1.area

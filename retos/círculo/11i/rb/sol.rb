@@ -11,11 +11,3 @@ class Circulo
         return 2 * Math::PI * @radio
     end
 end
-
-
-print "Radio: "
-r = gets.chomp.to_f
-
-c = Circulo.new(r)
-puts "Área: #{c.area}"
-puts "Perímetro: #{c.perimetro}"

@@ -9,10 +9,3 @@ class Circulo:
 
     def perimetro(self):
         return 2 * math.pi * self.__radio
-
-
-r = float(input("Radio: "))
-
-c = Circulo(r)
-print( f"Área: {c.area()}" )
-print( f"Perímetro: {c.perimetro()}" )
