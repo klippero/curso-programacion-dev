@@ -1,0 +1,4 @@
+Viajes que adquieres: 30
+viajes disponibles: 30
+Viajes que consumes: 5
+viajes disponibles: 25
