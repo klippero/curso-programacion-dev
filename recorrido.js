@@ -29,4 +29,4 @@ for(let i=0; i<recorrido.temas.length; i++ )
     ol.appendChild(li);
 }
 
-insert("lenguaje",lenguajes[lenguaje].label);
+insert("lang",lenguajes[lenguaje].label);
