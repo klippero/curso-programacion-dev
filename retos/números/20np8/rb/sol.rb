@@ -38,6 +38,3 @@ class Entero
         end
     end
 end
-
-
-Entero.new(169).mostrar_cuadrados_perfectos_menores
