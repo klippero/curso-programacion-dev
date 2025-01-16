@@ -32,10 +32,10 @@ else
     document.getElementById("out").setAttribute("data-code",path + 'test.txt ');
 }
 
-
 insert("sol-fileName",'sol.' + lenguajes[lenguaje].extension);
 document.getElementById("sol").setAttribute("data-code",path_code + 'sol.' + lenguajes[lenguaje].extension );
 
+insertA("link-sol",'sol',path_code + 'sol.' + lenguajes[lenguaje].extension);
 insertA("recorrido",recorridos[reto.recorrido].label,"recorrido.html?recorrido=" + reto.recorrido + "&lenguaje=" + lenguaje);
 insert("lenguaje",lenguajes[lenguaje].label);
 insert("tema",reto.tema);
