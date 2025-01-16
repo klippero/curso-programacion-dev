@@ -34,7 +34,7 @@ else
 
 insert("sol-fileName",'sol.' + lenguajes[lenguaje].extension);
 
-insertA("link-sol",'sol',path_code + 'sol.' + lenguajes[lenguaje].extension);
+insertA("link-sol",'.',path_code + 'sol.' + lenguajes[lenguaje].extension);
 insertA("recorrido",recorridos[reto.recorrido].label,"recorrido.html?recorrido=" + reto.recorrido + "&lenguaje=" + lenguaje);
 insert("lenguaje",lenguajes[lenguaje].label);
 insert("tema",reto.tema);
