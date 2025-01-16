@@ -14,10 +14,3 @@ class Primitiva
         return "#{@n1}, #{@n2}, #{@n3}, #{@n4}, #{@n5}, #{@n6} COMPLEMENTARIO: #{@complementario} REINTEGRO: #{@reintegro}"
     end
 end
-
-
-p1 = Primitiva.new
-puts p1
-
-p2 = Primitiva.new
-puts p2

@@ -31,11 +31,3 @@ class Tirada
         return "#{@dado1},#{@dado2} > #{total}"
     end
 end
-
-
-tirada1 = Tirada.new
-puts tirada1.total
-puts tirada1
-
-tirada2 = Tirada.new
-puts tirada2

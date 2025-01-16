@@ -34,7 +34,3 @@ class Punto
         return "(#{@x},#{@y})"
     end
 end
-
-
-q = Punto.new(1,-4)
-puts q

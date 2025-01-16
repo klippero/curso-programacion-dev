@@ -7,7 +7,3 @@ class Cuadrado:
 
     def __str__(self):
         return f"Cuadrado: {self.__lado}x{self.__lado}"
-
-
-c = Cuadrado(8)
-print(c)

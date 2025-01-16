@@ -13,10 +13,3 @@ class Primitiva:
 
     def __str__(self):
         return f"{self.__n1}, {self.__n2}, {self.__n3}, {self.__n4}, {self.__n5}, {self.__n6} COMPLEMENTARIO: {self.__complementario} REINTEGRO: {self.__reintegro}"
-
-
-p1 = Primitiva()
-print(p1)
-
-p2 = Primitiva()
-print(p2)

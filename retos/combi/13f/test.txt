@@ -1,0 +1,5 @@
+Frigo Puerta cerrada | 20ºC (-13ºC) | Congelador Puerta cerrada | 20ºC (-38ºC)
+Frigo Puerta abierta | 20ºC (-13ºC) | Congelador Puerta cerrada | 20ºC (-38ºC)
+Frigo Puerta abierta | 20ºC (-13ºC) | Congelador Puerta cerrada | -18ºC (0ºC)
+Frigo Puerta abierta | 20ºC (-13ºC) | Congelador Puerta abierta | -18ºC (0ºC)
+Frigo Puerta abierta | 6ºC (1ºC) | Congelador Puerta abierta | -18ºC (0ºC)

@@ -16,8 +16,3 @@ class Primitiva:
 
     def reintegro(self):
         return self.__reintegro
-
-
-p1 = Primitiva()
-p2 = Primitiva()
-print( f"Los reintegros son {p1.reintegro()} y {p2.reintegro()}" )

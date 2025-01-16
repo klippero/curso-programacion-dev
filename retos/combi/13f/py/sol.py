@@ -10,8 +10,11 @@ class MaquinaFrio:
     def cierra(self):
         self.__puerta = "cerrada"
 
-    def fija_temperatura(nueva_temperatura=self.__temperatura_recomendada):
-        self.__temperatura = nueva_temperatura
+    def fija_temperatura(self,nueva_temperatura=None):
+        if nueva_temperatura:
+            self.__temperatura = nueva_temperatura
+        else:
+            self.__temperatura = self.__temperatura_recomendada
 
     def para_temperatura_recomendada(self):
         return self.__temperatura_recomendada - self.__temperatura
@@ -19,41 +22,20 @@ class MaquinaFrio:
     def temperatura(self):
         return self.__temperatura
 
-    def to_s(self):
-        return "Puerta #{self.__puerta} | #{self.__temperatura}ºC (#{para_temperatura_recomendada}ºC)"
+    def __str__(self):
+        return f"Puerta {self.__puerta} | {self.__temperatura}ºC ({self.para_temperatura_recomendada()}ºC)"
 
 
-class FrigorificoCombi
+class FrigorificoCombi:
     def __init__(self):
-        self.__frigorifico = MaquinaFrio.new(20,7)
-        self.__congelador = MaquinaFrio.new(20,-18)
-    end
+        self.__frigorifico = MaquinaFrio(20,7)
+        self.__congelador = MaquinaFrio(20,-18)
 
-    def to_s(self):
-        return "Frigo #{self.__frigorifico} | Congelador #{self.__congelador}"
-    end
+    def __str__(self):
+        return f"Frigo {self.__frigorifico} | Congelador {self.__congelador}"
 
     def frigorifico(self):
         return self.__frigorifico
-    end
 
     def congelador(self):
         return self.__congelador
-    end
-end
-
-
-mi_frigo = FrigorificoCombi.new
-puts mi_frigo
-
-mi_frigo.frigorifico.abre
-puts mi_frigo
-
-mi_frigo.congelador.fija_temperatura
-puts mi_frigo
-
-mi_frigo.congelador.abre
-puts mi_frigo
-
-mi_frigo.frigorifico.fija_temperatura(6)
-puts mi_frigo

@@ -10,10 +10,3 @@ class Dado:
     def __str__(self):
         return str(self.__cara_superior)
         # return f"{self.__cara_superior}"
-
-
-d = Dado()
-print(d)
-
-d.tira()
-print(d)

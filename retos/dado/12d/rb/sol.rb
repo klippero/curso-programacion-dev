@@ -12,10 +12,3 @@ class Dado
         # return "#{@cara_superior}"
     end
 end
-
-
-d = Dado.new
-puts d
-
-d.tira
-puts d

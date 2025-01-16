@@ -13,9 +13,3 @@ class Bonobus:
 
     def __str__(self):
         return f"viajes disponibles: {self.__viajes}"
-
-
-num_viajes = int(input("Viajes que adquieres: "))
-
-mi_bonobus = Bonobus(num_viajes)
-print(mi_bonobus)

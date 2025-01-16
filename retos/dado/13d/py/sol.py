@@ -25,11 +25,3 @@ class Tirada:
 
     def __str__(self):
         return f"{self.__dado1},{self.__dado2} > {self.total()}"
-
-
-tirada1 = Tirada()
-print(tirada1.total())
-print(tirada1)
-
-tirada2 = Tirada()
-print(tirada2)

@@ -1,0 +1,13 @@
+<p>En la mayoría de los videojuegos, hay una serie de jugadores que se mueven por diferentes pantallas y tienen vidas que pueden perder dependiendo de las circunstancias del juego. Vamos a implementar una clase que permita gestionar a un jugador.</p>
+
+<p>Implementa la clase <code>Jugador</code> que se construya recibiendo como parámetro el nombre del jugador. En caso de no recibirlo, el jugador se llamará Spooky. Al crearse, el jugador tendrá 3 vidas y estará situado en la posición 0,0.</p>
+
+<p>Para gestionar la posición del jugador usa la clase <code>Punto</code>. En el mismo fichero implementa la clase <code>Jugador</code> y la clase <code>Punto</code>, una detrás de la otra. En el constructor de un <code>Punto</code> haremos que si no recibe los valores, se sitúe en la posición 0,0.</p>
+
+<p>Implementa el método que permita imprimir directamente un <code>Jugador</code> con el formato: <code>Spooky Vidas: 2 (0,3)</code></p>
+
+<p>Cuando un jugador pierda una vida se invocará al método <code>muere</code>, y cuando obtenga una vida extra al denominado <code>vida_extra</code>. Implementa ambos métodos.</p>
+
+<p>Los movimientos que puede realizar un jugador los llevará a cabo mediante los métodos: <code>sube</code>, <code>salta</code>, <code>baja</code>, <code>derecha</code>, <code>izquierda</code>, <code>sprint_derecha</code> y <code>sprint_izquierda</code>. Todos ellos mueven una posición en la dirección correspondiente excepto los sprints y los saltos que moverán 3 posiciones simultáneamente.</p>
+
+<p>Las coordenadas x e y no se modificarán desde la clase <code>Jugador</code>, sino desde la clase <code>Punto</code>, esto es, en la clase <code>Jugador</code> existirá un atributo de tipo <code>Punto</code> que indique la posición de un jugador en un momento dado. Para facilitar los movimientos, en la clase <code>Punto</code>, vamos a implementar los métodos <code>up</code>, <code>down</code>, <code>right</code> y <code>left</code> que por defecto moverán una posición en el sentido correspondiente pero que podrán recibir como parámetro las posiciones a moverse.</p>

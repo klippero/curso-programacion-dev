@@ -11,7 +11,3 @@ class Cuadrado
         return @lado * @lado
     end
 end
-
-
-c = Cuadrado.new(8)
-puts c
