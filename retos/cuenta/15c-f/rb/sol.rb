@@ -11,4 +11,16 @@ class Cuenta
     def ingreso( cantidad )
         @saldo = @saldo + cantidad
     end
+
+    def calcula_intereses
+        return @saldo * 10 / 100
+    end
+
+    def liquida_intereses
+        @saldo = @saldo + self.calcula_intereses
+    end
+
+    def reintegro( cantidad )
+        @saldo = @saldo - cantidad
+    end
 end

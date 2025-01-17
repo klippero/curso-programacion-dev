@@ -149,7 +149,7 @@ const retos = {
     '15c-c': { label: "15c-c", recorrido: "POO", tema: 15, coleccion: "cuenta"},
     '15c-d': { label: "15c-d", recorrido: "POO", tema: 15, coleccion: "cuenta"},
     '15c-e': { label: "15c-e", recorrido: "POO", tema: 15, coleccion: "cuenta"},
-    '15c': { label: "15c", recorrido: "POO", tema: 15, coleccion: "cuenta"},
+    '15c-f': { label: "15c-f", recorrido: "POO", tema: 15, coleccion: "cuenta"},
     '17c': { label: "17c", recorrido: "POO", tema: 17, coleccion: "cuenta"},
     '18c': { label: "18c", recorrido: "POO", tema: 18, coleccion: "cuenta"},
     '26cr1': { label: "26cr1", recorrido: "POO", tema: 26, coleccion: "registradora"},

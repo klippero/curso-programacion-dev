@@ -4,3 +4,6 @@ Aportación inicial: 192
 Ingreso: 1500
 <<<< Titular: Santi Saldo: 1692.0€ >>>>
 Los intereses son 169.2€
+<<<< Titular: Santi Saldo: 1861.2€ >>>>
+Reintegro: 927.23
+<<<< Titular: Santi Saldo: 933.97€ >>>>
