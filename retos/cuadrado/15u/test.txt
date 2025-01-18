@@ -1,0 +1,2 @@
+Cuadrado: 4x4 area 16
+Cuadrado: 6.0x6.0 area 36.0

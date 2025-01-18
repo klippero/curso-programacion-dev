@@ -35,10 +35,3 @@ class Tirada
         return msg
     end
 end
-
-
-jugador1 = Tirada.new
-puts jugador1
-
-jugador2 = Tirada.new
-puts jugador2
