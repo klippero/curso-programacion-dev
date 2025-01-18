@@ -38,8 +38,3 @@ class Punto
         return ( @x ** 2 + @y ** 2 ) ** (1/2.0)
     end
 end
-
-
-p = Punto.new(11,13)
-puts p
-puts p.distancia_origen
