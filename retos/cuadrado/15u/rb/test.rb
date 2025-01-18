@@ -1,24 +1,4 @@
-class Cuadrado
-    def initialize(lado)
-        @lado = lado
-    end
-
-    def to_s
-        return "Cuadrado: #{@lado}x#{@lado}"
-    end
-
-    def area
-        return @lado * @lado
-    end
-
-    def lado
-        return @lado
-    end
-
-    def agranda(ratio)
-        @lado = @lado * ratio
-    end
-end
+require_relative 'sol'
 
 c = Cuadrado.new(4)
 puts "#{c} area #{c.area}"

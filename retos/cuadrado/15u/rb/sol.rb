@@ -19,9 +19,3 @@ class Cuadrado
         @lado = @lado * ratio
     end
 end
-
-c = Cuadrado.new(4)
-puts "#{c} area #{c.area}"
-
-c.agranda(1.5)
-puts "#{c} area #{c.area}"
