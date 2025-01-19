@@ -1,0 +1,4 @@
+Viajes que adquieres: 5
+viajes disponibles: 5
+Viajes que deseas usar: 7
+viajes disponibles: 5

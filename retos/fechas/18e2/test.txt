@@ -1,0 +1,4 @@
+2000 es bisiesto: false
+2023 es bisiesto: false
+2024 es bisiesto: true
+2100 es bisiesto: false
