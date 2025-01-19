@@ -1,0 +1,4 @@
+Frigo Puerta cerrada | 20ºC (-13ºC) ALERTA | Congelador Puerta cerrada | 20ºC (-38ºC) ALERTA
+Frigo Puerta cerrada | 8ºC (-1ºC) ALERTA | Congelador Puerta cerrada | 20ºC (-38ºC) ALERTA
+Frigo Puerta cerrada | 8ºC (-1ºC) ALERTA | Congelador Puerta cerrada | -18ºC (0ºC)
+Frigo Puerta cerrada | 5ºC (2ºC) | Congelador Puerta cerrada | -18ºC (0ºC)

@@ -1,0 +1,29 @@
+HIJO 1
+Nombre: Lucía
+Edad: 20
+
+HIJO 2
+Nombre: Yago
+Edad: 13
+
+Tu edad: 52
+
+Lucía nació cuando tenías 32 años
+Yago nació cuando tenías 39 años
+Cuando nació Yago, Lucía tenía 7 años
+
+------------
+
+HIJO 1
+Nombre: Alba
+Edad: 16
+
+HIJO 2
+Nombre: Diego
+Edad: 16
+
+Tu edad: 50
+
+Alba nació cuando tenías 34 años
+Diego nació cuando tenías 34 años
+Alba y Diego nacieron el mismo año

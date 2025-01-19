@@ -1,0 +1,9 @@
+Número: 393
+Divisor: 3
+3 ES DIVISOR de 393
+
+--------
+
+Número: 39483
+Divisor: 7
+7 NO ES DIVISOR de 39483
