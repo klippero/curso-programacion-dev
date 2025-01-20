@@ -1,0 +1,2 @@
+(1,-4) en la diagonal: false
+(6,6) en la diagonal: true

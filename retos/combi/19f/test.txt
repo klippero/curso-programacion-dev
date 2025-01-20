@@ -1,0 +1,14 @@
+Frigo Puerta cerrada | 21ºC (-14ºC) | Congelador Puerta cerrada | 21ºC (-39ºC)
+Frigo Puerta abierta | 21ºC (-14ºC) | Congelador Puerta cerrada | 21ºC (-39ºC)
+Frigo Puerta cerrada | 21ºC (-14ºC) | Congelador Puerta cerrada | 21ºC (-39ºC)
+Frigo Puerta cerrada | 21ºC (-14ºC) | Congelador Puerta abierta | 21ºC (-39ºC)
+Frigo Puerta cerrada | 21ºC (-14ºC) | Congelador Puerta cerrada | 21ºC (-39ºC)
+
+Frigo Puerta cerrada | 20ºC (-13ºC) | Congelador Puerta cerrada | 20ºC (-38ºC)
+Frigo Puerta abierta | 20ºC (-13ºC) | Congelador Puerta cerrada | 20ºC (-38ºC)
+Frigo Puerta abierta | 20ºC (-13ºC) | Congelador Puerta cerrada | -18ºC (0ºC)
+Frigo Puerta abierta | 20ºC (-13ºC) | Congelador Puerta abierta | -18ºC (0ºC)
+Frigo Puerta abierta | 6ºC (1ºC) | Congelador Puerta abierta | -18ºC (0ºC)
+La temperatura es ok: false
+Frigo Puerta abierta | 7ºC (0ºC) | Congelador Puerta abierta | -18ºC (0ºC)
+La temperatura es ok: true

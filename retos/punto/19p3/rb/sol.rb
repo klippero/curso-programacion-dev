@@ -73,7 +73,3 @@ class Punto
         return cuadrante == n
     end
 end
-
-
-puts Punto.new(1,5).cuadrante? (1)
-puts Punto.new(-3,-5).cuadrante? (2)
