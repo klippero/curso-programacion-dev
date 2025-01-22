@@ -13,7 +13,3 @@ class Entero
         return producto
     end
 end
-
-
-puts "8! = #{Entero.new(8).factorial}"
-puts "0! = #{Entero.new(0).factorial}"

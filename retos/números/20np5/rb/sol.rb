@@ -29,7 +29,3 @@ class Entero
         end
     end
 end
-
-
-e = Entero.new(10000)
-e.mostrar_perfectos_menores

@@ -12,7 +12,3 @@ class Entero
         puts
     end
 end
-
-
-e = Entero.new(5)
-e.mostrar_previos

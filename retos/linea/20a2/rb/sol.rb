@@ -13,9 +13,3 @@ class Linea
         return result
     end
 end
-
-
-print "longitud: "
-n = gets.chomp.to_i
-l = Linea.new(n)
-puts l

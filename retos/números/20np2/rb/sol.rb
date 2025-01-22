@@ -13,7 +13,3 @@ class Entero
         return suma
     end
 end
-
-
-e = Entero.new(5)
-puts "Suma: #{e.suma_previos}"

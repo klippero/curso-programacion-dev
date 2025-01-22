@@ -1,0 +1,2 @@
+Divisores de 8: 7
+Divisores de 28: 28
