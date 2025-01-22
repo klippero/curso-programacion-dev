@@ -36,6 +36,3 @@ class Entero
         puts(1)
     end
 end
-
-
-Entero.new(343).factores

@@ -17,16 +17,3 @@ class Entero
         puts "al salir del bucle i vale #{i} "
     end
 end
-
-
-print "N: "
-n = gets.chomp.to_i
-e = Entero.new(n)
-e.primo?
-
-
-=begin
-
-        while i < @n and @n % i != 0
-
-=end

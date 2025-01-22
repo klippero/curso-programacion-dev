@@ -18,12 +18,6 @@ class Entero
 end
 
 
-print "N: "
-n = gets.chomp.to_i
-e = Entero.new(n)
-puts e.primo?
-
-
 =begin
 
 Si return devuelve !encontrado y no se comprueba

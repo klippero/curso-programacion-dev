@@ -23,7 +23,3 @@ class Entero
         return encontrado
     end
 end
-
-
-puts Entero.new(25).es_cuadrado_perfecto_while?
-puts Entero.new(24).es_cuadrado_perfecto_while?

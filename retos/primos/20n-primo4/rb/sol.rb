@@ -13,7 +13,7 @@ class Entero
                 i = i + 1
             end
         end
-        return i == @n
+        return !encontrado && @n > 1
     end
 
     def mostrar_primos_menores
@@ -26,9 +26,6 @@ class Entero
         end
     end
 end
-
-
-Entero.new(89).mostrar_primos_menores
 
 
 =begin
