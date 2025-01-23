@@ -152,11 +152,11 @@ const retos = {
     '15c-f': { label: "15c-f", recorrido: "POO", tema: 15, coleccion: "cuenta"},
     '17c': { label: "17c", recorrido: "POO", tema: 17, coleccion: "cuenta"},
     '18c': { label: "18c", recorrido: "POO", tema: 18, coleccion: "cuenta"},
-    '26cr1': { label: "26cr1", recorrido: "POO", tema: 26, coleccion: "registradora"},
-    '26cr2': { label: "26cr2", recorrido: "POO", tema: 26, coleccion: "registradora"},
-    '26cr3': { label: "26cr3", recorrido: "POO", tema: 26, coleccion: "registradora"},
-    '26cr4': { label: "26cr4", recorrido: "POO", tema: 26, coleccion: "registradora"},
-    '27cr': { label: "27cr", recorrido: "POO", tema: 27, coleccion: "registradora"},
+    '26cr1': { label: "add", recorrido: "POO", tema: 26, coleccion: "registradora"},
+    '26cr2': { label: "to_f", recorrido: "POO", tema: 26, coleccion: "registradora"},
+    '26cr3': { label: "take", recorrido: "POO", tema: 26, coleccion: "registradora"},
+    '26cr4': { label: "Operador <<", recorrido: "POO", tema: 26, coleccion: "registradora"},
+    '27cr': { label: "", recorrido: "POO", tema: 27, coleccion: "registradora"},
     '28cr1': { label: "28cr1", recorrido: "POO", tema: 28, coleccion: "registradora"},
     '28cr2': { label: "28cr2", recorrido: "POO", tema: 28, coleccion: "registradora"},
     '28cr3': { label: "28cr3", recorrido: "POO", tema: 28, coleccion: "registradora"},
@@ -320,7 +320,8 @@ const retos = {
     'juego': { label: 'juego' },
     'primitiva': { label: 'primitiva' },
     'punto': { label: 'punto' },
-    'cuadrado': { label: 'cuadrado' }
+    'cuadrado': { label: 'cuadrado' },
+    'registradora':{label:'Caja registradora'}
     };
 
 function insert(id,content)

@@ -4,7 +4,7 @@ class CajaRegistradora
     def initialize
         # @slot = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
         @slot = []
-        VALUE.each do
+        VALUE.length.times do
             @slot << 0
         end
     end
@@ -43,13 +43,3 @@ class CajaRegistradora
         end
     end
 end
-
-
-cr = CajaRegistradora.new
-cr.add(0.02,3)
-cr.add(20,2)
-puts cr
-cr.add(2,1)
-cr.add(1,12)
-cr.add(0.5,3)
-puts cr
