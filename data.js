@@ -140,6 +140,11 @@ const retos = {
     '23a-relacionales': { label: "23a-relacionales", recorrido: "POO", tema: 23, coleccion: "linea"},
     '23a': { label: "23a", recorrido: "POO", tema: 23, coleccion: "linea"},
     '24a': { label: "24a", recorrido: "POO", tema: 24, coleccion: "linea"},
+    '28a1': { label: "Gráfico con esponja", recorrido: "POO", tema: 28, coleccion: "linea"},
+    '28a2': { label: "Gráfico con números", recorrido: "POO", tema: 28, coleccion: "linea"},
+    '28a3': { label: "Gráfico con chars diferentes", recorrido: "POO", tema: 28, coleccion: "linea"},
+    '29a1': { label: "Gráfico con key arguments", recorrido: "POO", tema: 29, coleccion: "linea"},
+    '29a2': { label: "Gráfico con key arguments con valores por defecto", recorrido: "POO", tema: 29, coleccion: "linea"},
     '15b': { label: "15b", recorrido: "POO", tema: 15, coleccion: "bonobús"},
     '17b': { label: "17b", recorrido: "POO", tema: 17, coleccion: "bonobús"},
     '18b': { label: "18b", recorrido: "POO", tema: 18, coleccion: "bonobús"},
@@ -152,6 +157,7 @@ const retos = {
     '15c-f': { label: "15c-f", recorrido: "POO", tema: 15, coleccion: "cuenta"},
     '17c': { label: "17c", recorrido: "POO", tema: 17, coleccion: "cuenta"},
     '18c': { label: "18c", recorrido: "POO", tema: 18, coleccion: "cuenta"},
+    '28c': { label: "Ingreso y reintegro con esponja", recorrido: "POO", tema: 28, coleccion: "cuenta"},
     '26cr1': { label: "add", recorrido: "POO", tema: 26, coleccion: "registradora"},
     '26cr2': { label: "to_f", recorrido: "POO", tema: 26, coleccion: "registradora"},
     '26cr3': { label: "take", recorrido: "POO", tema: 26, coleccion: "registradora"},
@@ -204,7 +210,7 @@ const retos = {
     '23le-restaListas': { label: "23le-restaListas", recorrido: "POO", tema: 23, coleccion: "listaenteros"},
     '23le-sumaListas': { label: "23le-sumaListas", recorrido: "POO", tema: 23, coleccion: "listaenteros"},
     '23le-sumaListas2': { label: "23le-sumaListas2", recorrido: "POO", tema: 23, coleccion: "listaenteros"},
-    '28le-suma': { label: "28le-suma", recorrido: "POO", tema: 28, coleccion: "listaenteros"},
+    '28le-suma': { label: "Suma lista", recorrido: "POO", tema: 28, coleccion: "listaenteros"},
     '22lp-firstandlast': { label: "22lp-firstandlast", recorrido: "POO", tema: 22, coleccion: "listapalabras"},
     '22mbp1': { label: "22mbp1", recorrido: "POO", tema: 22, coleccion: "primitiva"},
     '22mbp2': { label: "22mbp2", recorrido: "POO", tema: 22, coleccion: "primitiva"},
@@ -310,7 +316,7 @@ const retos = {
     const colecciones = {
     'animales': { label: 'animales' },
     'bonobús': { label: 'bonobús' },
-    'cuenta': { label: 'cuenta' },
+    'cuenta': { label: 'Cuenta' },
     'dado': { label: 'dado' },
     'combi': { label: 'combi' },
     'estadistica': { label: 'estadística' },
@@ -321,7 +327,9 @@ const retos = {
     'primitiva': { label: 'primitiva' },
     'punto': { label: 'punto' },
     'cuadrado': { label: 'cuadrado' },
-    'registradora':{label:'Caja registradora'}
+    'registradora':{label:'Caja registradora'},
+    'listaenteros':{label:'Lista enteros'},
+    'linea':{label:'Línea'}
     };
 
 function insert(id,content)
