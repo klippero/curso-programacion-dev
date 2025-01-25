@@ -6,7 +6,10 @@ let lenguaje = parametros.get("lenguaje");
 let path = root_path  + 'retos/' + reto.coleccion + '/' + id + '/';
 let path_code = path + lenguajes[lenguaje].extension + '/';
 
-insert("title",reto.label);
+title = id.toString() + ". " + reto.label
+if (colecciones[reto.coleccion])
+    title +=  ' (' + colecciones[reto.coleccion].label  + ')'
+insert("title",title);
 
 let resource = path + 'index.html';
 fetch(resource)

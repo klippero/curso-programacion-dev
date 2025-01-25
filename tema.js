@@ -29,9 +29,9 @@ for (const retoId in retos)
         a = document.createElement("a");
         a.href = "reto.html?reto=" + retoId + "&lenguaje=" + lenguaje;
         a.textContent = retoId;
-        if (colecciones[retos[retoId].coleccion])
-            a.textContent +=  '. ' + colecciones[retos[retoId].coleccion].label 
         a.textContent += '. ' + retos[retoId].label;
+        if (colecciones[retos[retoId].coleccion])
+            a.textContent +=  ' (' + colecciones[retos[retoId].coleccion].label  + ')'
         li = document.createElement("li");
         li.appendChild(a);
         ul.appendChild(li);
