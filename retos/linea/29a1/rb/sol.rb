@@ -47,3 +47,5 @@ class GraficoBarras
         return result
     end
 end
+
+puts GraficoBarras.new(23,17,4,55,51,45,15,char:'.',showNum:true)

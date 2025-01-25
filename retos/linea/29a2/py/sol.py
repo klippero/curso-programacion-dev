@@ -16,7 +16,7 @@ class Linea:
 
 
 class GraficoBarras:
-    def __init__(self,*longitudes,char,showNum):
+    def __init__(self,*longitudes,char='-',showNum=False):
         self.__lineas = []
         for longitud in longitudes:
             self.__lineas.append(Linea(longitud,char))

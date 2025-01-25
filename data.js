@@ -140,9 +140,6 @@ const retos = {
     '23a-relacionales': { label: "23a-relacionales", recorrido: "POO", tema: 23, coleccion: "linea"},
     '23a': { label: "23a", recorrido: "POO", tema: 23, coleccion: "linea"},
     '24a': { label: "24a", recorrido: "POO", tema: 24, coleccion: "linea"},
-    '28a1': { label: "Gráfico con esponja", recorrido: "POO", tema: 28, coleccion: "linea"},
-    '28a2': { label: "Gráfico con números", recorrido: "POO", tema: 28, coleccion: "linea"},
-    '28a3': { label: "Gráfico con chars diferentes", recorrido: "POO", tema: 28, coleccion: "linea"},
     '29a1': { label: "Gráfico con key arguments", recorrido: "POO", tema: 29, coleccion: "linea"},
     '29a2': { label: "Gráfico con key arguments con valores por defecto", recorrido: "POO", tema: 29, coleccion: "linea"},
     '15b': { label: "15b", recorrido: "POO", tema: 15, coleccion: "bonobús"},
@@ -157,15 +154,11 @@ const retos = {
     '15c-f': { label: "15c-f", recorrido: "POO", tema: 15, coleccion: "cuenta"},
     '17c': { label: "17c", recorrido: "POO", tema: 17, coleccion: "cuenta"},
     '18c': { label: "18c", recorrido: "POO", tema: 18, coleccion: "cuenta"},
-    '28c': { label: "Ingreso y reintegro con esponja", recorrido: "POO", tema: 28, coleccion: "cuenta"},
     '26cr1': { label: "add", recorrido: "POO", tema: 26, coleccion: "registradora"},
     '26cr2': { label: "to_f", recorrido: "POO", tema: 26, coleccion: "registradora"},
     '26cr3': { label: "take", recorrido: "POO", tema: 26, coleccion: "registradora"},
     '26cr4': { label: "Operador <<", recorrido: "POO", tema: 26, coleccion: "registradora"},
     '27cr': { label: "", recorrido: "POO", tema: 27, coleccion: "registradora"},
-    '28cr1': { label: "Parámetros por defecto", recorrido: "POO", tema: 28, coleccion: "registradora"},
-    '28cr2': { label: "Parámetro esponja add", recorrido: "POO", tema: 28, coleccion: "registradora"},
-    '28cr3': { label: "Parámetro esponja take", recorrido: "POO", tema: 28, coleccion: "registradora"},
     '17d1': { label: "17d1", recorrido: "POO", tema: 17, coleccion: "dado"},
     '17d2': { label: "17d2", recorrido: "POO", tema: 17, coleccion: "dado"},
     '18e1': { label: "18e1", recorrido: "POO", tema: 18, coleccion: "fechas"},
@@ -210,7 +203,6 @@ const retos = {
     '23le-restaListas': { label: "23le-restaListas", recorrido: "POO", tema: 23, coleccion: "listaenteros"},
     '23le-sumaListas': { label: "23le-sumaListas", recorrido: "POO", tema: 23, coleccion: "listaenteros"},
     '23le-sumaListas2': { label: "23le-sumaListas2", recorrido: "POO", tema: 23, coleccion: "listaenteros"},
-    '28le-suma': { label: "Suma lista", recorrido: "POO", tema: 28, coleccion: "listaenteros"},
     '22lp-firstandlast': { label: "22lp-firstandlast", recorrido: "POO", tema: 22, coleccion: "listapalabras"},
     '22mbp1': { label: "22mbp1", recorrido: "POO", tema: 22, coleccion: "primitiva"},
     '22mbp2': { label: "22mbp2", recorrido: "POO", tema: 22, coleccion: "primitiva"},
@@ -310,8 +302,17 @@ const retos = {
     '23u0': { label: "23u0", recorrido: "POO", tema: 23, coleccion: "cuadrado"},
     '23u1': { label: "23u1", recorrido: "POO", tema: 23, coleccion: "cuadrado"},
     '23u2': { label: "23u2", recorrido: "POO", tema: 23, coleccion: "cuadrado"},
-    '23u3': { label: "23u3", recorrido: "POO", tema: 23, coleccion: "cuadrado"}
-    };
+    '23u3': { label: "23u3", recorrido: "POO", tema: 23, coleccion: "cuadrado"},
+    '28cr1': { label: "Parámetros por defecto", recorrido: "POO", tema: 28, coleccion: "registradora"},
+    '28cr2': { label: "Parámetro esponja add", recorrido: "POO", tema: 28, coleccion: "registradora"},
+    '28cr3': { label: "Parámetro esponja take", recorrido: "POO", tema: 28, coleccion: "registradora"},
+    '28le-suma': { label: "Suma lista", recorrido: "POO", tema: 28, coleccion: "listaenteros"},
+    '28c': { label: "Ingreso y reintegro con esponja", recorrido: "POO", tema: 28, coleccion: "cuenta"},
+    '28a1': { label: "Gráfico con esponja", recorrido: "POO", tema: 28, coleccion: "linea"},
+    '28a2': { label: "Gráfico con números", recorrido: "POO", tema: 28, coleccion: "linea"},
+    '28a3': { label: "Gráfico con chars diferentes", recorrido: "POO", tema: 28, coleccion: "linea"},
+    '28est': { label: "Con esponja", recorrido: "POO", tema: 28, coleccion: "estadistica"},
+};
 
     const colecciones = {
     'animales': { label: 'animales' },
@@ -329,6 +330,8 @@ const retos = {
     'cuadrado': { label: 'cuadrado' },
     'registradora':{label:'Caja registradora'},
     'listaenteros':{label:'Lista enteros'},
+    'edades':{label:'Edades'},
+    'midiccionario':{label:'midiccionario'},
     'linea':{label:'Línea'}
     };
 
