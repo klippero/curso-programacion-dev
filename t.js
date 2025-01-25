@@ -90,7 +90,7 @@ function pres()
         const preElement = preElements[i];
         preElements[i].addEventListener("click", () => 
             {
-                preElement.addEventListener('click', () => copy(preElement));
+//                preElement.addEventListener('click', () => copy(preElement));
             }
         );
 
