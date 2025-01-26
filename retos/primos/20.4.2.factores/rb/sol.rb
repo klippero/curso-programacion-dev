@@ -55,8 +55,3 @@ class Entero
         puts(1)
     end
 end
-
-
-print "n: "
-n = Entero.new(gets.chomp.to_i)
-n.factores

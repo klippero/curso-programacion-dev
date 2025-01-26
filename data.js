@@ -255,9 +255,9 @@ const retos = {
     '20n-primo2': { label: "Primo. Mostrar hasta un divisor", recorrido: "POO", tema: 20, coleccion: "primos"},
     '20n-primo3': { label: "Primo. Devuelve true o false", recorrido: "POO", tema: 20, coleccion: "primos"},
     '20n-primo4': { label: "Primos menores", recorrido: "POO", tema: 20, coleccion: "primos"},
-    '20n.siguientePrimo': { label: "20n.siguientePrimo", recorrido: "POO", tema: 20, coleccion: "primos"},
-    '20.4.1.factores': { label: "20.4.1.factores", recorrido: "POO", tema: 20, coleccion: "primos"},
-    '20.4.2.factores': { label: "20.4.2.factores", recorrido: "POO", tema: 20, coleccion: "primos"},
+    '20n.siguientePrimo': { label: "Siguiente primo", recorrido: "POO", tema: 20, coleccion: "primos"},
+    '20.4.1.factores': { label: "Descomponer en factores primos (primero para un único factor)", recorrido: "POO", tema: 20, coleccion: "primos"},
+    '20.4.2.factores': { label: "Descomponer en factores primos (múltiples factores)", recorrido: "POO", tema: 20, coleccion: "primos"},
     '27.4.3.factores': { label: "27.4.3.factores", recorrido: "POO", tema: 27, coleccion: "primos"},
     '27.5.desfactoriza': { label: "27.5.desfactoriza", recorrido: "POO", tema: 27, coleccion: "primos"},
     '27.6.factores-negativos': { label: "27.6.factores-negativos", recorrido: "POO", tema: 27, coleccion: "primos"},
@@ -338,6 +338,7 @@ const retos = {
     'aleatorio':{label:'aleatorio'},
     'números':{label:'números'},
     'fechas':{label:'fechas'},
+    'primos':{label:'primos'},
     'linea':{label:'línea'}
     };
 
