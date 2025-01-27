@@ -20,21 +20,20 @@ class Aleatorio
     def intentos
         return @intentos
     end
-end
 
+    def juego
+        print "Dime un número entre 0 y 9: "
+        n = gets.chomp.to_i
 
-random = Aleatorio.new
-
-print "Dime un número: "
-n = gets.chomp.to_i
-
-while !random.es_este?(n)
-    if n > random.numero
-        print "Te has pasado. "
-    else
-        print "Te has quedado corto. "
+        while !self.es_este?(n)
+            if n > self.numero
+                print "Te has pasado. "
+            else
+                print "Te has quedado corto. "
+            end
+            print "Dime otro número entre 0 y 9: "
+            n = gets.chomp.to_i
+        end
+        puts "Acertaste al intento #{@intentos}, el número era el #{@numero}"
     end
-    print "Dime otro: "
-    n = gets.chomp.to_i
 end
-puts "Acertaste al intento #{random.intentos}, el número era el #{random}"

@@ -1,0 +1,8 @@
+Dime un número entre 0 y 9: 3
+Dime un número entre 0 y 9: 6
+Dime un número entre 0 y 9: 9
+Dime un número entre 0 y 9: 1
+Dime un número entre 0 y 9: 2
+Dime un número entre 0 y 9: 7
+Dime un número entre 0 y 9: 5
+Acertaste, el número era el 5

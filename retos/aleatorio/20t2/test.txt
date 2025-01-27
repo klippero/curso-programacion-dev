@@ -1,0 +1,7 @@
+Dime un número entre 0 y 9: 9
+Te has pasado. Dime otro un número entre 0 y 9: 0
+Te has quedado corto. Dime otro un número entre 0 y 9: 8
+Te has pasado. Dime otro un número entre 0 y 9: 4
+Te has quedado corto. Dime otro un número entre 0 y 9: 7
+Te has pasado. Dime otro un número entre 0 y 9: 6
+Acertaste, el número era el 6
