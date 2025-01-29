@@ -1,17 +1,4 @@
-class Entero
-    def initialize(n)
-        @n = n
-    end
+require_relative 'sol'
 
-    def factorial
-        producto = 1
-        @n.times do |i|
-            producto = producto * (i+1)
-        end
-        return producto
-    end
-end
-
-
-print "El factorial de 8 es "
-puts Entero.new(8).factorial
+puts "8! = #{Entero.new(8).factorial}"
+puts "0! = #{Entero.new(0).factorial}"

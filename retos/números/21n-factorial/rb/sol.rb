@@ -11,7 +11,3 @@ class Entero
         return producto
     end
 end
-
-
-print "El factorial de 8 es "
-puts Entero.new(8).factorial

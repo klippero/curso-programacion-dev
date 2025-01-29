@@ -231,7 +231,7 @@ const retos = {
     '21n-a1': { label: "Números amigos. Método amigo", recorrido: "POO", tema: 21, coleccion: "números"},
     '21n-a2': { label: "Números amigos. Método amigo?", recorrido: "POO", tema: 21, coleccion: "números"},
     '21n-a3': { label: "Números amigos. Método muestra_amigos_previos", recorrido: "POO", tema: 21, coleccion: "números"},
-    '21n-factorial': { label: "21n-factorial", recorrido: "POO", tema: 21, coleccion: "números"},
+    '21n-factorial': { label: "Otro bucle", recorrido: "POO", tema: 21, coleccion: "números"},
     '21np1': { label: "21np1", recorrido: "POO", tema: 21, coleccion: "números"},
     '21np2': { label: "21np2", recorrido: "POO", tema: 21, coleccion: "números"},
     '21np3': { label: "21np3", recorrido: "POO", tema: 21, coleccion: "números"},
