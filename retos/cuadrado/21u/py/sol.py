@@ -14,11 +14,8 @@ class Cuadrado:
     def __str__(self):
         result =""
         i = 1
-        while i <= self.__lado:
-            j = 1
-            while j <= self.__lado:
+        for _ in range(self.__lado):
+            for _ in range(self.__lado):
                 result = result + "*"
-                j = j + 1
             result = result + "\n"
-            i = i + 1
         return result

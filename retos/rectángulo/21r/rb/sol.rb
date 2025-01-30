@@ -15,12 +15,3 @@ class Rectangulo
         return result
     end
 end
-
-
-print "base: "
-b = gets.chomp.to_i
-print "altura: "
-a = gets.chomp.to_i
-
-c = Rectangulo.new(b,a)
-puts(c)

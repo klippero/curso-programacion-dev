@@ -14,9 +14,3 @@ class Triangulo
         return result
     end
 end
-
-
-print "Base: "
-b = gets.chomp.to_i
-
-puts Triangulo.new(b)
