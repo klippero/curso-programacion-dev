@@ -17,10 +17,6 @@ class ListaEnteros
 end
 
 
-lista = ListaEnteros.new( [1,3,5,7,2,11,5] )
-puts lista.posMayor
-
-
 =begin
 La solución propuesta inicializa el resultado
 a la primera posición de la lista (la 0) y

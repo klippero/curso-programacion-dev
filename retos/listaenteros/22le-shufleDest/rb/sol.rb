@@ -14,8 +14,3 @@ class Lista
         end
     end
 end
-
-
-l = Lista.new([2,4,5,9])
-l.shuffle!
-puts l

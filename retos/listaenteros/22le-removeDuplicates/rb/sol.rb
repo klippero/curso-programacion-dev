@@ -23,7 +23,3 @@ class ListaEnteros
         return result
     end
 end
-
-
-lista = ListaEnteros.new( [1,3,1,5,7,2,11,2,5] )
-print lista.removeDuplicates

@@ -24,9 +24,3 @@ class Lista
         return @array.to_s
     end
 end
-
-
-l = Lista.new([2,4,5,9])
-print l.shuffle
-puts
-puts l
