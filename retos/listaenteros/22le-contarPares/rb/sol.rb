@@ -13,13 +13,3 @@ class ListaEnteros
         return result
     end
 end
-
-
-lista = ListaEnteros.new( [1,3,1,10,5,7,2,11,2,5,4] )
-puts lista.nPares
-
-lista = ListaEnteros.new( [1,3,1,1] )
-puts lista.nPares
-
-lista = ListaEnteros.new( [] )
-puts lista.nPares

@@ -15,10 +15,6 @@ class ListaEnteros
 end
 
 
-lista = ListaEnteros.new( [1,3,5,7,2,11,5] )
-puts lista.mayor
-
-
 =begin
 Se podría inicializar el resultado con un valor
 que estemos seguros que será menor que todos
