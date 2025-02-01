@@ -18,12 +18,4 @@ class Primitiva
         result << "\nREINTEGRO: #{@reintegro}"
         return result
     end
-
-    def reintegro
-        return @reintegro
-    end
 end
-
-
-p = Primitiva.new
-puts p
