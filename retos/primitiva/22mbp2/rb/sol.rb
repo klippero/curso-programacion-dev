@@ -17,8 +17,3 @@ class Bombo
         return numero
     end
 end
-
-
-b = Bombo.new
-puts b.extrae_bola
-puts b

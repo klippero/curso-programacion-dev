@@ -12,10 +12,6 @@ class Bombo
 end
 
 
-b = Bombo.new
-puts b
-
-
 =begin
 
 Alternativa while

@@ -27,7 +27,3 @@ class Bombo
         end
     end
 end
-
-
-b = Bombo.new
-puts b

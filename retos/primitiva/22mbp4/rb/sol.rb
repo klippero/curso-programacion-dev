@@ -43,13 +43,10 @@ class Primitiva
 
     def to_s
         result = "PREMIADOS: "
-        for n in @premiados
+        @premiados.each do |n|
             result << "#{n} "
         end
         result << "\nCOMPLEMENTARIO: #{@complementario}\nREINTEGRO: #{@reintegro}"
         result << "\nBOMBO: #{@bombo}"
     end
 end
-
-p = Primitiva.new
-puts p
