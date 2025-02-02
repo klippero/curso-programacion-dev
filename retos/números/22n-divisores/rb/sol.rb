@@ -15,12 +15,6 @@ class Entero
 end
 
 
-print "N: "
-n = gets.chomp.to_i
-e = Entero.new(n)
-print e.divisores
-
-
 =begin
 
 Alternativa: usando while

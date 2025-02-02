@@ -1,26 +1,3 @@
-class Aleatorio
-    def initialize
-        @numero = rand(0..9)
-        @intentos = 0
-    end
-
-    def es_este?(n)
-        @intentos = @intentos + 1
-        return n == @numero
-    end
-
-    def to_s
-        return @numero.to_s
-    end
-
-    def numero
-        return @numero
-    end
-
-    def intentos
-        return @intentos
-    end
-end
 
 
 random = Aleatorio.new
