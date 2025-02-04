@@ -10,33 +10,11 @@ class Entero
     def par?
         return @n % 2 == 0
     end
-end
 
-
-n = 1
-while !Entero.new(n).par?
-    print "N1: "
-    n = gets.chomp.to_i
-end
-puts
-
-m = 1
-while m % 2 != 0
-    print "N2: "
-    m = gets.chomp.to_i
-end
-puts
-
-m = 1
-while ! ( m % 2 == 0 )
-    print "N3: "
-    m = gets.chomp.to_i
-end
-puts
-
-print "N: "
-n = gets.chomp.to_i
-while ! ( n % 2 == 0 )
-    print "no es par, dame otro N: "
-    n = gets.chomp.to_i
+    def pide_numeros_hasta_par
+        while !par?
+            print "n: "
+            @n = gets.chomp.to_i
+        end
+    end
 end
