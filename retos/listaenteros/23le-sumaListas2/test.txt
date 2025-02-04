@@ -1,0 +1,5 @@
+La suma es  1 3 1 10 2 5 4 3 17
+y la original  1 3 1 10 2 5 4
+La suma es  4 6 3 4 7 2
+y las listas son  4 6 3
+y  4 7 2

@@ -9,10 +9,6 @@ class Aleatorio
         return n == @numero
     end
 
-    def !=(n)
-        return ! ( self == n ) # OJO son necesarios los paréntesis
-    end
-
     def to_s
         return @numero.to_s
     end
@@ -24,27 +20,26 @@ class Aleatorio
     def intentos
         return @intentos
     end
-end
 
+    def juego
+        numeros_dichos = []
+        print "Dime un número entre 0 y 9: "
+        n = gets.chomp.to_i
 
-random = Aleatorio.new
-numeros_dichos = []
-
-print "Dime un número: "
-n = gets.chomp.to_i
-
-while random != n
-    if numeros_dichos.include?(n)
-        print "Ese ya lo has dicho. "
-    else
-        numeros_dichos << n
-        if n > random.numero
-            print "Te has pasado. "
-        else
-            print "Te has quedado corto. "
+        while !(self == n)
+            if numeros_dichos.include?(n)
+                print "Ese ya lo has dicho. "
+            else
+                numeros_dichos << n
+                if n > self.numero
+                    print "Te has pasado. "
+                else
+                    print "Te has quedado corto. "
+                end
+            end
+            print "Dime otro número entre 0 y 9: "
+            n = gets.chomp.to_i
         end
+        puts "Acertaste al intento #{@intentos}, el número era el #{@numero}"
     end
-    print "Dime otro: "
-    n = gets.chomp.to_i
 end
-puts "Acertaste al intento #{random.intentos}, el número era el #{random}"

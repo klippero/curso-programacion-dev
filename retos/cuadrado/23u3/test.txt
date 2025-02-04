@@ -1,0 +1,2 @@
+c1: Cuadrado: 19x19
+c2: Cuadrado: 7x7
