@@ -1,0 +1,21 @@
+<p>Implementa la clase <code>CajaRegistradora</code> que simule el funcionamiento de una caja registradora.</p>
+
+<p>La caja registradora tiene una serie de huecos donde se depositan monedas o billetes iguales.</p>
+
+<p>El número de monedas o billetes que hay en un momento dado en cada uno de los huecos de la caja registradora estará recogido en el atributo <code>slot</code> que debe ser un array. El primer elemento del array indicará las monedas de 1 céntimo, el segundo elemento las de 2 céntimos, el siguiente las de 5 céntimos y así sucesivamente hasta los billetes de 500 euros que estarán en la última posición.</p>
+
+<p>El valor unitario de cada moneda o billete estará recogido en una constante de tipo array denominada <code>VALUE</code>.</p>
+
+<p>El constructor de la clase no recibe ningún parámetro pues inicialmente la caja registradora estará vacía.</p>
+
+<p>Añade un método <code>add</code> que permita añadir monedas o billetes indicando primero el valor de la moneda o billete y, en segundo lugar, la cantidad. Por ejemplo:<br>cr.add(20,2)<br>añade 2 billetes de 20€ a la caja registradora.</p>
+
+<p>Para encontrar el slot donde se han de depositar las nuevas monedas o billetes utiliza el bucle genérico para búsqueda que ya hemos visto en sesiones previas. Aísla la búsqueda del slot en un método <code>i4value</code> que dado un valor devuelva la posición del slot o -1 en caso de que el valor no esté en el array <code>VALUE</code>. Prueba este método con diversos valores:</p>
+
+<pre>cr = CajaRegistradora.new
+    puts cr.i4value(0.02) # debe imprimir 1
+    puts cr.i4value(500)  # debe imprimir 14
+    puts cr.i4value(4)    # debe imprimir -1
+    </pre>
+
+<p>Implementa el método que permita imprimir directamente el contenido de una caja registradora tal como se indica en el ejemplo.</p>

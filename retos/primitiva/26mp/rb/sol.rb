@@ -33,7 +33,3 @@ class Primitiva
         return @reintegro
     end
 end
-
-
-p = Primitiva.new
-puts p
