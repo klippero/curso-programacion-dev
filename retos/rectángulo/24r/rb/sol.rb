@@ -61,8 +61,3 @@ class Rectangulo
         @altura *= ratio
     end
 end
-
-
-r = Rectangulo.new(2,1)
-r.resize!(2)
-puts r

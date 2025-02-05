@@ -21,7 +21,3 @@ class Tiempo
         return @segundos + @minutos * 60 + @horas * 60 * 60
     end
 end
-
-
-t = Tiempo.new(1,15,20)
-puts "#{t} = #{t.to_i} segundos"

@@ -21,9 +21,3 @@ class Lista
         return Lista.new(result)
     end
 end
-
-
-lista = Lista.new( [1,3,1,10,2,5,4] )
-resta = lista - [1,2,4]
-puts "La resta es #{resta}"
-puts "y la original #{lista}"
