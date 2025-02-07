@@ -22,11 +22,14 @@ class Entero:
         return str(self.__n)
 
     def factores(self):
+        factores = {}
         primo = Entero(2)
         n = self.__n
         while n != 1:
             while n % primo.__n == 0:
-                print(f"{n} | {primo}")
+                if not primo.__n in factores:
+                    factores[primo.__n] = 0
+                factores[primo.__n] += 1
                 n = n//primo.__n
             primo.siguientePrimo()
-        print(1)
+        return factores
