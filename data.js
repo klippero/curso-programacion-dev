@@ -215,19 +215,19 @@ const retos = {
     '18c': { label: "No reintegrar más del saldo", recorrido: "POO", tema: 18, coleccion: "cuenta"},
     '18p': { label: "¿En qué cuadrante?", recorrido: "POO", tema: 18, coleccion: "punto"},
     '26cr1': { label: "CajaRegistradora add", recorrido: "POO", tema: 26, coleccion: "registradora"},
-    '26cr2': { label: "Convertir a float", recorrido: "POO", tema: 26, coleccion: "registradora"},
-    '26cr3': { label: "take", recorrido: "POO", tema: 26, coleccion: "registradora"},
-    '26cr4': { label: "Operador <<", recorrido: "POO", tema: 26, coleccion: "registradora"},
-    '27cr': { label: "Caja registradora", recorrido: "POO", tema: 27, coleccion: "registradora"},
+    '26cr2': { label: "Convertir a float", recorrido: "POO", tema: 26, coleccion: "registradora",prev:"26cr1"},
+    '26cr3': { label: "take", recorrido: "POO", tema: 26, coleccion: "registradora",prev:"26cr2"},
+    '26cr4': { label: "Operador <<", recorrido: "POO", tema: 26, coleccion: "registradora",prev:"26cr3"},
+    '27cr': { label: "Caja registradora", recorrido: "POO", tema: 27, coleccion: "registradora",prev:"26cr4"},
     '18e1': { label: "Una condición para bisiestos", recorrido: "POO", tema: 18, coleccion: "fechas"},
     '18e2': { label: "Dos condiciones para bisiestos", recorrido: "POO", tema: 18, coleccion: "fechas"},
     '18e3': { label: "Tres condiciones para bisiestos", recorrido: "POO", tema: 18, coleccion: "fechas"},
-    '27ed1': { label: "Mostrar claves", recorrido: "POO", tema: 27, coleccion: "edades"},
-    '27ed2': { label: "Mostrar claves ordenadas", recorrido: "POO", tema: 27, coleccion: "edades"},
-    '27ed3': { label: "Mostrar valores", recorrido: "POO", tema: 27, coleccion: "edades"},
-    '27ed4': { label: "Contar", recorrido: "POO", tema: 27, coleccion: "edades"},
-    '27ed5': { label: "Mayor", recorrido: "POO", tema: 27, coleccion: "edades"},
-    '27ed6': { label: "Reverse", recorrido: "POO", tema: 27, coleccion: "edades"},
+    '27ed1': { label: "Mostrar claves", recorrido: "POO", tema: 27, coleccion: "edades",prev:"17edades"},
+    '27ed2': { label: "Mostrar claves ordenadas", recorrido: "POO", tema: 27, coleccion: "edades",prev:"27ed1"},
+    '27ed3': { label: "Mostrar valores", recorrido: "POO", tema: 27, coleccion: "edades",prev:"27ed2"},
+    '27ed4': { label: "Contar", recorrido: "POO", tema: 27, coleccion: "edades",prev:"27ed3"},
+    '27ed5': { label: "Mayor", recorrido: "POO", tema: 27, coleccion: "edades",prev:"27ed4"},
+    '27ed6': { label: "Reverse", recorrido: "POO", tema: 27, coleccion: "edades",prev:"27ed5"},
     '22le-suma': { label: "Sumar los elementos de una lista", recorrido: "POO", tema: 22, coleccion: "listaenteros"},
     '22le-mayor': { label: "Buscar el mayor elemento", recorrido: "POO", tema: 22, coleccion: "listaenteros"},
     '22le-contar': { label: "Contar apariciones", recorrido: "POO", tema: 22, coleccion: "listaenteros"},
@@ -253,11 +253,11 @@ const retos = {
     '22le-restaListasDestr': { label: "Resta listas destructivo", recorrido: "POO", tema: 22, coleccion: "listaenteros"},
     '22t': { label: "Adivinar número sin repetir", recorrido: "POO", tema: 22, coleccion: "aleatorio"},
     '22est-media': { label: "Media", recorrido: "POO", tema: 22, coleccion: "estadistica"},
-    '22est-mediana': { label: "Mediana", recorrido: "POO", tema: 22, coleccion: "estadistica"},
+    '22est-mediana': { label: "Mediana", recorrido: "POO", tema: 22, coleccion: "estadistica",prev:"22est-media"},
     '22le-shufleDest': { label: "Barajar (destructivo)", recorrido: "POO", tema: 22, coleccion: "listaenteros"},
     '22le-shufle': { label: "Barajar (no destructivo)", recorrido: "POO", tema: 22, coleccion: "listaenteros"},
-    '27est-moda1': { label: "Moda", recorrido: "POO", tema: 27, coleccion: "estadistica"},
-    '27est-moda2': { label: "Moda múltiple", recorrido: "POO", tema: 27, coleccion: "estadistica"},
+    '27est-moda1': { label: "Moda", recorrido: "POO", tema: 27, coleccion: "estadistica",prev:"22est-mediana"},
+    '27est-moda2': { label: "Moda múltiple", recorrido: "POO", tema: 27, coleccion: "estadistica",prev:"27est-moda1"},
     '0hw': { label: "Hello world", recorrido: "POO", tema: 0, coleccion: "hw"},
     '26mp': { label: "Constantes", recorrido: "POO", tema: 26, coleccion: "primitiva"},
     '27md-claves': { label: "Claves", recorrido: "POO", tema: 27, coleccion: "midiccionario"},
@@ -305,18 +305,26 @@ const retos = {
     '24tm6': { label: "Operador *", recorrido: "POO", tema: 24, coleccion: "tiempo"},
     '24r': { label: "Resize", recorrido: "POO", tema: 24, coleccion: "rectángulo"},
     '24a': { label: "Resize", recorrido: "POO", tema: 24, coleccion: "linea"},
-    '28cr1': { label: "Parámetros por defecto", recorrido: "POO", tema: 28, coleccion: "registradora"},
-    '28cr2': { label: "Parámetro esponja add", recorrido: "POO", tema: 28, coleccion: "registradora"},
-    '28cr3': { label: "Parámetro esponja take", recorrido: "POO", tema: 28, coleccion: "registradora"},
+    '28cr1': { label: "Parámetros por defecto", recorrido: "POO", tema: 28, coleccion: "registradora",prev:"27cr"},
+    '28cr2': { label: "Parámetro esponja add", recorrido: "POO", tema: 28, coleccion: "registradora",prev:"28cr1"},
+    '28cr3': { label: "Parámetro esponja take", recorrido: "POO", tema: 28, coleccion: "registradora",prev:"28cr2"},
     '28le-suma': { label: "Suma lista", recorrido: "POO", tema: 28, coleccion: "listaenteros"},
     '28c': { label: "Ingreso y reintegro con esponja", recorrido: "POO", tema: 28, coleccion: "cuenta"},
     '28a1': { label: "Gráfico con esponja", recorrido: "POO", tema: 28, coleccion: "linea"},
     '28a2': { label: "Gráfico con números", recorrido: "POO", tema: 28, coleccion: "linea"},
     '28a3': { label: "Gráfico con chars diferentes", recorrido: "POO", tema: 28, coleccion: "linea"},
-    '28est': { label: "Media, mediana y moda con esponja", recorrido: "POO", tema: 28, coleccion: "estadistica"},
+    '28est': { label: "Media, mediana y moda con esponja", recorrido: "POO", tema: 28, coleccion: "estadistica",prev:"27est-moda2"},
 };
 
-    const colecciones = {
+for(let retoId in retos)
+{
+    if (retos[retoId].prev)
+    {
+        retos[retos[retoId].prev].next = retoId
+    }
+}
+
+const colecciones = {
     'animales': { label: 'animales' },
     'bonobús': { label: 'bonobús' },
     'cuenta': { label: 'cuenta' },

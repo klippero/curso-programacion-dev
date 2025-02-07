@@ -138,3 +138,7 @@ th, td {
 th {
     background-color: #f2f2f2;
 }
+
+.orden-retos {
+    text-align: right;
+}

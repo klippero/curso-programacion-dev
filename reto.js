@@ -42,3 +42,29 @@ insertA("recorrido",recorridos[reto.recorrido].label,"recorrido.html?recorrido="
 insert("lenguaje",lenguajes[lenguaje].label);
 insert("tema",reto.tema);
 insert("coleccion",colecciones[reto.coleccion].label);
+
+if (reto.prev)
+{
+    prev = retos[reto.prev]
+
+    txt = "← " + reto.prev + ". " + prev.label
+    if (prev.tema != reto.tema)
+    {
+        txt += " (" + prev.tema.toString() + ". " + recorridos["POO"].temas[prev.tema].label + ")"
+    }
+    lnk = "reto.html?reto=" + reto.prev + "&lenguaje=" + lenguaje
+    insertA("reto-previo",txt,lnk);
+}
+
+if (reto.next)
+{
+    next = retos[reto.next]
+
+    txt = "→ " + reto.next + ". " + next.label
+    if (next.tema != reto.tema)
+    {
+        txt += " (" + next.tema.toString() + ". " + recorridos["POO"].temas[next.tema].label + ")"
+    }
+    lnk = "reto.html?reto=" + reto.next + "&lenguaje=" + lenguaje
+    insertA("reto-siguiente",txt,lnk);
+}
