@@ -34,7 +34,7 @@ for (const retoId in retos)
             a.textContent +=  ' (' + colecciones[retos[retoId].coleccion].label  + ')'
         if (retos[retoId].prev || retos[retoId].next)
         {
-            a.textContent += " ⤑"
+            a.textContent += " ⇾"
         }
         li = document.createElement("li");
         li.appendChild(a);

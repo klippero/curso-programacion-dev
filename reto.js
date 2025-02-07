@@ -60,7 +60,7 @@ if (reto.next)
 {
     next = retos[reto.next]
 
-    txt = "→ " + reto.next + ". " + next.label
+    txt = "➔ " + reto.next + ". " + next.label
     if (next.tema != reto.tema)
     {
         txt += " (" + next.tema.toString() + ". " + recorridos["POO"].temas[next.tema].label + ")"
