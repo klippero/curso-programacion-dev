@@ -1,0 +1,35 @@
+<p>El mínimo común múltiplo de una lista de enteros se determina calculando los factores primos de todos los enteros y tomando los factores comunes y no comunes con el mayor exponente.</p>
+
+<p>A continuación se muestran varios ejemplos:
+ 12 = 2<sup>2</sup> x 3<sup>1</sup><br>
+  8 = 2<sup>3</sup><br>
+mcm = 2<dup>3</dup> x 3<sup>1</sup> = 24<br>
+<br>
+ 10 = 2<sup>1</sup> x 5<sup>1</sup><br>
+ 27 =           3<sup>3</sup><br>
+ 32 = 2<sup>5</sup><br>
+mcm = 2<sup>5</sup> x 5<sup>1</sup> x 3<sup>3</sup> = 4320<br>
+<br>
+  3 = 3<sup>1</sup><br>
+  7 =      7<sup>1</sup><br>
+  9 = 3<sup>2</sup><br>
+mcm = 3<sup>2</sup> x 7<sup>1</sup> = 6<sup>3</sup><br>
+</p>
+
+<p>Implementa el método <code>mcm</code> en la clase <code>ListaEnteros</code> que obtenga los factores primos de todos los enteros de la lista y tome todos con el mayor exponente para calcular el mínimo común múltiplo.</p>
+
+<p>Para implementar el método <code>mcm</code>, el proceso debe ser:
+<ol>
+    <li>inicializamos un diccionario vacío donde se irá construyendo el resultado con todos los factores comunes con el mayor exponente</li>
+    <li>para cada número de la lista:
+        <ol><li>se calculan los factores primos</li>
+            <li>para cada factor primo
+                <ol><li>si no está en el diccionario resultado, lo metemos con su exponente</li>
+                    <li>si está en el diccionario, nos quedamos con el exponente más alto</li>
+                </ol>
+            </li>
+        </ol>
+    </li>
+    <li>desfactorizamos el diccionario para calcular el resultado que devolvemos</li>
+</ol>
+</p>
