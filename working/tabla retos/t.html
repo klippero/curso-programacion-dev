@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de Retos</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Tabla de Retos</h2>
+    <table id="tabla-retos">
+        <thead>
+            <tr id="header-row">
+                <th>Reto</th>
+            </tr>
+        </thead>
+        <tbody id="tabla-body"></tbody>
+    </table>
+
+    <script>
+        // Datos de los retos
+        const retos = [
+            { id: 1, nombre: "Reto 1", temas: ["HTML", "CSS"] },
+            { id: 2, nombre: "Reto 2", temas: ["JavaScript", "React"] },
+            { id: 3, nombre: "Reto 3", temas: ["CSS", "JavaScript"] },
+            { id: 4, nombre: "Reto 4", temas: ["HTML", "React"] }
+        ];
+
+        // Extraer todos los temas únicos
+        const temasUnicos = [...new Set(retos.flatMap(reto => reto.temas))];
+
+        // Insertar encabezados de temas
+        const headerRow = document.getElementById("header-row");
+        temasUnicos.forEach(tema => {
+            const th = document.createElement("th");
+            th.textContent = tema;
+            headerRow.appendChild(th);
+        });
+
+        // Insertar filas de retos
+        const tablaBody = document.getElementById("tabla-body");
+        retos.forEach(reto => {
+            const tr = document.createElement("tr");
+
+            // Columna con el nombre del reto
+            const tdNombre = document.createElement("td");
+            tdNombre.textContent = reto.nombre;
+            tr.appendChild(tdNombre);
+
+            // Columnas con los temas
+            temasUnicos.forEach(tema => {
+                const td = document.createElement("td");
+                td.textContent = reto.temas.includes(tema) ? "✔️" : "";
+                tr.appendChild(td);
+            });
+
+            tablaBody.appendChild(tr);
+        });
+    </script>
+
+</body>
+</html>
