@@ -1,0 +1,28 @@
+<p>El máximo común divisor de una lista de enteros se calcula factorizando los números y tomando sólo los factores comunes con el menor exponente.</p>
+
+<p>A continuación se muestran varios ejemplos:<br>
+    12 = 2<sup>2</sup> x 3<sup>1</sup>
+     8 = 2<sup>3</sup>
+   MCD = 2<sup>2</sup> = 4
+   
+    12 = 2<sup>2</sup> x 3<sup>1</sup>
+    18 = 2<sup>1</sup> x 3<sup>2</sup>
+   MCD = 2<sup>1</sup> x 3<sup>1</sup> = 6
+   </p>
+
+<p>Implementa el método MCD en la clase ListaEnteros siguiendo estos pasos:
+
+<ol>
+    <li>inicializamos un diccionario para el resultado con los factores primos del primer elemento de la lista</li>
+    <li>    para el resto de números de la lista:
+        <ol>
+<li>obtenemos los factores primos</li>
+<li>para cada factor del resultado (ojo: no iteramos sobre los factores del número, sino sobre los del resultado):
+    <ol><li>si no está en los factores del número, le asignamos 0 como exponente (lo podríamos eliminar, pero si iteramos con .items() no es posible)</li>
+    <li>si está, nos quedamos con el exponente más bajo</li></ol>
+</li>
+        </ol>
+    </li>
+    <li>desfactorizamos para calcular el resultado</li>
+</ol>
+    </p>
