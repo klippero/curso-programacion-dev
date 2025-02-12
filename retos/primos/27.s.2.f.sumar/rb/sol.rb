@@ -164,7 +164,7 @@ class Fraccion
         return @numerador
     end
 
-    def suma(otra)
+    def +(otra)
         mcm = ListaEnteros.new([@denominador,otra.denominador]).mcm
         result = Fraccion.new( @numerador * mcm/@denominador + otra.numerador * mcm/otra.denominador \
                            , mcm)
@@ -172,16 +172,3 @@ class Fraccion
         return result
     end
 end
-
-
-puts Fraccion.new(3,5).suma(Fraccion.new(1,5))
-puts Fraccion.new(3,5).suma(Fraccion.new(1,2))
-puts Fraccion.new(3,4).suma(Fraccion.new(1,8))
-puts Fraccion.new(8,3).suma(Fraccion.new(7,15))
-puts Fraccion.new(7,6).suma(Fraccion.new(9,16))
-puts Fraccion.new(3,12).suma(Fraccion.new(10,8))
-puts Fraccion.new(-3,12).suma(Fraccion.new(-10,8))
-puts Fraccion.new(-5,3).suma(Fraccion.new(1,3))
-puts Fraccion.new(-5,3).suma(Fraccion.new(-1,3))
-puts Fraccion.new(5,-3).suma(Fraccion.new(-1,3))
-puts Fraccion.new(-5,-3).suma(Fraccion.new(-1,3))

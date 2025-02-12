@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla con Cabeceras Verticales</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: 20px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            writing-mode: vertical-rl; /* Rota el texto verticalmente */
+            transform: rotate(180deg); /* Corrige la orientación */
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <th>Producto</th>
+            <td>Manzana</td>
+            <td>Banana</td>
+            <td>Naranja</td>
+        </tr>
+        <tr>
+            <th>Precio</th>
+            <td>$1.00</td>
+            <td>$0.50</td>
+            <td>$0.75</td>
+        </tr>
+        <tr>
+            <th>Cantidad</th>
+            <td>10</td>
+            <td>20</td>
+            <td>15</td>
+        </tr>
+    </table>
+
+</body>
+</html>
