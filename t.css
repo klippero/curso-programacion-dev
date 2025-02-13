@@ -1,3 +1,16 @@
+body {
+    margin: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px; /* Tamaño legible */
+    line-height: 1.6; /* Espaciado adecuado entre líneas */
+}
+
+th {
+    background-color: #f4f4f4;
+    writing-mode: vertical-rl; /* Rota el texto verticalmente */
+    transform: rotate(180deg); /* Corrige la orientación */
+}
+
 .code-container {
     position: relative;
     margin-bottom: 20px;

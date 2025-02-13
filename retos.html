@@ -1,0 +1,27 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link href="t.css" rel="stylesheet" />
+    <script src="data.js"></script>
+</head>
+<body>
+    <table id="tabla-retos">
+        <thead>
+            <tr id="header-row">
+                <th>Reto</th>
+            </tr>
+        </thead>
+        <tbody id="tabla-body"></tbody>
+    </table>
+
+    <script>
+        const headerRow = document.getElementById("header-row");
+        for(let i=0; i<recorridos["POO"].temas.length; i++ )
+        {
+            const th = document.createElement("th");
+            th.textContent = i + '. ' + recorridos["POO"].temas[i].label;
+            headerRow.appendChild(th);
+        }
+    </script>
+</body>
+</html>
