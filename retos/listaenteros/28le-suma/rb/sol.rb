@@ -1,11 +1,11 @@
 class ListaEnteros
-    def initialize(*lista)
-        @lista = lista
+    def initialize(*array)
+        @array = array
     end
 
     def suma
         result = 0
-        @lista.each do |n|
+        @array.each do |n|
             result = result + n
         end
         return result

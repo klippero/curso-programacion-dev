@@ -245,12 +245,6 @@ class Mixto
         result = fr_result.to_mixto
         result.simplificar!
         result.simplificarAcanonica!
-
-        otro.entero *= -1
         return result
     end
 end
-
-
-puts Mixto.new(Fraccion.new(1,2),7) - Mixto.new(Fraccion.new(1,3),2)
-puts Mixto.new(Fraccion.new(1,3),8) - Mixto.new(Fraccion.new(2,3),4)
