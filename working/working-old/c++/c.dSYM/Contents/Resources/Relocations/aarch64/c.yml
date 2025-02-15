@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/santiagoalvarezrojo/Documents/github/curso-programacion/working/c++/c'
+relocations:     []
+...

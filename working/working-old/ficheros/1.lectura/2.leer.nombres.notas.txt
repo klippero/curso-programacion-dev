@@ -1,0 +1,10 @@
+Diego,5
+Pilar,3.5
+Matías,7
+Christian,9
+Lorenzo,3
+Daniel,5
+Eva,10
+Javi,10
+Ana,7
+Luis,4.9

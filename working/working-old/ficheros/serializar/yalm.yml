@@ -1,0 +1,10 @@
+--- !ruby/object:Primitiva
+premiados:
+- 10
+- 23
+- 24
+- 31
+- 36
+- 45
+complementario: 2
+reintegro: 8

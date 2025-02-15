@@ -1,4 +1,4 @@
-const root_path = "https://raw.githubusercontent.com/klippero/code-snippet-in-web/refs/heads/main/";
+const root_path = "https://raw.githubusercontent.com/klippero/curso-programacion-dev/refs/heads/main/";
 
 const recorridos = {
     "POO":
