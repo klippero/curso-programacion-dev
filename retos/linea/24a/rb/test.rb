@@ -1,5 +1,5 @@
 require_relative 'sol'
 
-l1 = Linea.new(2)
-l1.resize!(3)
-puts l1
+l = Linea.new(2)
+l.resize!(3)
+puts l
