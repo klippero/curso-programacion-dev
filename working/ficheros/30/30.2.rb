@@ -1,10 +1,10 @@
 class Frigo
-    DATAFILE = "working/ficheros/30/30.2.txt"
+    TEMP_FILE = "working/ficheros/30/30.2.txt"
 
     def initialize(color="blanco")
         @color = color
         @puerta = "cerrada"
-        f = File.open(DATAFILE)
+        f = File.open(TEMP_FILE)
         @temperatura = f.read.to_i
     end
 
@@ -18,7 +18,7 @@ class Frigo
 
     def fija_temperatura(nueva_temperatura=-18)
         @temperatura = nueva_temperatura
-        f = File.open(DATAFILE,"w")
+        f = File.open(TEMP_FILE,"w")
         f.puts @temperatura
     end
 

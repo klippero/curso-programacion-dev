@@ -1,5 +1,6 @@
 class Frigo
-    TEMP_FILE = "working/ficheros/30/30.1.txt"
+    TEMP_FILE = "working/ficheros/30/30.3.txt"
+    REGISTRO_FILE = "working/ficheros/30/30.3.reg.txt"
 
     def initialize(color="blanco")
         @color = color
@@ -18,6 +19,11 @@ class Frigo
 
     def fija_temperatura(nueva_temperatura=-18)
         @temperatura = nueva_temperatura
+        tempf = File.open(TEMP_FILE,"w")
+        tempf.puts @temperatura
+
+        registrof = File.open(REGISTRO_FILE,"a")
+        registrof.puts @temperatura
     end
 
     def to_s
@@ -35,4 +41,9 @@ end
 
 
 f = Frigo.new("rojo")
+puts f
+f.fija_temperatura(3)
+f.fija_temperatura(7)
+f.fija_temperatura(10)
+f.fija_temperatura(18)
 puts f
