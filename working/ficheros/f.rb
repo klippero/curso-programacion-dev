@@ -12,8 +12,8 @@ f.rewind
 
 f.each do |line|
     line.chomp!
-    data = line.split(',')  # datos separados por comas
-    puts data
+    nombre,años = line.split(',')  # datos separados por comas
+    puts "#{nombre} tiene #{años} años"
 end
 
 

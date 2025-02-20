@@ -2,5 +2,3 @@ Santi,54
 Yago,13
 Lucía,22
 Berta,35
-Rosalina,84
-Santiago,86
