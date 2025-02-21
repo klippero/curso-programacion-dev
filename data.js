@@ -43,7 +43,8 @@ const recorridos = {
             { label: 'Diccionarios' },
             { label: 'Parámetros requeridos, por defecto y opcionales' },
             { label: 'Keyword arguments' },
-            {
+            { label: 'Ficheros' },
+/*            {
                 label: 'Excepciones',
                 secciones: [
                     { label: 'Qué son' },
@@ -79,6 +80,7 @@ const recorridos = {
                 ]
             },
             { label: 'return implícito' }
+              */
         ]
     }
 };
@@ -313,6 +315,7 @@ const retos = {
     '28a2': { label: "Gráfico con números", recorrido: "POO", tema: 28, coleccion: "linea",prev:"28a1"},
     '28a3': { label: "Gráfico con chars diferentes", recorrido: "POO", tema: 28, coleccion: "linea",prev:"28a2"},
     '28est': { label: "Media, mediana y moda con esponja", recorrido: "POO", tema: 28, coleccion: "estadistica",prev:"27est-moda2"},
+    '30c1': { label: "Leer saldo de fichero", recorrido: "POO", tema: 30, coleccion: "cuenta",prev:"28c"},
 };
 
 for(let retoId in retos)
