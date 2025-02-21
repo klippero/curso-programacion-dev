@@ -24,7 +24,7 @@ class Frigo
     def fija_temperatura(nueva_temperatura=-18)
         @temperatura = nueva_temperatura
         tempf = File.open(TEMP_FILE,"w")
-        tempf.puts @temperatura
+        tempf.print @temperatura
 
         registrof = File.open(REGISTRO_FILE,"a")
         registrof.puts @temperatura

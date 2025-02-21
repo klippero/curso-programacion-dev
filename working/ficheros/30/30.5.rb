@@ -5,7 +5,7 @@ class Frigo
     def initialize
         if File.file?(DATA_FILE)
             f = File.open(DATA_FILE)
-            data = f.read.chomp.split(",")
+            data = f.read.split(",")
             @temperatura = data[0].to_i
             @color = data[1]
             @puerta = data[2]
@@ -19,7 +19,7 @@ class Frigo
 
     def save
         dataf = File.open(DATA_FILE,"w")
-        dataf.puts "#{@temperatura},#{@color},#{@puerta}"
+        dataf.print "#{@temperatura},#{@color},#{@puerta}"
     end
 
     def abre
