@@ -1,5 +1,5 @@
 class Cuenta
-    DATA_FILE = "working/ficheros/30/cuenta/data.txt"
+    DATA_FILE = "retos/cuenta/30c1/rb/data.txt"
 
     def initialize
         if File.file?(DATA_FILE)
