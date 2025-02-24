@@ -1,11 +1,13 @@
 class Frigo
-    TEMP_FILE = "working/ficheros/30/30.1.txt"
+    DATA_FILE = "POO/temas/30/rb/30.1.txt"
 
     def initialize(color="blanco")
         @color = color
         @puerta = "cerrada"
-        f = File.open(TEMP_FILE)
-        @temperatura = f.read.to_i
+        dataf = File.open(DATA_FILE)
+            # error si no existe
+        @temperatura = dataf.read.to_i
+        dataf.close
     end
 
     def to_s

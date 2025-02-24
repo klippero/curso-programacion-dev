@@ -39,3 +39,8 @@ puts d
 # añadir al final del fichero
 f = File.open("working/ficheros/f.txt","a")
 f.puts "Santiago,86"
+
+# escribir en fichero (si existe, se machaca)
+f = File.open("working/ficheros/f1.txt","w")
+f.print 90
+f.close
