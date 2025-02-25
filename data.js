@@ -43,7 +43,18 @@ const recorridos = {
             { label: 'Diccionarios' },
             { label: 'Parámetros requeridos, por defecto y opcionales' },
             { label: 'Keyword arguments' },
-            { label: 'Ficheros' },
+            { 
+                label: 'Ficheros',
+                secciones:
+                [
+                    { label: 'Lectura' },
+                    { label: 'Escritura' },
+                    { label: 'Añadir' },
+                    { label: 'Comprobar si existe un fichero' },
+                    { label: 'Datos separados por comas' },
+                    { label: 'Objetos' }
+                ]
+            },
 /*            {
                 label: 'Excepciones',
                 secciones: [

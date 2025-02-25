@@ -26,6 +26,19 @@ for(let i=0; i<recorrido.temas.length; i++ )
     a.textContent = recorrido.temas[i].label
     li = document.createElement("li");
     li.appendChild(a);
+
+    if (recorrido.temas[i].secciones)
+    {
+        ol2 = document.createElement("ol");
+        for(let j=0; j<recorrido.temas[i].secciones.length; j++ )
+        {
+            li2 = document.createElement("li");
+            li2.textContent = recorrido.temas[i].secciones[j].label;
+            ol2.appendChild(li2);
+        }
+        li.appendChild(ol2);
+    }
+
     ol.appendChild(li);
 }
 
