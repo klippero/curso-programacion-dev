@@ -4,18 +4,21 @@ let recorrido = parametros.get("recorrido");
 let tema = parseInt(parametros.get("tema"));
 let seccion = parseInt(parametros.get("seccion"));
 let lenguaje = parametros.get("lenguaje");
-const path = root_path + recorrido + '/temas/' + tema + '/';
+let path = root_path + recorrido + '/temas/' + tema + '/';
+if (seccion)
+{
+    path += seccion + '/';
+}
 
 title = tema.toString()
 if (seccion)
 {
-    title += '.' + seccion + '. ' + recorridos[recorrido].temas[tema].secciones[seccion].label + ' (' + recorridos[recorrido].temas[tema].label + ')';
+    title += '.' + seccion + '. ' + recorridos[recorrido].temas[tema].secciones[seccion-1].label + ' (' + recorridos[recorrido].temas[tema].label + ')';
 }
 else
 {
     title += '. ' + recorridos[recorrido].temas[tema].label;
 }
-
 insert("title",title);
 
 let resource = path + 'index.html';
@@ -35,7 +38,7 @@ fetch(resource)
 ul = document.getElementById("retos");
 for (const retoId in retos)
 {
-    if (retos[retoId].recorrido == recorrido && retos[retoId].tema == tema)
+    if (retos[retoId].recorrido == recorrido && retos[retoId].tema == tema && ( !seccion || retos[retoId].seccion == seccion))
     {
         a = document.createElement("a");
         a.href = "reto.html?reto=" + retoId + "&lenguaje=" + lenguaje;
@@ -53,6 +56,24 @@ for (const retoId in retos)
     }
 }
 
+if (!seccion && recorridos[recorrido].temas[tema].secciones)
+{
+    seccion = 0;
+}
+
+
+if (seccion && seccion < recorridos[recorrido].temas[tema].secciones.length)
+{
+    insertA("siguiente-tema",tema.toString() + '.' + (seccion+1).toString() + '. ' + recorridos[recorrido].temas[tema].secciones[seccion].label,"tema.html?recorrido=" + recorrido + "&lenguaje=" + lenguaje + "&tema=" + tema + "&seccion=" + (seccion+1));
+}
+else if (!seccion && recorridos[recorrido].temas[tema].secciones)
+{
+    insertA("siguiente-tema",tema.toString() + ".1. " + recorridos[recorrido].temas[tema].secciones[0].label,"tema.html?seccion=1&recorrido=" + recorrido + "&lenguaje=" + lenguaje + "&tema=" + (tema));
+}
+else
+{
+    insertA("siguiente-tema",(tema+1).toString() + ". " + recorridos[recorrido].temas[tema+1].label,"tema.html?recorrido=" + recorrido + "&lenguaje=" + lenguaje + "&tema=" + (tema+1));
+}
+
 insertA("recorrido",recorridos[recorrido].label,"recorrido.html?recorrido=" + recorrido + "&lenguaje=" + lenguaje);
 insert("lenguaje",lenguajes[lenguaje].label);
-insertA("siguiente-tema",(tema+1).toString() + ". " + recorridos[recorrido].temas[tema+1].label,"tema.html?recorrido=" + recorrido + "&lenguaje=" + lenguaje + "&tema=" + (tema+1));
