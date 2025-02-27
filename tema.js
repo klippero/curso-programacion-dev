@@ -2,10 +2,21 @@ const url = new URL(window.location.href);
 const parametros = url.searchParams;
 let recorrido = parametros.get("recorrido");
 let tema = parseInt(parametros.get("tema"));
+let seccion = parseInt(parametros.get("seccion"));
 let lenguaje = parametros.get("lenguaje");
 const path = root_path + recorrido + '/temas/' + tema + '/';
 
-insert("title",tema.toString() + ". " + recorridos[recorrido].temas[tema].label);
+title = tema.toString()
+if (seccion)
+{
+    title += '.' + seccion + '. ' + recorridos[recorrido].temas[tema].secciones[seccion].label + ' (' + recorridos[recorrido].temas[tema].label + ')';
+}
+else
+{
+    title += '. ' + recorridos[recorrido].temas[tema].label;
+}
+
+insert("title",title);
 
 let resource = path + 'index.html';
 fetch(resource)
