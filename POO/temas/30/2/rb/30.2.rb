@@ -1,5 +1,5 @@
 class Frigo
-    DATA_FILE = "POO/temas/30/rb/30.2.txt"
+    DATA_FILE = "POO/temas/30/2/30.2.txt"
 
     def initialize(color="blanco")
         @color = color

@@ -1,5 +1,5 @@
 class Frigo:
-    DATA_FILE = "POO/temas/30/py/30.2.txt"
+    DATA_FILE = "POO/temas/30/2/30.2.txt"
 
     def __init__(self,color="blanco"):
         self.__color = color
