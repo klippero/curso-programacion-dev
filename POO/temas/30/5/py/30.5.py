@@ -1,8 +1,8 @@
 from pathlib import Path
 
 class Frigo:
-    DATA_FILE = "POO/temas/30/py/30.5.txt"
-    REG_FILE = "POO/temas/30/py/30.5.reg.txt"
+    DATA_FILE = "POO/temas/30/5/30.5.txt"
+    REG_FILE = "POO/temas/30/5/30.5.reg.txt"
 
     def __init__(self,color="blanco"):
         self.__color = color

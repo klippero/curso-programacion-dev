@@ -1,0 +1,2 @@
+Color: rojo | Puerta cerrada | 0ºC
+Color: rojo | Puerta cerrada | 18ºC

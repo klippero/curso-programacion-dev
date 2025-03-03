@@ -1,6 +1,6 @@
 class Frigo
-    DATA_FILE = "POO/temas/30/rb/30.5.txt"
-    REG_FILE = "POO/temas/30/rb/30.5.reg.txt"
+    DATA_FILE = "POO/temas/30/5/30.5.txt"
+    REG_FILE = "POO/temas/30/5/30.5.reg.txt"
 
     def initialize
         if File.file?(DATA_FILE)
