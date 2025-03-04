@@ -1,2 +1,7 @@
 Color: blanco | Puerta cerrada | 0ºC
 Color: blanco | Puerta cerrada | 17ºC
+
+---------
+
+Color: blanco | Puerta cerrada | 17ºC
+Color: blanco | Puerta cerrada | 17ºC

@@ -10,7 +10,8 @@ class Frigo:
         dataf.close()
 
     def __str__(self):
-        return f"Color: {self.__color} | Puerta {self.__puerta} | {self.__temperatura}ºC"
+        return f"Color: {self.__color} | Puerta" + \
+            f"{self.__puerta} | {self.__temperatura}ºC"
 
 
 f = Frigo("rojo")
