@@ -32,8 +32,11 @@ for(let i=0; i<recorrido.temas.length; i++ )
         ol2 = document.createElement("ol");
         for(let j=0; j<recorrido.temas[i].secciones.length; j++ )
         {
+            a2 = document.createElement("a");
+            a2.href = "tema.html?recorrido=" + id + "&lenguaje=" + lenguaje + "&tema=" + i + "&seccion=" + (j+1);
+            a2.textContent = recorrido.temas[i].secciones[j].label
             li2 = document.createElement("li");
-            li2.textContent = recorrido.temas[i].secciones[j].label;
+            li2.appendChild(a2);
             ol2.appendChild(li2);
         }
         li.appendChild(ol2);
