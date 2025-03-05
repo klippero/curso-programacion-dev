@@ -2,14 +2,9 @@ class Cuenta
     DATA_FILE = "retos/cuenta/30c2/data.txt"
 
     def initialize
-        if File.file?(DATA_FILE)
-            saldof = File.open(DATA_FILE)
-            @saldo = saldof.read.to_f
-            saldof.close
-        else
-            @saldo = 0
-        end
-        save
+        dataf = File.open(DATA_FILE)
+        @saldo = dataf.read.to_f
+        dataf.close
     end
 
     def to_s
@@ -19,6 +14,7 @@ class Cuenta
     def ingreso( cantidad )
         if cantidad > 0
             @saldo = @saldo + cantidad
+            @saldo = @saldo.round(2)
         end
         save
     end
@@ -26,6 +22,7 @@ class Cuenta
     def reintegro( cantidad )
         if cantidad > 0 && cantidad <= @saldo
             @saldo = @saldo - cantidad
+            @saldo = @saldo.round(2)
         end
         save
     end

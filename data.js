@@ -327,6 +327,7 @@ const retos = {
     '28a3': { label: "Gráfico con chars diferentes", recorrido: "POO", tema: 28, coleccion: "linea",prev:"28a2"},
     '28est': { label: "Media, mediana y moda con esponja", recorrido: "POO", tema: 28, coleccion: "estadistica",prev:"27est-moda2"},
     '30c1': { label: "Leer saldo de fichero", recorrido: "POO", tema: 30, seccion: 1, coleccion: "cuenta",prev:"28c"},
+    '30c2': { label: "Escribir el saldo en fichero", recorrido: "POO", tema: 30, seccion: 2, coleccion: "cuenta",prev:"28c"},
 };
 
 for(let retoId in retos)
