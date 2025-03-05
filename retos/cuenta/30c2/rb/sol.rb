@@ -1,10 +1,11 @@
 class Cuenta
-    DATA_FILE = "retos/cuenta/30c2/rb/data.txt"
+    DATA_FILE = "retos/cuenta/30c2/data.txt"
 
     def initialize
         if File.file?(DATA_FILE)
             saldof = File.open(DATA_FILE)
             @saldo = saldof.read.to_f
+            saldof.close
         else
             @saldo = 0
         end
@@ -32,5 +33,6 @@ class Cuenta
     def save
         saldof = File.open(DATA_FILE,"w")
         saldof.print @saldo
+        saldof.close
     end
 end

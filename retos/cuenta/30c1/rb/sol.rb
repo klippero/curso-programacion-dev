@@ -1,13 +1,8 @@
 class Cuenta
-    DATA_FILE = "retos/cuenta/30c1/rb/data.txt"
+    DATA_FILE = "retos/cuenta/30c1/data.txt"
 
     def initialize
-        if File.file?(DATA_FILE)
-            saldof = File.open(DATA_FILE)
-            @saldo = saldof.read.to_f
-        else
-            @saldo = 0
-        end
+        @saldo = File.open(DATA_FILE).read.to_f
     end
 
     def to_s

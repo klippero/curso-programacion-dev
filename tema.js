@@ -38,7 +38,7 @@ fetch(resource)
 ul = document.getElementById("retos");
 for (const retoId in retos)
 {
-    if (retos[retoId].recorrido == recorrido && retos[retoId].tema == tema && ( !seccion || retos[retoId].seccion == seccion))
+    if (retos[retoId].recorrido == recorrido && retos[retoId].tema == tema && ( !seccion && !retos[retoId].seccion || seccion && retos[retoId].seccion == seccion))
     {
         a = document.createElement("a");
         a.href = "reto.html?reto=" + retoId + "&lenguaje=" + lenguaje;
