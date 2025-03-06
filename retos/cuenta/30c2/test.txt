@@ -1,4 +1,4 @@
-Saldo: 100.23€
-Saldo: 115.46€
-Saldo: 102.26€
-Saldo: 2.26€
+Saldo: 100.34€
+Saldo: 115.57€
+Saldo: 102.37€
+Saldo: 2.37€
