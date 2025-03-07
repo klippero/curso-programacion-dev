@@ -1,11 +1,17 @@
+from pathlib import Path
+
+
 class Cuenta:
-    DATA_FILE = "retos/cuenta/30c3/data.txt"
-    LOG_FILE = "retos/cuenta/30c3/log.txt"
+    DATA_FILE = "retos/cuenta/30c4/data.txt"
+    LOG_FILE = "retos/cuenta/30c4/log.txt"
 
     def __init__(self):
-        dataf = open(Cuenta.DATA_FILE,"r")
-        self.__saldo = float(dataf.read())
-        dataf.close()
+        if Path(Cuenta.DATA_FILE).exists():
+            dataf = open(Cuenta.DATA_FILE,"r")
+            self.__saldo = float(dataf.read())
+            dataf.close()
+        else:
+            self.__saldo = 0
         self.log()
 
     def __str__(self):
