@@ -330,6 +330,7 @@ const retos = {
     '30c2': { label: "Escribir el saldo", recorrido: "POO", tema: 30, seccion: 2, coleccion: "cuenta",prev:"30c1"},
     '30c3': { label: "Añadir movimientos a un fichero", recorrido: "POO", tema: 30, seccion: 3, coleccion: "cuenta",prev:"30c2"},
     '30c4': { label: "Comprobar si existe el fichero de saldo", recorrido: "POO", tema: 30, seccion: 4, coleccion: "cuenta",prev:"30c3"},
+    '306cr': { label: "Guardar la caja en un fichero", recorrido: "POO", tema: 30, seccion: 6, coleccion: "registradora",prev:"28cr3"},
 };
 
 for(let retoId in retos)
