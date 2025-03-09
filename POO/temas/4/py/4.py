@@ -1,4 +1,7 @@
 class Frigo:
+    def __init__(self):
+        print( "se está creando un frigo")
+
     def abre(self):
         print( "se está abriendo" )
 
@@ -10,6 +13,3 @@ class Frigo:
 
 
 mi_frigo = Frigo()
-mi_frigo.abre()
-mi_frigo.cierra()
-mi_frigo.fija_temperatura()

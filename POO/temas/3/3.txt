@@ -1,1 +1,3 @@
-se está creando un frigo
+se está abriendo
+se está cerrando
+se cambia la temperatura

@@ -4,7 +4,7 @@ let recorrido = parametros.get("recorrido");
 let tema = parseInt(parametros.get("tema"));
 let seccion = parseInt(parametros.get("seccion"));
 let lenguaje = parametros.get("lenguaje");
-let path = root_path + recorrido + '/temas/' + tema + '/';
+let path = root_path + recorrido + '/temas/' + (tema-1) + '/';
 if (seccion)
 {
     path += seccion + '/';
@@ -13,11 +13,11 @@ if (seccion)
 title = tema.toString()
 if (seccion)
 {
-    title += '.' + seccion + '. ' + recorridos[recorrido].temas[tema].secciones[seccion-1].label + ' (' + recorridos[recorrido].temas[tema].label + ')';
+    title += '.' + seccion + '. ' + recorridos[recorrido].temas[tema-1].secciones[seccion-1].label + ' (' + recorridos[recorrido].temas[tema-1].label + ')';
 }
 else
 {
-    title += '. ' + recorridos[recorrido].temas[tema].label;
+    title += '. ' + recorridos[recorrido].temas[tema-1].label;
 }
 insert("title",title);
 
@@ -56,23 +56,23 @@ for (const retoId in retos)
     }
 }
 
-if (!seccion && recorridos[recorrido].temas[tema].secciones)
+if (!seccion && recorridos[recorrido].temas[tema-1].secciones)
 {
     seccion = 0;
 }
 
 
-if (seccion && seccion < recorridos[recorrido].temas[tema].secciones.length)
+if (seccion && seccion < recorridos[recorrido].temas[tema-1].secciones.length)
 {
-    insertA("siguiente-tema",tema.toString() + '.' + (seccion+1).toString() + '. ' + recorridos[recorrido].temas[tema].secciones[seccion].label,"tema.html?recorrido=" + recorrido + "&lenguaje=" + lenguaje + "&tema=" + tema + "&seccion=" + (seccion+1));
+    insertA("siguiente-tema",tema.toString() + '.' + (seccion+1).toString() + '. ' + recorridos[recorrido].temas[tema-1].secciones[seccion].label,"tema.html?recorrido=" + recorrido + "&lenguaje=" + lenguaje + "&tema=" + tema + "&seccion=" + (seccion+1));
 }
-else if (!seccion && recorridos[recorrido].temas[tema].secciones)
+else if (!seccion && recorridos[recorrido].temas[tema-1].secciones)
 {
-    insertA("siguiente-tema",tema.toString() + ".1. " + recorridos[recorrido].temas[tema].secciones[0].label,"tema.html?seccion=1&recorrido=" + recorrido + "&lenguaje=" + lenguaje + "&tema=" + (tema));
+    insertA("siguiente-tema",tema.toString() + ".1. " + recorridos[recorrido].temas[tema-1].secciones[0].label,"tema.html?seccion=1&recorrido=" + recorrido + "&lenguaje=" + lenguaje + "&tema=" + (tema));
 }
 else
 {
-    insertA("siguiente-tema",(tema+1).toString() + ". " + recorridos[recorrido].temas[tema+1].label,"tema.html?recorrido=" + recorrido + "&lenguaje=" + lenguaje + "&tema=" + (tema+1));
+    insertA("siguiente-tema",(tema+1).toString() + ". " + recorridos[recorrido].temas[tema].label,"tema.html?recorrido=" + recorrido + "&lenguaje=" + lenguaje + "&tema=" + (tema+1));
 }
 
 insertA("recorrido",recorridos[recorrido].label,"recorrido.html?recorrido=" + recorrido + "&lenguaje=" + lenguaje);

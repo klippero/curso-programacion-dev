@@ -1,4 +1,8 @@
 class Frigo
+    def initialize
+        puts "se está creando un frigo"
+    end
+
     def abre
         puts "se está abriendo"
     end
@@ -14,6 +18,3 @@ end
 
 
 mi_frigo = Frigo.new
-mi_frigo.abre
-mi_frigo.cierra
-mi_frigo.fija_temperatura

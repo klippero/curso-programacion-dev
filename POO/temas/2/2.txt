@@ -1,3 +1,0 @@
-se está abriendo
-se está cerrando
-se cambia la temperatura

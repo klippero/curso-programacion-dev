@@ -18,7 +18,6 @@ const recorridos = {
             { label: 'Métodos' },
             { label: 'Constructor' },
             { label: 'Atributos' },
-            { label: 'Atributos' },
             { label: 'String formatting' },
             { label: 'Métodos que modifican el estado' },
             { label: 'Parámetros de un método' },

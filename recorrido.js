@@ -22,7 +22,7 @@ ol = document.getElementById("temas");
 for(let i=0; i<recorrido.temas.length; i++ )
 {
     a = document.createElement("a");
-    a.href = "tema.html?recorrido=" + id + "&lenguaje=" + lenguaje + "&tema=" + i;
+    a.href = "tema.html?recorrido=" + id + "&lenguaje=" + lenguaje + "&tema=" + (i+1);
     a.textContent = recorrido.temas[i].label
     li = document.createElement("li");
     li.appendChild(a);
