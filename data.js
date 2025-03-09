@@ -24,7 +24,7 @@ const recorridos = {
             { label: 'Parámetros de un constructor' },
             { label: 'Valores por defecto para parámetros' },
             { label: 'Lectura por teclado' },
-            { label: 'return' },
+            { label: 'Lectura por teclado' },
             { label: 'return' },
             { label: 'Convertir a string' },
             { label: 'Consultar un atributo' },
@@ -109,8 +109,8 @@ const lenguajes = {
 
 const retos = {
     '1an': { label: "Mi gato Pipo", recorrido: "POO", tema: 1, coleccion: "animales", out_por_lenguaje: true},
-    '10io-t': { label: "Pregunta nombre y años", recorrido: "POO", tema: 10, coleccion: "entradasalida"},
-    '10b': { label: "Pregunta el número de viajes", recorrido: "POO", tema: 10, coleccion: "bonobús",prev:"9b"},
+    '11io-t': { label: "Pregunta nombre y años", recorrido: "POO", tema: 11, coleccion: "entradasalida"},
+    '11b': { label: "Pregunta el número de viajes", recorrido: "POO", tema: 11, coleccion: "bonobús",prev:"9b"},
     '13b': { label: "Convertir a texto", recorrido: "POO", tema: 13, coleccion: "bonobús",prev:"12b"},
     '13p': { label: "Convertir a texto", recorrido: "POO", tema: 13, coleccion: "punto",prev:"9p3"},
     '13u': { label: "Convertir a texto", recorrido: "POO", tema: 13, coleccion: "cuadrado",prev:"12u"},
@@ -142,7 +142,7 @@ const retos = {
     '12u': { label: "Área", recorrido: "POO", tema: 12, coleccion: "cuadrado"},
     '12i': { label: "Calcula área y perímetro", recorrido: "POO", tema: 12, coleccion: "círculo"},
     '12g': { label: "Pasar Celsius a Fahrenheit", recorrido: "POO", tema: 12, coleccion: "grados"},
-    '12b': { label: "Uso de return en info", recorrido: "POO", tema: 12, coleccion: "bonobús",prev:"10b"},
+    '12b': { label: "Uso de return en info", recorrido: "POO", tema: 12, coleccion: "bonobús",prev:"11b"},
     '14u': { label: "getter lado", recorrido: "POO", tema: 14, coleccion: "cuadrado",prev:"13u"},
     '14m': { label: "getter reintegro", recorrido: "POO", tema: 14, coleccion: "primitiva",prev:"13m"},
     '14d': { label: "Tirada de 2 dados", recorrido: "POO", tema: 14, coleccion: "dado",prev:"13d"},
