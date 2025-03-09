@@ -4,7 +4,7 @@ let recorrido = parametros.get("recorrido");
 let tema = parseInt(parametros.get("tema"));
 let seccion = parseInt(parametros.get("seccion"));
 let lenguaje = parametros.get("lenguaje");
-let path = root_path + recorrido + '/temas/' + (tema-1) + '/';
+let path = root_path + recorrido + '/temas/' + (tema) + '/';
 if (seccion)
 {
     path += seccion + '/';
