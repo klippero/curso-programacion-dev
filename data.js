@@ -146,7 +146,7 @@ const retos = {
     '14u': { label: "getter lado", recorrido: "POO", tema: 14, coleccion: "cuadrado",prev:"12u"},
     '14m': { label: "getter reintegro", recorrido: "POO", tema: 14, coleccion: "primitiva",prev:"12m"},
     '14d': { label: "Tirada de 2 dados", recorrido: "POO", tema: 14, coleccion: "dado",prev:"12d"},
-    '14j': { label: "Juevo con posición y vidas", recorrido: "POO", tema: 14, coleccion: "juego"},
+    '14j': { label: "Juego con posición y vidas", recorrido: "POO", tema: 14, coleccion: "juego"},
     '14f': { label: "Dos máquinas de frío", recorrido: "POO", tema: 14, coleccion: "combi",prev:"9f"},
     '20n': { label: "Pedir números hasta par", recorrido: "POO", tema: 20, coleccion: "números"},
     '20a1': { label: "10 asteriscos", recorrido: "POO", tema: 20, coleccion: "linea"},
