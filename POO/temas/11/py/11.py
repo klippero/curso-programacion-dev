@@ -17,7 +17,8 @@ class Frigo:
         print( f'Color: {self.__color} | Puerta {self.__puerta} | {self.__temperatura}ºC' )
 
     def para_temperatura_recomendada(self):
-        return self.__temperatura - 7
+        result = self.__temperatura - 7
+        return result
 
 
 mi_frigo = Frigo("rojo")

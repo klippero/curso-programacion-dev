@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre en paralelo</title>
+    <style>
+        .contenedor {
+            display: flex;
+            gap: 10px;
+        }
+        pre {
+            white-space: pre; /* Evita el salto de línea */
+            overflow: auto; /* Agrega scroll si es necesario */
+            border: 1px solid black;
+            padding: 5px;
+            background: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <pre>class Frigo
+    def initialize
+        @color = "blanco"
+        @puerta = "cerrada"
+        @temperatura = 20
+    end
+        
+    def abre
+        puts "se está abriendo"
+    end
+        
+    def cierra
+        puts "se está cerrando"
+    end
+        
+    def fija_temperatura
+        puts "se cambia la temperatura"
+    end
+        
+    def muestra_estado
+        puts "Color: #{@color} | Puerta #{@puerta} | #{@temperatura}ºC"
+    end
+end
+
+mi_frigo = Frigo.new
+mi_frigo.muestra_estado</pre>
+        <pre>Otro bloque de código
+alineado a la derecha.</pre>
+    </div>
+</body>
+</html>

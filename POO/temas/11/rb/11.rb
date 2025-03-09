@@ -22,7 +22,8 @@ class Frigo
     end
 
     def para_temperatura_recomendada
-        return @temperatura - 7
+        result = @temperatura - 7
+        return result
     end
 end
 
