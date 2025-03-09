@@ -1,2 +1,2 @@
-def temperatura_recomendada(saelf):
+def tiene_temperatura_recomendada(self):
     return self.__temperatura == 7

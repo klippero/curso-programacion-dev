@@ -22,7 +22,7 @@ class Frigo:
     def temperatura(self):
         return self.__temperatura
 
-    def is_temperatura_recomendada(self):
+    def tiene_temperatura_recomendada(self):
         return self.__temperatura == 7
 
 
