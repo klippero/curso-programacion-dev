@@ -31,7 +31,7 @@ const recorridos = {
             { label: 'Operadores relacionales' },
             { label: 'if else' },
             { label: 'Operadores lógicos' },
-            { label: 'Métodos ? y return de expresiones lógicas' },
+            { label: 'return de expresiones lógicas' },
             { label: 'while' },
             { label: 'times / each' },
             { label: 'Listas' },

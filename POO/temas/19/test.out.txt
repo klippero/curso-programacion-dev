@@ -1,0 +1,4 @@
+Color: rojo | Puerta cerrada | 20ºC (13ºC)
+false
+Color: rojo | Puerta cerrada | 7ºC (0ºC)
+true
