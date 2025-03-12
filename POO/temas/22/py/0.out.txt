@@ -1,17 +1,54 @@
+
+
+
+
+
+
+
+
+
+
 ['piña', 'coco', 'uva', 'dátil', 'kiwi']
+
+
 piña
 kiwi
+
+
 5
+
+
+
 ['piña', 'coco', 'higo', 'dátil', 'kiwi']
+
+
 ['coco', 'higo', 'dátil']
 ['dátil', 'kiwi']
 ['piña', 'coco']
 ['higo', 'dátil']
+
+
 kiwi
 ['piña', 'coco', 'higo', 'dátil']
+
+
+
 ['coco', 'dátil', 'higo', 'piña']
+
+
 True
 False
+
+
+
 coco dátil higo piña 
+
+
+
+
 coco dátil higo piña 
+
+
+
+
 ['coco', 'dátil', 'piña']
