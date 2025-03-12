@@ -11,7 +11,3 @@ class Entero
         return producto
     end
 end
-
-
-puts Entero.new(2).potencia(4)
-puts Entero.new(5).potencia(3)
