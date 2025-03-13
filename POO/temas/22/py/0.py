@@ -1,4 +1,4 @@
-# lista vacía
+# array vacío
 frutas = []
 
 # inicializar
@@ -38,16 +38,6 @@ print(frutas)
 # comprobar si está
 print( 'coco' in frutas )
 print( 'manzana' in frutas )
-
-# recorrer
-for fruta in frutas:
-    print( fruta, end=" " )
-print()
-
-# recorrer por índice
-for i in range(len(frutas)):
-    print( frutas[i], end=" ")
-print()
 
 # eliminar un elemento
 del frutas[2]

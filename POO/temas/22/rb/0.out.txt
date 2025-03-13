@@ -55,16 +55,4 @@ false
 
 
 
-coco dátil higo piña 
-
-
-
-
-
-coco dátil higo piña 
-
-
-
-
-
 ["coco", "dátil", "piña"]

@@ -1,4 +1,4 @@
-# lista vacía
+# array vacío
 frutas = []
 
 # inicializar
@@ -52,18 +52,6 @@ puts
 # comprobar si está
 puts frutas.include?('coco')
 puts frutas.include?('manzana')
-
-# recorrer
-frutas.each do |fruta|
-    print "#{fruta} "
-end
-puts
-
-# recorrer por índice
-frutas.length.times do |i|
-    print "#{frutas[i]} "
-end
-puts
 
 # eliminar un elemento
 frutas.delete_at(2)
