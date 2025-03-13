@@ -8,5 +8,6 @@ class ListaEnteros:
         while i < len(self.__lista) and not encontrado:
             if self.__lista[i] % 2 == 0:
                 encontrado = True
-            i = i + 1
+            else:
+                i = i + 1
         return encontrado
