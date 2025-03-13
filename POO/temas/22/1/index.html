@@ -1,0 +1,41 @@
+<p>En aquellos casos donde se esté buscando un elemento no será necesario recorrer todo el array sino que la búsqueda concluirá cuando se localice dicho elemento.</p>
+
+<p>Para recorrer un array utilizando un bucle <code>while</code>:
+
+    <ol>
+        <li>inicializamos el contador al primer elemento que es el 0</li>
+        <li>iteramos mientras el contador sea menor que el tamaño del array</li>
+        <li>al finalizar el bucle incrementamos en 1 el contador</li>
+    </ol>
+</p>
+
+<div class="container">
+    <pre data-code="https://raw.githubusercontent.com/klippero/code-snippet-in-web/refs/heads/main/POO/temas/22/1/<lenguaje>/1.<lenguaje>"></pre>
+    <pre data-code="https://raw.githubusercontent.com/klippero/code-snippet-in-web/refs/heads/main/POO/temas/22/1/1.out.txt"></pre>
+</div>
+
+<p>Para realizar la búsqueda de un elemento, esto es, detenernos cuando se haya encontrado, se debe incluir:
+    <ol>
+        <li>añadir una variable <code>encontrado</code> que inicializaremos a falso</li>
+        <li>añadir una segunda condición a cumplir en el <code>while</code>: que encontrado sea falso</li>
+        <li>dentro del bucle se ha de comprobar si se ha encontrado el elemento de forma que
+            <ul>
+                <li>si se ha encontrado, se cambia la variable <code>encontrado</code> a cierto</li>
+                <li>si no se ha encontrado, se incrementa el contador para pasar al siguiente elemento</li>
+            </ul>
+        </li>
+        <li>al salir del <code>while</code>:
+            <ul>
+                <li><code>encontrado</code> indicará si se ha encontrado</li>
+                <li>el contador apuntará al elemento encontrado</li>
+            </ul>
+        </li>
+    </ol>
+</p>
+
+<p>En el ejemplo se busca dentro del array algún elemento con 5 letras.</p>
+
+<div class="container">
+    <pre data-code="https://raw.githubusercontent.com/klippero/code-snippet-in-web/refs/heads/main/POO/temas/22/1/<lenguaje>/2.<lenguaje>"></pre>
+    <pre data-code="https://raw.githubusercontent.com/klippero/code-snippet-in-web/refs/heads/main/POO/temas/22/1/2.out.txt"></pre>
+</div>

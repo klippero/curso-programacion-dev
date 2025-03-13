@@ -18,5 +18,7 @@ class Lista:
         result = self.clone()
         for i in range(len(result)):
             j = random.randrange(len(result))
-            result[i],result[j] = result[j],result[i]
+            aux = result[j]
+            result[j] = result[i]
+            result[i] = aux
         return result

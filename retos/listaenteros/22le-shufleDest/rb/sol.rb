@@ -10,7 +10,9 @@ class Lista
     def shuffle!
         @array.length.times do |i|
             j = rand(@array.length)
-            @array[i],@array[j] = @array[j],@array[i]
+            aux = @array[j]
+            @array[j] = @array[i]
+            @array[i] = aux
         end
     end
 end

@@ -15,7 +15,9 @@ class Lista
         result = self.clone
         result.length.times do |i|
             j = rand(result.length)
-            result[i],result[j] = result[j],result[i]
+            aux = result[j]
+            result[j] = result[i]
+            result[i] = aux
         end
         return result
     end

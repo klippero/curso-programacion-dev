@@ -14,4 +14,6 @@ class Lista:
     def shuffle_destructivo(self):
         for i in range(len(self.__lista)):
             j = random.randrange(len(self.__lista))
-            self.__lista[i],self.__lista[j] = self.__lista[j],self.__lista[i]
+            aux = self.__lista[j]
+            self.__lista[j] = self.__lista[i]
+            self.__lista[i] = aux
