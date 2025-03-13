@@ -3,10 +3,11 @@ class ListaEnteros:
         self.__lista = lista
 
     def posMayor(self):
-        result = 0
-        i = 1
-        while i < len(self.__lista):
-            if self.__lista[i] > self.__lista[result]:
-                result = i
-            i = i + 1
+        if len(self.__lista) < 1:
+            result = -1
+        else:
+            result = 0
+            for i in range(1,len(self.__lista)):
+                if self.__lista[i] > self.__lista[result]:
+                    result = i
         return result

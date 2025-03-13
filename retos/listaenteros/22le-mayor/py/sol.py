@@ -3,8 +3,11 @@ class ListaEnteros:
         self.__lista = lista
 
     def mayor(self):
-        result = self.__lista[0]
-        for n in self.__lista:
-            if n > result:
-                result = n
+        if len(self.__lista) < 1:
+            result = -1
+        else:
+            result = self.__lista[0]
+            for n in self.__lista[1:]:
+                if n > result:
+                    result = n
         return result
