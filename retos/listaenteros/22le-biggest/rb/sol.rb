@@ -3,15 +3,12 @@ class ListaEnteros
         @lista = lista
     end
 
-    def menor
-        result = 1000000
+    def mayor
+        result = -1
         @lista.each do |n|
-            if n < result
+            if n > result
                 result = n
             end
-        end
-        if result == 1000000
-            result = -1
         end
         return result
     end
