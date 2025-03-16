@@ -37,7 +37,11 @@ const recorridos = {
             {
                 label: 'Array',
                 secciones: [
-                    { label: 'Bucle para búsqueda' }
+                     { label: 'Recorrido de todos los elementos' }
+                    ,{ label: 'Recorrido por índice de todos los elementos' }
+                    ,{ label: 'Recorrido de parte de los elementos (slice)' }
+                    ,{ label: 'Recorrido por índice de parte de los elementos' }
+                    ,{ label: 'Bucle para búsqueda' }
                 ]
             },
             { label: 'Implementando operadores' },
@@ -257,10 +261,10 @@ const retos = {
     '22est-media': { label: "Media", recorrido: "POO", tema: 22, coleccion: "estadistica"},
     '22est-mediana': { label: "Mediana", recorrido: "POO", tema: 22, coleccion: "estadistica",prev:"22est-media"},
     '22t': { label: "Adivinar número sin repetir", recorrido: "POO", tema: 22, coleccion: "aleatorio",prev:"20t3"},
-    '22le-esta': { label: "¿Está en la lista?", recorrido: "POO", tema: 22, seccion: 1, coleccion: "listaenteros"},
-    '22le-removeDuplicates': { label: "Elimina duplicados", recorrido: "POO", tema: 22, seccion: 1, coleccion: "listaenteros",prev:'22le-esta'},
-    '22le-hayPar': { label: "¿Hay algún par?", recorrido: "POO", tema: 22, seccion: 1, coleccion: "listaenteros"},
-    '22le-pos-item': { label: "Posición de un elemento", recorrido: "POO", tema: 22, seccion: 1, coleccion: "listaenteros"},
+    '22le-esta': { label: "¿Está en la lista?", recorrido: "POO", tema: 22, seccion: 5, coleccion: "listaenteros"},
+    '22le-removeDuplicates': { label: "Elimina duplicados", recorrido: "POO", tema: 22, seccion: 5, coleccion: "listaenteros",prev:'22le-esta'},
+    '22le-hayPar': { label: "¿Hay algún par?", recorrido: "POO", tema: 22, seccion: 5, coleccion: "listaenteros"},
+    '22le-pos-item': { label: "Posición de un elemento", recorrido: "POO", tema: 22, seccion: 5, coleccion: "listaenteros"},
     '22mp1': { label: "Primitiva usando lista", recorrido: "POO", tema: 22, coleccion: "primitiva",prev:"14m"},
     '22mp2': { label: "Evitando repetidos", recorrido: "POO", tema: 22, coleccion: "primitiva",prev:"22mp1"},
     '22mbp1': { label: "Bombo de primitiva", recorrido: "POO", tema: 22, coleccion: "primitiva",prev:"22mp2"},
