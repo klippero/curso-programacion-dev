@@ -6,7 +6,7 @@ class ListaEnteros
     def mayor
         result = -1
         @lista.each do |n|
-            if n > result
+            if result == -1 || n > result
                 result = n
             end
         end
