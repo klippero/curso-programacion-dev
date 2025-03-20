@@ -1,4 +1,17 @@
+
+
+
+
+
+
+
+
+
+
 False
+
+
+
 Se produjo una excepción: TypeError
 '>' not supported between instances of 'Cuadrado' and 'Cuadrado'
   File "10.py", line 15, in <module>
