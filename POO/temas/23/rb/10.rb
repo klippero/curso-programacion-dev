@@ -11,11 +11,8 @@ end
 
 n1 = 8
 n2 = 8
-puts n1 == n2
+puts n1 > n2
 
 c1 = Cuadrado.new(8)
 c2 = Cuadrado.new(8)
-puts c1 == c2
-puts c1 == c1
-
 puts c1 > c2
