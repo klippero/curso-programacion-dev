@@ -19,7 +19,7 @@ class Sopa
     end
 
     def letter(coor)
-        return @sopa[coor[0],coor[1]]
+        return @sopa[coor[0]][coor[1]]
     end
 
     def set(coor,letter)
@@ -57,6 +57,7 @@ class Sopa
     end
 end
 
+
 class Word
     def initialize(sopa,word)
         @sopa = sopa
@@ -73,19 +74,26 @@ class Word
         @fin = [ @inicio[0] + (@word.length-1) * @orientacion[0], @inicio[1] + (@word.length-1) * @orientacion[1] ]
     end
 
+    def next(coor)
+        return [ coor[0] + (1*@orientacion[0]), coor[1] + (1*@orientacion[1]) ]
+    end
+
     def possible?
         coor = [@inicio[0],@inicio[1]]
         i = 0
         posible = true
         while coor != @fin && posible
-            if [' ',@word[i]].include?(@sopa.letter(coor))
+            if ! @sopa.en_sopa?(coor)
                 posible = false
-            elsif coor[0] == @sopa.ancho || coor[1] == @sopa.alto
-                posible = false
+            elsif [' ',@word[i]].include?(@sopa.letter(coor))
+                posible = true
             else
                 i = i + 1
                 coor[0] = coor[0] + (1*@orientacion[0])
                 coor[1] = coor[1] + (1*@orientacion[1])
+                if ! @sopa.en_sopa?(coor)
+                    posible = false
+                end
             end
         end
         return posible
