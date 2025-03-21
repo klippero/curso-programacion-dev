@@ -48,7 +48,7 @@ const recorridos = {
             { label: 'Asignación abreviada' },
             { label: 'Comentarios' },
             { label: 'Constantes' },
-            { label: 'Diccionarios' },
+            { label: 'Hashes' },
             { label: 'Parámetros requeridos, por defecto y opcionales' },
             { label: 'Keyword arguments' },
             { 
@@ -239,7 +239,7 @@ const retos = {
     '26cr2': { label: "Convertir a float", recorrido: "POO", tema: 26, coleccion: "registradora",prev:"26cr1"},
     '26cr3': { label: "take", recorrido: "POO", tema: 26, coleccion: "registradora",prev:"26cr2"},
     '26cr4': { label: "Operador <<", recorrido: "POO", tema: 26, coleccion: "registradora",prev:"26cr3"},
-    '28cr': { label: "Caja registradora", recorrido: "POO", tema: 27, coleccion: "registradora",prev:"26cr4"},
+    '27cr': { label: "Caja registradora", recorrido: "POO", tema: 27, coleccion: "registradora",prev:"26cr4"},
     '18e1': { label: "Una condición para bisiestos", recorrido: "POO", tema: 18, coleccion: "fechas"},
     '18e2': { label: "Dos condiciones para bisiestos", recorrido: "POO", tema: 18, coleccion: "fechas",prev:"18e1"},
     '18e3': { label: "Tres condiciones para bisiestos", recorrido: "POO", tema: 18, coleccion: "fechas",prev:"18e2"},
@@ -327,9 +327,9 @@ const retos = {
     '24tm6': { label: "Operador *", recorrido: "POO", tema: 24, coleccion: "tiempo",prev:"24tm5"},
     '24r': { label: "Resize", recorrido: "POO", tema: 24, coleccion: "rectángulo",prev:"23r"},
     '24a': { label: "Resize", recorrido: "POO", tema: 24, coleccion: "linea",prev:"23a"},
-    '29cr1': { label: "Parámetros por defecto", recorrido: "POO", tema: 28, coleccion: "registradora",prev:"28cr"},
-    '29cr2': { label: "Parámetro esponja add", recorrido: "POO", tema: 28, coleccion: "registradora",prev:"29cr1"},
-    '29cr3': { label: "Parámetro esponja take", recorrido: "POO", tema: 28, coleccion: "registradora",prev:"29cr2"},
+    '28cr1': { label: "Parámetros por defecto", recorrido: "POO", tema: 28, coleccion: "registradora",prev:"27cr"},
+    '28cr2': { label: "Parámetro esponja add", recorrido: "POO", tema: 28, coleccion: "registradora",prev:"28cr1"},
+    '28cr3': { label: "Parámetro esponja take", recorrido: "POO", tema: 28, coleccion: "registradora",prev:"28cr2"},
     '28le-suma': { label: "Suma lista", recorrido: "POO", tema: 28, coleccion: "listaenteros"},
     '29c': { label: "Ingreso y reintegro con esponja", recorrido: "POO", tema: 28, coleccion: "cuenta",prev:"18c",prev:"18c"},
     '28a1': { label: "Gráfico con esponja", recorrido: "POO", tema: 28, coleccion: "linea",prev:"24a"},
@@ -340,7 +340,7 @@ const retos = {
     '30c2': { label: "Escribir el saldo", recorrido: "POO", tema: 30, seccion: 2, coleccion: "cuenta",prev:"30c1"},
     '30c3': { label: "Añadir movimientos a un fichero", recorrido: "POO", tema: 30, seccion: 3, coleccion: "cuenta",prev:"30c2"},
     '30c4': { label: "Comprobar si existe el fichero de saldo", recorrido: "POO", tema: 30, seccion: 4, coleccion: "cuenta",prev:"30c3"},
-    '306cr': { label: "Guardar la caja en un fichero", recorrido: "POO", tema: 30, seccion: 6, coleccion: "registradora",prev:"29cr3"},
+    '306cr': { label: "Guardar la caja en un fichero", recorrido: "POO", tema: 30, seccion: 6, coleccion: "registradora",prev:"28cr3"},
 };
 
 for(let retoId in retos)

@@ -1,0 +1,53 @@
+
+
+
+
+
+
+
+
+
+
+
+Reikiavik
+
+
+true
+false
+
+
+
+
+
+
+4
+
+
+
+5
+
+4
+
+--- orden diccionario ---
+* Senegal > Dakar
+* Islandia > Reikiavik
+* Dinamarca > Copenhague
+* Ecuador > Quito
+
+--- ordenado ---
+* Dinamarca > Copenhague
+* Ecuador > Quito
+* Islandia > Reikiavik
+* Senegal > Dakar
+
+--- iterando valores ---
+> Dakar
+> Reikiavik
+> Copenhague
+> Quito
+
+--- par key->value ---
+* Senegal > Dakar
+* Islandia > Reikiavik
+* Dinamarca > Copenhague
+* Ecuador > Quito
