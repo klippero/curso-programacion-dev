@@ -1,0 +1,21 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+false
+
+
+
+10.rb:18:in `<main>': undefined method `>' for an instance of Cuadrado (NoMethodError)
+
+puts c1 > c2
+        ^
