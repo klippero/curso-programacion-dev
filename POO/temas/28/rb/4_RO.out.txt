@@ -1,8 +1,8 @@
-# 2+ parameters
 
-def sponge(a,b,*o)
-    puts "Valores: #{a},#{b},#{o}"
-end
 
-sponge(1,2,3)
-sponge(1)
+
+
+
+
+Valores: 1,2,[3]
+4_RO.rb:3:in `sponge': wrong number of arguments (given 1, expected 2+) (ArgumentError)

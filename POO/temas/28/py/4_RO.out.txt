@@ -1,0 +1,12 @@
+
+
+
+
+
+
+Valores: 1,2,[3]
+Traceback (most recent call last):
+  File "/Users/santiagoalvarezrojo/Documents/github/curso-programacion-dev/POO/temas/28/py/4_RO.py", line 8, in <module>
+    sponge(1)
+    ~~~~~~^^^
+TypeError: sponge() missing 1 required positional argument: 'b'
