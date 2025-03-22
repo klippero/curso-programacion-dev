@@ -1,0 +1,2 @@
+Positional args: [1, 2, 3]
+Keyword args: {:a=>"alpha", :b=>"beta"}

@@ -1,0 +1,3 @@
+Color rojo | 19ºC
+Color blanco | 17ºC
+Color blanco | 16ºC
