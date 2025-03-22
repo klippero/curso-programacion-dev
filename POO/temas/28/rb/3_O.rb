@@ -1,5 +1,3 @@
-# parámetros opcionales (esponja)
-
 def sponge(*o)
     puts "Valores: #{o}"
 end

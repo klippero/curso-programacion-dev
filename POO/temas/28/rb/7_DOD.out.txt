@@ -1,3 +1,10 @@
+
+
+
+
+
+
+
 7_DOD.rb:4: syntax error, unexpected '=', expecting ')' (SyntaxError)
 def sponge(a=7,*o,b=9)
                    ^

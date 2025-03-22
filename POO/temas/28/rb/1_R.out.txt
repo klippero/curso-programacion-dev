@@ -2,8 +2,5 @@
 
 
 
-
-
 3
-POO/temas/28/rb/1_R.rb:3:in `suma': wrong number of arguments (given 1, expected 2) (ArgumentError)
-        from POO/temas/28/rb/1_R.rb:8:in `<main>'
+1_R.rb:3:in `suma': wrong number of arguments (given 1, expected 2) (ArgumentError)

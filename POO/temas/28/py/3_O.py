@@ -1,5 +1,3 @@
-# parámetros opcionales (esponja)
-
 def sponge(*o):
     print( f"Valores: {o}" )
 

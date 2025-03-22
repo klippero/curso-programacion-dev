@@ -1,5 +1,3 @@
-# parámetros con valor por defecto
-
 def default(a,b,c=1):
     print( f"Valores: {a},{b},{c}" )
 
