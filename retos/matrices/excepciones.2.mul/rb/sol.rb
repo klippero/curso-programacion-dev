@@ -39,6 +39,10 @@ class Matriz
     end
 
     def + (otra)
+        if ! (rows == otra.rows && columns == otra.columns)
+            raise ArgumentError.new("una matriz de #{rows}x#{columns} no se puede sumar a una de #{otra.rows}x#{otra.columns}")
+        end
+
         result = clone_list
         @matrix.length.times do |i|
             @matrix[i].length.times do |j|
@@ -58,7 +62,7 @@ class Matriz
         return Matriz.new(result)
     end
 
-    def * (otra)
+    def ** (otra)
         result = []
         self.rows.times do |row|
             new_row = []
@@ -74,6 +78,26 @@ class Matriz
                     result[row][column] += @matrix[row][i] * otra.matrix[i][column]
                 end
             end
+        end
+        return Matriz.new(result)
+    end
+
+    def *(otra)
+        if ! (rows == otra.columns && columns == otra.rows)
+            raise ArgumentError.new("una matriz de #{rows}x#{columns} no se puede multiplicar por una de #{otra.rows}x#{otra.columns}")
+        end
+
+        result = []
+        self.rows.times do |row|
+            row_sol = []
+            otra.columns.times do |column|
+                cell = 0
+                self.columns.times do |i|
+                    cell += @matrix[row][i] * otra.matrix[i][column]
+                end
+                row_sol << cell
+            end
+            result << row_sol
         end
         return Matriz.new(result)
     end
