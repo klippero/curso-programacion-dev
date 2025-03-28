@@ -341,8 +341,14 @@ const retos = {
     '30c3': { label: "Añadir movimientos a un fichero", recorrido: "POO", tema: 30, seccion: 3, coleccion: "cuenta",prev:"30c2"},
     '30c4': { label: "Comprobar si existe el fichero de saldo", recorrido: "POO", tema: 30, seccion: 4, coleccion: "cuenta",prev:"30c3"},
     '306cr': { label: "Guardar la caja en un fichero", recorrido: "POO", tema: 30, seccion: 6, coleccion: "registradora",prev:"28cr3"},
-    'mat': { label: "Suma y resta de matrices", recorrido: "POO", tema: 22, coleccion: "listaenteros"},
     'gb1': { label: "Guerra de barcos", recorrido: "POO", tema: 22, seccion: 5, coleccion: "guerra-de-barcos"},
+    '22.1.to_s': { label: "Mostrar", recorrido: "POO", tema: 22, seccion: 1, coleccion: "matrices"},
+    '22.2.traspuesta': { label: "Traspuesta", recorrido: "POO", tema: 22, seccion: 1, coleccion: "matrices",prev:'22.1.to_s'},
+    '23.1.suma': { label: "Suma", recorrido: "POO", tema: 23, coleccion: "matrices",prev:'22.1.traspuesta'},
+    '23.2.resta': { label: "Resta", recorrido: "POO", tema: 23, coleccion: "matrices",prev:'23.1.suma'},
+    '23.3.mul': { label: "Producto", recorrido: "POO", tema: 23, coleccion: "matrices",prev:'23.2.resta'},
+    '30.5.1.leerfichero': { label: "Leer de fichero", recorrido: "POO", tema: 30, seccion: 5, coleccion: "matrices",prev:'23.3.mul'},
+    '30.5.2.escribirfichero': { label: "Escribir en fichero", recorrido: "POO", tema: 30, seccion: 5, coleccion: "matrices",prev:'30.5.1.leerfichero'},
 };
 
 for(let retoId in retos)
@@ -381,7 +387,8 @@ const colecciones = {
     'fracción':{label:'fracciones'},
     'tiempo':{label:'tiempo'},
     'linea':{label:'línea'},
-    'guerra-de-barcos':{label:'Guerra de barcos'}
+    'guerra-de-barcos':{label:'Guerra de barcos'},
+    'matrices':{label:'Matrices'},
     };
 
 function insert(id,content)
