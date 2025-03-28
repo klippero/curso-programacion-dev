@@ -1,0 +1,38 @@
+<p>Se trata de implementar el clásico juego Guerra de barcos, también llamado Hundir la flota.</p>
+
+<p>El juego se ha de implementar en la clase <code>Tablero</code> que debe incluir un método <code>juego</code>.</p>
+
+<p>Al instanciar la clase <code>Tablero</code>, se crea un array con las filas y las columnas indicadas en los parámetros del constructor donde cada celda esté vacía, esto es, contenga el carácter ' '.</p>
+
+<p>Par indicar que hay un barco usaremos el carácter 'B'. Inicialmente fijaremos los siguiente barcos en el tablero:
+    <ul>
+        <li>0,0</li>
+        <li>3,3 a 3,4</li>
+        <li>0,7 a 3,7</li>
+    </ul>
+</p>
+
+<p>Lo primero que has de hacer es implementar el método que permita mostrar un objeto del tipo Tablero. Obviamente, los barcos no se muestran en el tablero para no dar pistas. Ejemplo:
+    <pre> 0 1 2 3 4 5 6 7 8 9 
+  +-+-+-+-+-+-+-+-+-+-+
+0 | | | | | | | | | | |
+  +-+-+-+-+-+-+-+-+-+-+
+1 | | | | | | | | | | |
+  +-+-+-+-+-+-+-+-+-+-+
+2 | | | | | | | | | | |
+  +-+-+-+-+-+-+-+-+-+-+
+3 | | | | | | | | | | |
+  +-+-+-+-+-+-+-+-+-+-+
+4 | | | | | | | | | | |
+  +-+-+-+-+-+-+-+-+-+-+</pre>
+</p>
+
+<p>La dinámica del juego es que se pide al usuario que introduzca coordenadas (fila y columna) y se realizará un disparo a dicha coordenada. Implementa el método disparo que reciba las coordenadas que ha tecleado el usuario y devuelva la palabra:
+    <ul>
+        <li><b>agua</b> si no hay un barco</li>
+        <li><b>tocado</b> si se ha alcanzado un barco pero no se ha hundido completamente</li>
+        <li><b>hundido</b> si se ha hundido un barco</li>
+    </ul>
+</p>
+
+<p>Además de devolver la palabra correspondiente, el método <code>disparo</code> modificará la celda del array con caracteres especiales para indicar cuando se ha fallado el disparo, cuando se ha alcanzado un barco y cuando se ha hundido.</p>

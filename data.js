@@ -342,6 +342,7 @@ const retos = {
     '30c4': { label: "Comprobar si existe el fichero de saldo", recorrido: "POO", tema: 30, seccion: 4, coleccion: "cuenta",prev:"30c3"},
     '306cr': { label: "Guardar la caja en un fichero", recorrido: "POO", tema: 30, seccion: 6, coleccion: "registradora",prev:"28cr3"},
     'mat': { label: "Suma y resta de matrices", recorrido: "POO", tema: 22, coleccion: "listaenteros"},
+    'gb1': { label: "Guerra de barcos", recorrido: "POO", tema: 22, seccion: 5, coleccion: "guerra-de-barcos"},
 };
 
 for(let retoId in retos)
@@ -379,7 +380,8 @@ const colecciones = {
     'primos':{label:'primos'},
     'fracción':{label:'fracciones'},
     'tiempo':{label:'tiempo'},
-    'linea':{label:'línea'}
+    'linea':{label:'línea'},
+    'guerra-de-barcos':{label:'Guerra de barcos'}
     };
 
 function insert(id,content)
