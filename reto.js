@@ -63,7 +63,7 @@ if (reto.next)
     txt = "➔ " + reto.next + ". " + next.label
     if (next.tema != reto.tema)
     {
-        txt += " (" + next.tema.toString() + ". " + recorridos["POO"].temas[next.tema].label + ")"
+        txt += " (" + next.tema.toString() + ". " + recorridos["POO"].temas[next.tema-1].label + ")"
     }
     lnk = "reto.html?reto=" + reto.next + "&lenguaje=" + lenguaje
     insertA("reto-siguiente",txt,lnk);

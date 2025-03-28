@@ -344,7 +344,7 @@ const retos = {
     'gb1': { label: "Guerra de barcos", recorrido: "POO", tema: 22, seccion: 5, coleccion: "guerra-de-barcos"},
     '22.1.to_s': { label: "Mostrar", recorrido: "POO", tema: 22, seccion: 1, coleccion: "matrices"},
     '22.2.traspuesta': { label: "Traspuesta", recorrido: "POO", tema: 22, seccion: 1, coleccion: "matrices",prev:'22.1.to_s'},
-    '23.1.suma': { label: "Suma", recorrido: "POO", tema: 23, coleccion: "matrices",prev:'22.1.traspuesta'},
+    '23.1.suma': { label: "Suma", recorrido: "POO", tema: 23, coleccion: "matrices",prev:'22.2.traspuesta'},
     '23.2.resta': { label: "Resta", recorrido: "POO", tema: 23, coleccion: "matrices",prev:'23.1.suma'},
     '23.3.mul': { label: "Producto", recorrido: "POO", tema: 23, coleccion: "matrices",prev:'23.2.resta'},
     '30.5.1.leerfichero': { label: "Leer de fichero", recorrido: "POO", tema: 30, seccion: 5, coleccion: "matrices",prev:'23.3.mul'},
