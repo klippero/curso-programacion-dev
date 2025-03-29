@@ -1,4 +1,4 @@
-#
+# tema 22
 
 class Palabra
     def initialize(word)

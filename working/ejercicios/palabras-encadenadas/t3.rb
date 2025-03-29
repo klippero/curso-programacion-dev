@@ -1,3 +1,5 @@
+# tema 22.1
+
 class Palabra
     def initialize(word)
         @word = word
