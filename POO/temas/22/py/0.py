@@ -13,6 +13,7 @@ print(frutas)
 # acceso a elementos
 print( frutas[0] )
 print( frutas[4] )
+print( frutas[-1] )   # último elemento
 
 # tamaño
 print( len(frutas) )

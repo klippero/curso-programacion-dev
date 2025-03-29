@@ -13,7 +13,8 @@ puts
 
 # acceso a elementos
 puts frutas[0]
-puts frutas[4]
+puts frutas[3]
+puts frutas[-1]   # último elemento
 
 # tamaño
 puts frutas.length
