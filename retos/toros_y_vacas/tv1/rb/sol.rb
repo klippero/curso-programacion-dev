@@ -1,10 +1,10 @@
 class TorosYVacas
     def initialize(longitud)
-        @lista = []
+        @secreto = []
         @tries = []
         @hints = []
         longitud.times do
-            @lista << rand(10)
+            @secreto << rand(10)
         end
     end
 
@@ -21,17 +21,17 @@ class TorosYVacas
         end
 
         # completa con 0 por la izquierda el try
-        while try.length < @lista.length
+        while try.length < @secreto.length
             try = [0] + try
         end
 
         # si el try es más largo, lo trunca
-        try = try[0..@lista.length-1]
+        try = try[0..@secreto.length-1]
 
         @tries << try
 
         used = []
-        @lista.each do
+        @secreto.each do
             used << false
         end
 
@@ -42,7 +42,7 @@ class TorosYVacas
 
         # primera iteración busca elementos de valor y posición 2
         try.length.times do |i|
-            if @lista.length > i && try[i] == @lista[i]
+            if @secreto.length > i && try[i] == @secreto[i]
                 result[i] = 2
                 used[i] = true
             end
@@ -53,8 +53,8 @@ class TorosYVacas
             if result[i] == 0
                 j = 0
                 encontrado = false
-                while j < @lista.length && !encontrado
-                    if @lista[j] == try[i] && !used[j]
+                while j < @secreto.length && !encontrado
+                    if @secreto[j] == try[i] && !used[j]
                         used[j] = true
                         result[i] = 1
                         encontrado = true
@@ -109,6 +109,15 @@ class TorosYVacas
         end
         return result
     end
+
+    def juego
+        while ! self.success?
+            print "\nIntento: "
+            n = gets.chomp.to_i
+            self.valida(n)
+            puts self
+        end
+    end
 end
 
 
@@ -120,11 +129,3 @@ puts mm
 
 https://reglasdejuegosimples.blogspot.com/2013/06/toros-y-vacas-es-un-juego-tradicional.html
 =end
-
-tv = TorosYVacas.new(4)
-while !tv.success?
-    print "\nIntento: "
-    n = gets.chomp.to_i
-    tv.valida(n)
-    puts tv
-end

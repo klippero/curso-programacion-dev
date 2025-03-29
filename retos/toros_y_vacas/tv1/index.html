@@ -1,0 +1,36 @@
+<p>En el juego Toros y vacas, el usuario debe acertar un número secreto de 4 dígitos. Para ello, en cada intento, se le indica al  recibiendo qué cifras están en la solución y cuales están bien colocadas.</p>
+
+<p>Por ejemplo, si el número secreto es el 6 4 6 1 y el usuario ha escrito el número 6 0 1 4 se le indicará que la primera cifra es correcta del todo, y la segunda y la cuarta aparecen en la solución pero en otra posición. Para ello, se indica con un 2 que se ha acertado del todo y con un 1 que se ha acertado el número pero que aparece en otra posición. Se mostrará de la siguiente forma:</p>
+
+<pre>Intento: 6014
+6 0 1 4       2 1 0 1</pre>
+
+<p>El juego terminará cuando el usuario acierte el número secreto, esto es, el resultado del intento es 2 2 2 2.</p>
+
+<p>Para solucionar el reto avanza de la siguiente forma:</p>
+
+<h3>Constructor</h3>
+
+<p>Implementa el constructor que genere el número secreto. Para facilitar la programación, el número secreto debe almacenarse en un atributo que ha de ser un array con cuatro números aleatorios del 0 al 9.</p>
+
+<p>Vamos a almacenar en otro atributo todos los intentos que el usuario teclea y, en otro atributo todas las respuestas a dichos intentos. Inicialmente esos atributos serán arrays vacíos.</p>
+
+<h3>Método para mostrar el estado</h3>
+
+<p>Implementa el método que permita mostrar el estado del juego. Deberá mostrar una lista con todos los intentos en dos columnas, a la izquierda lo que ha tecleado el usuario y a la derecha el resultado de ese intento.</p>
+
+<h3>Juego</h3>
+
+<p>Implementa el método juego que será un bucle donde:
+    <ol>
+        <li>se le pide al usuario el intento</li>
+        <li>se valida el intento</li>
+        <li>se muestra el resultado</li>
+    </ol>
+</p>
+
+<p>El bucle finalizará cuando el usuario haya acertado todos los números. Implementa un método que determine si se ha acertado o no.</p>
+
+<h3>Validar intento</h3>
+
+<p>Implementa un método valida para determinar el resultado para el último intento del usuario.</p>
