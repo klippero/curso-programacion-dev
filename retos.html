@@ -19,9 +19,29 @@
         for(let i=0; i<recorridos["POO"].temas.length; i++ )
         {
             const th = document.createElement("th");
-            th.textContent = i + '. ' + recorridos["POO"].temas[i].label;
+            th.textContent = (i+1) + '. ' + recorridos["POO"].temas[i].label;
             headerRow.appendChild(th);
         }
+
+        const table = document.getElementById("tabla-retos");
+        for(let retoId in retos)
+        {
+            if (!retos[retoId].prev)
+            {
+                const tr = document.createElement("tr");
+                const td = document.createElement("td");
+                td.textContent = retoId.toString()
+                r = retos[retoId]
+                while ( r.next )
+                {
+                    r = retos[r.next]
+                    td.textContent += " > " + r.label
+                }
+                tr.appendChild(td)
+                table.appendChild(tr)
+            }
+        }
+
     </script>
 </body>
 </html>
