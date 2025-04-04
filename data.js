@@ -350,6 +350,7 @@ const retos = {
     '30.5.1.leerfichero': { label: "Leer de fichero", recorrido: "POO", tema: 30, seccion: 5, coleccion: "matrices",prev:'23.3.mul'},
     '30.5.2.escribirfichero': { label: "Escribir en fichero", recorrido: "POO", tema: 30, seccion: 5, coleccion: "matrices",prev:'30.5.1.leerfichero'},
     'tv1': { label: "Toros y vacas", recorrido: "POO", tema: 22, seccion: 5, coleccion: "toros_y_vacas"},
+    'pe1': { label: "Palabras encadenadas", recorrido: "POO", tema: 22, coleccion: "palabras-encadenadas"},
 };
 
 for(let retoId in retos)
@@ -391,6 +392,7 @@ const colecciones = {
     'guerra-de-barcos':{label:'Guerra de barcos'},
     'matrices':{label:'Matrices'},
     'toros_y_vacas':{label:'Toros y vacas'},
+    'palabras-encadenadas':{label:'Palabras encadenadas'},
     };
 
 function insert(id,content)
