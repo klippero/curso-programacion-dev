@@ -21,6 +21,16 @@
             const th = document.createElement("th");
             th.textContent = (i+1) + '. ' + recorridos["POO"].temas[i].label;
             headerRow.appendChild(th);
+
+            if (recorridos["POO"].temas[i].secciones)
+            {
+                for(let j=0; j<recorridos["POO"].temas[i].secciones.length; j++ )
+                {
+                    const th = document.createElement("th");
+                    th.textContent = (i+1) + '.' + (j+1) + '. ' + recorridos["POO"].temas[i].secciones[j].label;
+                    headerRow.appendChild(th);
+                }
+            }
         }
 
         const table = document.getElementById("tabla-retos");
