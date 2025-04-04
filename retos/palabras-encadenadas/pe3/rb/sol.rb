@@ -1,5 +1,3 @@
-# tema 22.1
-
 class Palabra
     def initialize(word)
         @word = word
@@ -49,6 +47,3 @@ class Juego
         puts "#{palabra} no está encadenada. Has conseguido encadenar #{@words.length} palabras !!"
     end
 end
-
-juego = Juego.new
-juego.jugar

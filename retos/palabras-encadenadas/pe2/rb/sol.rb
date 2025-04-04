@@ -1,5 +1,3 @@
-# tema 22.1
-
 class Palabra
     def initialize(word)
         @word = word
@@ -38,13 +36,3 @@ class Juego
         return result
     end
 end
-
-juego = Juego.new
-puts juego.add("AMOR")
-puts juego
-
-puts juego.add("ROMA")
-puts juego
-
-puts juego.add("BRASIL")
-puts juego

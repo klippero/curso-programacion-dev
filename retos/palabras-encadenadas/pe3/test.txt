@@ -1,0 +1,11 @@
+Palabra: AMOR
+AMOR 
+Palabra: ROMA
+AMOR > ROMA 
+Palabra: ASTURIAS
+AMOR > ROMA > ASTURIAS 
+Palabra: SANTANDER
+AMOR > ROMA > ASTURIAS > SANTANDER 
+Palabra: TOLEDO
+AMOR > ROMA > ASTURIAS > SANTANDER 
+TOLEDO no está encadenada. Has conseguido encadenar 4 palabras !!

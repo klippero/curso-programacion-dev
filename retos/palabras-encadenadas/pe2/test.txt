@@ -1,0 +1,6 @@
+true
+ AMOR
+true
+ AMOR ROMA
+false
+ AMOR ROMA
