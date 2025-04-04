@@ -15,8 +15,8 @@ class Juego:
     def __str__(self):
         result = ""
         for word in self.__words:
-            result = result + f" {word}"
-        return result
+            result = result + f"{word} > "
+        return result[:-3]
 
     def add(self,word):
         if len(self.__words) == 0 or self.__words[-1].encadenadaCon(word):

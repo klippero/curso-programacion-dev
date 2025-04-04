@@ -1,6 +1,6 @@
 true
- AMOR
+AMOR 
 true
- AMOR ROMA
+AMOR > ROMA 
 false
- AMOR ROMA
+AMOR > ROMA 

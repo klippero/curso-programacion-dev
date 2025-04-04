@@ -21,9 +21,9 @@ class Juego
     def to_s
         result = ""
         @words.each do |word|
-            result = result + " #{word}"
+            result = result + "#{word} > "
         end
-        return result
+        return result[..-3]
     end
 
     def add(word)
