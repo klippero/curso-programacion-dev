@@ -80,13 +80,15 @@ class Matriz
 
     def *(otra)
         result = []
-        self.rows.times do |row|
-            row_sol = []
-            otra.columns.times do |column|
-                cell = "#{row}x#{column}"
-                row_sol << cell
+        if columns == otra.rows
+            self.rows.times do |row|
+                row_sol = []
+                otra.columns.times do |column|
+                    cell = "#{row},#{column}"
+                    row_sol << cell
+                end
+                result << row_sol
             end
-            result << row_sol
         end
         return Matriz.new(result)
     end

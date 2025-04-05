@@ -1,9 +1,11 @@
-<p>Dos matrices se pueden multiplicar cuando el número de columnas de la primera coincide con el número de filas de la segunda.</p>
+<p>Dos matrices se pueden multiplicar únicamente si el número de columnas de la primera coincide con el número de filas de la segunda. La matriz resultante tendrá tantas filas como la primera matriz y tantas columnas como la segunda.</p>
 
-<p>Para calcular la matriz resultante debemos operar sobre las filas de la primera matriz y las columnas de la segunda.</p>
+<p>Por ejemplo, si la matriz A es de 3 filas x 3 columnas y la matriz B de 3 filas x 2 columnas, éstas podrán multiplicarse ya que A tiene tantas columnas como B filas. Además, la matriz resultante tendrá 3 filas y 2 columnas.</p>
 
-<p>En el siguiente ejemplo:</p>
+<p><img src="img/mul.jpg" width="350"></p>
 
-<p><img src="img/mul.png" width="350"></p>
+<p>Para calcular cualquier celda se toma la fila correspondiente de la primera matriz y la columna de la segunda multiplicando los términos y sumándolos.</p>
 
-<p>Para calcular la primera celda de la casilla de la matriz resultado tomamos la primera fila, la primera columna y sumamos el producto de los valores.</p>
+<p>Por ejemplo, para calcular la celda de la primera fila y segunda columna se opera con la primera fila de A y la segunda columna de B de la siguiente forma: <code>4 x 1 + 3 x 3 + 2 x -1 = 11</code></p>
+
+<p>En un primer paso para resolver este reto, implementa el operador de multiplicación que devuelva una Matriz vacía en caso de que las matrices no se puedan multiplicar. Además, en caso de poder multiplicarse, debe devolver una matriz con el tamaño que ha de tener la matriz resultante de la multiplicación donde cada celda indique el número de fila y de columna que se multiplicarán en cada caso (tomando como primera fila o columna el 0).</p>
