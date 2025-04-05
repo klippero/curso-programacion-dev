@@ -2,6 +2,13 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "type": "java",
+      "name": "Frigo",
+      "request": "launch",
+      "mainClass": "Frigo",
+      "projectName": "curso-programacion-dev_fc40a16a"
+    },
+    {
       "name": "Depurador de Python: Archivo actual",
       "type": "debugpy",
       "request": "launch",
