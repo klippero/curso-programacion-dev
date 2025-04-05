@@ -45,4 +45,27 @@ for(let i=0; i<recorrido.temas.length; i++ )
     ol.appendChild(li);
 }
 
+ul = document.getElementById("retos");
+for(let retoId in retos)
+    {
+        if (!retos[retoId].prev)
+        {
+            a = document.createElement("a");
+            a.href = "reto.html?reto=" + retoId + "&lenguaje=" + lenguaje;
+            a.textContent = retoId;
+            a.textContent += '. ' + retos[retoId].label;
+    
+            r = retos[retoId]
+            while ( r.next )
+            {
+                a.textContent += " > " + r.next
+                r = retos[r.next]
+                // a.textContent += " > " + r.label
+            }
+            li = document.createElement("li");
+            li.appendChild(a);
+            ul.appendChild(li);
+        }
+    }
+
 insert("lang",lenguajes[lenguaje].label);
