@@ -23,6 +23,9 @@ class Matriz
             end
             result += "\n"
         end
+        if result == ""
+            result = "[ ]"
+        end
         return result
     end
 
