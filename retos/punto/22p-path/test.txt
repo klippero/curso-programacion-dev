@@ -1,0 +1,7 @@
+(3,2)
+(10,7)
+(3,4)
+(-1,11)
+Recorrido: (3,2) > (10,7) > (3,4) > (-1,11) 
+Distancia desde el origen: 9.848857801796104
+Distancia recorrida: 24.280356121205084

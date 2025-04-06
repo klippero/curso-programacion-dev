@@ -10,6 +10,9 @@ class Punto:
         self.__previa_y = y
 
     def mover(self,nueva_x=None,nueva_y=None):
+        # como no se puede usar como valor por defecto un atributo
+        # nueva_x=self.__x, nueva_y=self.__y
+        # hacemos el truco de usar el valor por defecto None
         self.__previa_x = self.__x
         self.__previa_y = self.__y
 

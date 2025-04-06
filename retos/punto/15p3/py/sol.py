@@ -37,6 +37,8 @@ class Punto:
         return ( self.__x ** 2 + self.__y ** 2 ) ** (1/2.0)
 
     def distancia(self,otro=None):
+        # como no se puede asignar otro = Punto(0,0)
+        # hacemos el truco de usar el valor por defecto None
         if otro == None:
             otro = Punto(0,0)
         return ( (otro.__x - self.__x) ** 2 + (otro.__y - self.__y) ** 2 ) ** (1/2.0)
