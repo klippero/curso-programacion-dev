@@ -1,3 +1,3 @@
 class Frigo:
-    def abre(self):
+    def abre(self):                     # es obligatorio self
         print( "se está abriendo" )
