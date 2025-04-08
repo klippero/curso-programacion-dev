@@ -35,7 +35,7 @@ public class Frigo
 
     public static void main(String[] args)
     {
-        Frigo miFrigo = new Frigo();
+        snippet miFrigo = new snippet();
         miFrigo.muestraEstado();
     }
 }

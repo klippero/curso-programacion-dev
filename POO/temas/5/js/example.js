@@ -1,9 +1,13 @@
 class Frigo {
+    #color;
+    #puerta;
+    #temperatura;
+
     constructor()
     {
-        this._color = "blanco";
-        this._puerta = "cerrada";
-        this._temperatura = 20;
+        this.#color = "blanco";
+        this.#puerta = "cerrada";
+        this.#temperatura = 20;
     }
 
     abre()
@@ -23,9 +27,9 @@ class Frigo {
 
     muestraEstado()
     {
-        console.log(this._color);
-        console.log(this._puerta);
-        console.log(this._temperatura);
+        console.log(this.#color);
+        console.log(this.#puerta);
+        console.log(this.#temperatura);
     }
 }
 
