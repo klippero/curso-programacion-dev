@@ -33,33 +33,33 @@ class Tablero
     def linea
         result = "  +"
         self.columnas.times do
-            result += '-+'
+            result = result + '-+'
         end
-        result += "\n"
+        result = result + "\n"
     end
 
     def to_s
         result = "   "
         self.columnas.times do |i|
-            result += "#{i} "
+            result = result + "#{i} "
         end
-        result += "\n"
+        result = result + "\n"
 
-        result += self.linea
+        result = result + self.linea
 
         @tablero.length.times do |ifila|
-            result += "#{ifila} |"
+            result = result + "#{ifila} |"
             @tablero[ifila].each do |casilla|
                 if casilla == 'B'
-                    result += " |"
+                    result = result + " |"
                 else
-                    result += "#{casilla}|"
+                    result = result + "#{casilla}|"
                 end
             end
-            result += "\n"
-            result += self.linea
+            result = result + "\n"
+            result = result + self.linea
         end
-        result += "\n"
+        result = result + "\n"
         return result
     end
 
@@ -138,4 +138,3 @@ class Tablero
         end
     end
 end
-

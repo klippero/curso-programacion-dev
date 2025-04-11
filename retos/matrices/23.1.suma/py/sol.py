@@ -6,9 +6,16 @@ class Matriz:
         result = ""
         for row in self.__matrix:
             for item in row:
-                result += f"{item}  "
-            result += "\n"
+                result = result + f"{item}  "
+            result = result + "\n"
         return result
+
+    def __add__(self,otra):
+        result = self.clone_list()
+        for i in range(len(self.__matrix)):
+            for j in range(len(self.__matrix[0])):
+                result[i][j] = result[i][j] + otra.__matrix[i][j]
+        return Matriz(result)
     
     def clone_list(self):
         result = []
@@ -18,10 +25,3 @@ class Matriz:
                 row_result.append(item)
             result.append(row_result)
         return result
-
-    def __add__(self,otra):
-        result = self.clone_list()
-        for i in range(len(self.__matrix)):
-            for j in range(len(self.__matrix[0])):
-                result[i][j] += otra.__matrix[i][j]
-        return Matriz(result)

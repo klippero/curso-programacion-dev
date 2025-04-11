@@ -6,7 +6,7 @@ class ListaEnteros
     def suma
         result = 0.0
         @numeros.each do |item|
-            result+= item
+            result = result + item
         end
         return result
     end

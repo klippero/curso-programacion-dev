@@ -6,22 +6,27 @@ class Matriz:
         result = ""
         for row in self.__matrix:
             for item in row:
-                result += f"{item}  "
-            result += "\n"
+                result = result + f"{item}  "
+            result = result + "\n"
+        if result == "":
+            result = "[ ]"
         return result
     
-    def clone_list(self):
-        result = []
-        for row in self.__matrix:
-            row_result = []
-            for item in row:
-                row_result.append(item)
-            result.append(row_result)
-        return result
+    def rows(self):
+        return len(self.__matrix)
 
-    def __sub__(self,otra):
-        result = self.clone_list()
-        for i in range(len(self.__matrix)):
-            for j in range(len(self.__matrix[0])):
-                result[i][j] -= otra.__matrix[i][j]
+    def columns(self):
+        return len(self.__matrix[0])
+
+    def __mul__(self,otra):
+        result = []
+        if self.columns() == otra.rows():
+            for row in range(self.rows()): 
+                row_sol = []
+                for column in range(otra.columns()):
+                    cell = 0
+                    for i in range(self.columns()):
+                        cell = cell + self.__matrix[row][i] * otra.__matrix[i][column]
+                    row_sol.append(cell)
+                result.append(row_sol)
         return Matriz(result)

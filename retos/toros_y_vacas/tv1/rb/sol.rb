@@ -74,16 +74,16 @@ class TorosYVacas
         result = ""
         @tries.length.times do |i|
             @tries[i].each do |item|
-                result += " #{item}"
+                result = result + " #{item}"
             end
 
-            result += "   "
+            result = result + "   "
 
             @hints[i].each do |item|
-                result += " #{item}"
+                result = result + " #{item}"
             end
 
-            result += "\n"
+            result = result + "\n"
         end
         return result
     end

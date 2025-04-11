@@ -7,9 +7,9 @@ class Matriz
         result = ""
         @matrix.each do |row|
             row.each do |item|
-                result += "#{item}  "
+                result = result + "#{item}  "
             end
-            result += "\n"
+            result = result + "\n"
         end
         return result
     end

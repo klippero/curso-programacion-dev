@@ -11,11 +11,21 @@ class Matriz
         result = ""
         @matrix.each do |row|
             row.each do |item|
-                result += "#{item}  "
+                result = result + "#{item}  "
             end
-            result += "\n"
+            result = result + "\n"
         end
         return result
+    end
+
+    def - (otra)
+        result = clone_list
+        @matrix.length.times do |i|
+            @matrix[i].length.times do |j|
+                result[i][j] = result[i][j] - otra.matrix[i][j]
+            end
+        end
+        return Matriz.new(result)
     end
 
     def clone_list
@@ -28,25 +38,5 @@ class Matriz
             result << row_result
         end
         return result
-    end
-
-    def + (otra)
-        result = clone_list
-        @matrix.length.times do |i|
-            @matrix[i].length.times do |j|
-                result[i][j] += otra.matrix[i][j]
-            end
-        end
-        return Matriz.new(result)
-    end
-
-    def - (otra)
-        result = clone_list
-        @matrix.length.times do |i|
-            @matrix[i].length.times do |j|
-                result[i][j] -= otra.matrix[i][j]
-            end
-        end
-        return Matriz.new(result)
     end
 end

@@ -6,15 +6,9 @@ class Matriz:
         result = ""
         for row in self.__matrix:
             for item in row:
-                result += f"{item}  "
-            result += "\n"
+                result = result + f"{item}  "
+            result = result + "\n"
         return result
-
-    def rows(self):
-        return len(self.__matrix)
-
-    def columns(self):
-        return len(self.__matrix[0])
 
     def traspuesta(self):
         result = []
@@ -24,3 +18,9 @@ class Matriz:
                     result.append([])
                 result[columnI].append(self.__matrix[rowI][columnI])
         return Matriz(result)
+
+    def rows(self):
+        return len(self.__matrix)
+
+    def columns(self):
+        return len(self.__matrix[0])

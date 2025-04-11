@@ -6,6 +6,6 @@ class Matriz:
         result = ""
         for row in self.__matrix:
             for item in row:
-                result += f"{item}  "
-            result += "\n"
+                result = result + f"{item}  "
+            result = result + "\n"
         return result

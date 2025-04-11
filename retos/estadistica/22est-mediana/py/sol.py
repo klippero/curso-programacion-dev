@@ -5,7 +5,7 @@ class ListaEnteros:
     def suma(self):
         result = 0
         for item in self.__numeros:
-            result += item
+            result = result + item
         return result
 
     def media(self):
