@@ -36,6 +36,7 @@ class Tablero
             result = result + '-+'
         end
         result = result + "\n"
+        return result
     end
 
     def to_s
@@ -95,7 +96,7 @@ class Tablero
                 i = i + 1
             end
         end
-        return ! encontrado
+        return !encontrado
     end
 
     def disparo(f,c)
