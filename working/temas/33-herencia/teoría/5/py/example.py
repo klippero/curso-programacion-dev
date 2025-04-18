@@ -1,10 +1,10 @@
 class Empleado:
     def __init__(self,nombre,salario):
-        self.nombre = nombre
-        self.salario = salario
+        self._nombre = nombre
+        self._salario = salario
 
     def __str__(self):
-        return f"{self.nombre}: {self.salario}€"
+        return f"{self._nombre}: {self._salario}€"
 
 
 class Becario(Empleado):
@@ -21,7 +21,7 @@ class Manager(Empleado):
         self.__bonus = bonus
 
     def __str__(self):
-        return f"{self.nombre}: {self.salario}€ + #{self.__bonus}€ (manager)"
+        return f"{self._nombre}: {self._salario}€ + #{self.__bonus}€ (manager)"
 
 
 d = Empleado("Diego",35000)
