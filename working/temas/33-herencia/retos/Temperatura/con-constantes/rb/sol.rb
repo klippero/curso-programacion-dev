@@ -27,10 +27,6 @@ end
 class Kelvin < Grado
     Symbol = "K"
 
-    def initialize(grados)
-        super(grados)
-    end
-
     def to(cl)
         if cl == Celsius
             grados = @grados - 273.15
@@ -47,10 +43,6 @@ end
 class Fahrenheit < Grado
     Symbol = "ºF"
 
-    def initialize(grados)
-        super(grados)
-    end
-
     def to(cl)
         if cl == Celsius
             grados = 5.0 / 9 * ( @grados - 32 )
@@ -66,10 +58,6 @@ end
 
 class Celsius < Grado
     Symbol = "ºC"
-
-    def initialize(grados)
-        super(grados)
-    end
 
     def to(cl)
         if cl == Fahrenheit
