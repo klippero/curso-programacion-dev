@@ -1,0 +1,2 @@
+Dame un número: 0
+no se puede dividir entre 0

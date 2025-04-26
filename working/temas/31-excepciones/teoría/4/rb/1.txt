@@ -1,0 +1,6 @@
+Color rojo | 18ºC
+1.rb:13:in `fija_temperatura': no puede ser < 0 (ArgumentError)
+
+            raise ArgumentError.new("no puede ser < 0")
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        from 1.rb:23:in `<main>'

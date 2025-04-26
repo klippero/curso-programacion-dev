@@ -1,0 +1,14 @@
+Categoría                        Excepción
+-------------------------------  ---------------------
+División por cero                ZeroDivisionError     
+Variable no definida             NameError             
+Método/atributo no existe        AttributeError        
+Tipo incorrecto                  TypeError             
+Valor incorrecto                 ValueError            
+Número incorrecto de argumentos  TypeError (por número)
+Índice fuera de rango            IndexError            
+Clave inexistente                KeyError              
+Error de archivo no encontrado   FileNotFoundError     
+Error de importación/carga       ImportError           
+Error general de ejecución       RuntimeError          
+Error de entrada/salida          IOError o OSError     

@@ -1,0 +1,2 @@
+2.rb:1:in `suma': wrong number of arguments (given 1, expected 2) (ArgumentError)
+        from 2.rb:5:in `<main>'

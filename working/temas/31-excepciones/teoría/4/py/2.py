@@ -13,7 +13,5 @@ class Frigo:
         self.__temperatura = nueva_temperatura
 
 
-f1 = Frigo("rojo", 18)
+f1 = Frigo("rojo", -1)
 print(f1)
-
-f1.fija_temperatura(-1)

@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "2.py", line 4, in <module>
+    print(suma(3))
+          ^^^^^^^
+TypeError: suma() missing 1 required positional argument: 'b'
