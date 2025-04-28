@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "2.py", line 16, in <module>
+    f1 = Frigo("rojo", -1)
+         ^^^^^^^^^^^^^^^^^
+  File "2.py", line 5, in __init__
+    self.fija_temperatura(temperatura)
+  File "2.py", line 12, in fija_temperatura
+    raise ValueError("no puede ser < 0")
+ValueError: no puede ser < 0

@@ -1,0 +1,7 @@
+2.rb:13:in `fija_temperatura': no puede ser < 0 (ArgumentError)
+
+            raise ArgumentError.new("no puede ser < 0")
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        from 2.rb:4:in `initialize'
+        from 2.rb:20:in `new'
+        from 2.rb:20:in `<main>'

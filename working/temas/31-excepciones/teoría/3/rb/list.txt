@@ -1,0 +1,15 @@
+Categoría                        Excepción
+-------------------------------  ---------------------
+Categoría                        Ruby
+División por cero                ZeroDivisionError
+Variable no definida             NameError
+Método/atributo no existe        NoMethodError
+Tipo incorrecto                  TypeError
+Valor incorrecto                 ArgumentError (a veces)
+Número incorrecto de argumentos  ArgumentError
+Índice fuera de rango            IndexError
+Clave inexistente                KeyError
+Error de archivo no encontrado   Errno::ENOENT
+Error de importación/carga       LoadError
+Error general de ejecución       RuntimeError
+Error de entrada/salida          IOError

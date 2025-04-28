@@ -1,0 +1,3 @@
+Dame un número: 0
+example.rb:3:in `/': divided by 0 (ZeroDivisionError)
+        from example.rb:3:in `<main>'

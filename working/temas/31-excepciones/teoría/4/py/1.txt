@@ -1,0 +1,7 @@
+Color rojo | 18ºC
+Traceback (most recent call last):
+  File "1.py", line 18, in <module>
+    f1.fija_temperatura(-1)
+  File "1.py", line 11, in fija_temperatura
+    raise ValueError("no puede ser < 0")
+ValueError: no puede ser < 0
