@@ -1,4 +1,3 @@
-
 class Jugador
     def initialize(char)
         @char = char
@@ -41,7 +40,7 @@ class TresEnRaya
     def linea
         result = "  +"
         self.columnas.times do
-            result = result + '-+'
+            result = result + '---+'
         end
         result = result + "\n"
         return result
@@ -50,7 +49,7 @@ class TresEnRaya
     def to_s
         result = "   "
         self.columnas.times do |i|
-            result = result + "#{i} "
+            result = result + " #{i}  "
         end
         result = result + "\n"
 
@@ -59,7 +58,7 @@ class TresEnRaya
         @tablero.length.times do |ifila|
             result = result + "#{ifila} |"
             @tablero[ifila].each do |casilla|
-                result = result + "#{casilla}|"
+                result = result + " #{casilla} |"
             end
             result = result + "\n"
             result = result + self.linea
@@ -68,21 +67,101 @@ class TresEnRaya
         return result
     end
 
-    def move(player,fila,col)
+    def mark(player,fila,col)
         if @tablero[fila][col] == Nada
             @tablero[fila][col] = @jugadores[player].char
+            result = true
+        else
+            result = false
         end
+        return result
+    end
+
+    def findJugadorChar(char)
+        encontrado = false
+        i = 0
+        while i < @jugadores.length && !encontrado
+            if @jugadores[i].char == char
+                encontrado = true
+            else
+                i = i + 1
+            end
+        end
+        return i
+    end
+
+    def ganadorFila(fila)
+        result = -1
+        if @tablero[fila][0] != Nada
+            result = findJugadorChar(@tablero[fila][0])
+
+            encontrado = false
+            i = 1
+            while i < @tablero[fila].length && !encontrado
+                if @tablero[fila][i] != @jugadores[result].char
+                    encontrado = true
+                else
+                    i = i + 1
+                end
+            end
+
+            if encontrado
+                result = -1
+            end
+        end
+        return result
+    end
+
+    def ganadorColumna(col)
+        result = -1
+        if @tablero[0][col] != Nada
+            result = findJugadorChar(@tablero[0][col])
+
+            encontrado = false
+            i = 1
+            while i < @tablero.length && !encontrado
+                if @tablero[i][col] != @jugadores[result].char
+                    encontrado = true
+                else
+                    i = i + 1
+                end
+            end
+
+            if encontrado
+                result = -1
+            end
+        end
+        return result
     end
 
     def ganador
         # -1 si no hay ganador
-        result = -1
 
-        fila = 0
         encontrado = false
-        while fila < Size && result = -1
 
+        # filas
+        i = 0
+        while i < @tablero.length && !encontrado
+            result = ganadorFila(i)
+            if result != -1
+                encontrado = true
+            else
+                i = i + 1
+            end
         end
+
+        # columnas
+        i = 0
+        while i < @tablero.length && !encontrado
+            result = ganadorColumna(i)
+            if result != -1
+                encontrado = true
+            else
+                i = i + 1
+            end
+        end
+
+        return result
     end
 end
 
@@ -91,13 +170,37 @@ t = TresEnRaya.new(["X","O"])
 puts t
 puts
 
-t.move(0,1,2)
+puts t.mark(0,1,2)
 puts t
 puts
 
-t.move(1,2,1)
+puts t.mark(1,2,1)
 puts t
 puts
 
-t.move(0,0,1)
+puts t.mark(0,0,1)
 puts t
+puts
+
+puts t.mark(0,0,1)
+puts t
+puts
+
+puts t.ganador
+
+puts t.mark(1,2,2)
+puts t
+puts
+
+puts t.ganador
+
+
+t2 = TresEnRaya.new(["X","O"])
+puts t2.mark(0,0,1)
+puts t2.mark(0,1,1)
+puts t2.mark(1,2,1)
+puts t2.mark(1,0,2)
+puts t2.mark(1,1,2)
+puts t2.mark(1,2,2)
+puts t2
+puts t2.ganador
