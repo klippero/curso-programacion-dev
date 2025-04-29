@@ -11,7 +11,7 @@ end
 
 
 class TresEnRaya
-    Size = 3
+    Size = 4
     Nada = ' '
 
     def initialize(jugadores)
@@ -63,12 +63,16 @@ class TresEnRaya
             result = result + "\n"
             result = result + self.linea
         end
-        result = result + "\n"
+
+        winner = ganador
+        if winner != -1
+            result = result + ">> ganador: #{@jugadores[winner].char}"
+        end
         return result
     end
 
     def mark(player,fila,col)
-        if @tablero[fila][col] == Nada
+        if fila < filas && col < columnas && @tablero[fila][col] == Nada
             @tablero[fila][col] = @jugadores[player].char
             result = true
         else
@@ -163,10 +167,36 @@ class TresEnRaya
 
         return result
     end
+
+    def jugar
+        turno = rand(@jugadores.length)
+        alguien_gana = false
+
+        while !alguien_gana
+            puts "---- Juega #{@jugadores[turno].char} -------------"
+            ha_jugado = false
+            while !ha_jugado
+                print "fila: "
+                fila = gets.chomp.to_i
+                print "columna: "
+                col = gets.chomp.to_i
+                ha_jugado = mark(turno,fila,col)
+            end
+            puts self
+            puts
+            if ganador != -1
+                alguien_gana = true
+            else
+                turno = ( turno + 1 ) % @jugadores.length
+            end
+        end
+    end
 end
 
 
-t = TresEnRaya.new(["X","O"])
+t = TresEnRaya.new(["X","O","@"])
+t.jugar
+
 puts t
 puts
 
