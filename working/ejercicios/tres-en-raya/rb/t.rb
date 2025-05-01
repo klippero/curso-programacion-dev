@@ -11,10 +11,13 @@ end
 
 
 class TresEnRaya
-    Size = 3
+    Size = 4
+    SizeSol = 2
     Nada = ' '
 
+
     def initialize(jugadores)
+        @winner = [-1,-1,-1]
         @tablero = []
         Size.times do
             @tablero.append([])
@@ -29,17 +32,21 @@ class TresEnRaya
         end
     end
 
+
     def filas
         return @tablero.length
     end
+
 
     def columnas
         return @tablero[0].length
     end
 
+
     def enTablero(fila,col)
         return fila < filas && col < columnas && fila >= 0 && col >= 0
     end
+
 
     def linea
         result = "  +"
@@ -49,6 +56,7 @@ class TresEnRaya
         result = result + "\n"
         return result
     end
+
 
     def to_s
         result = "   "
@@ -68,12 +76,12 @@ class TresEnRaya
             result = result + self.linea
         end
 
-        winner = ganador
-        if winner != -1
-            result = result + ">> ganador: #{@jugadores[winner].char}"
+        if alguien_gana
+            result = result + ">> ganador: #{@jugadores[@winner[0]].char}"
         end
         return result
     end
+
 
     def mark(player,fila,col)
         if enTablero(fila,col) && @tablero[fila][col] == Nada
@@ -84,6 +92,7 @@ class TresEnRaya
         end
         return result
     end
+
 
     def findJugadorChar(char)
         encontrado = false
@@ -98,115 +107,88 @@ class TresEnRaya
         return i
     end
 
-    def ganadorFila(fila)
-        result = -1
-        if @tablero[fila][0] != Nada
-            result = findJugadorChar(@tablero[fila][0])
 
-            encontrado = false
-            i = 1
-            while i < @tablero[fila].length && !encontrado
-                if @tablero[fila][i] != @jugadores[result].char
-                    encontrado = true
-                else
-                    i = i + 1
-                end
-            end
+    def busca(n)
+        # busca n casillas iguales seguidas en vertical, horizontal o diagonal
+        # devuelve [char,fila,col]
+        # si no lo encuentra devuelve [-1,-1,-1]
 
-            if encontrado
-                result = -1
-            end
-        end
-        return result
-    end
-
-    def ganadorColumna(col)
-        result = -1
-        if @tablero[0][col] != Nada
-            result = findJugadorChar(@tablero[0][col])
-
-            encontrado = false
-            i = 1
-            while i < @tablero.length && !encontrado
-                if @tablero[i][col] != @jugadores[result].char
-                    encontrado = true
-                else
-                    i = i + 1
-                end
-            end
-
-            if encontrado
-                result = -1
-            end
-        end
-        return result
-    end
-
-    def ganadorDiagonal(filaInicio,colInicio,incFila,incCol)
-        f = filaInicio
-        c = colInicio
-        result = -1
-        if @tablero[filaInicio][colInicio] != Nada
-            result = findJugadorChar(@tablero[filaInicio][colInicio])
-
-            encontrado = false
+        encontrado = false
+        f = 0
+        c = 0
+        while enTablero(f,c) && !encontrado
             while enTablero(f,c) && !encontrado
-                if findJugadorChar(@tablero[f][c]) != @jugadores[result].char
-                    encontrato = true
+                result = buscaFC(SizeSol,f,c)
+                if result[0] != -1
+                    encontrado = true
+                else
+                    c = c + 1
+                end
+            end
+            if !encontrado
+                f = f + 1
+                c = 0
+            end
+        end
+        return result
+    end
+
+
+    def buscaFC(n,fila,col)
+        # desde fila,col busca n casillas iguales seguidas en cualquier dirección
+
+        dir = [[0,1],[1,0],[1,1],[-1,1]]   # fila, columna, diagonal
+
+        encontrado = false
+        i = 0
+        while i < dir.length && !encontrado
+            result = buscaFCD(n,fila,col,dir[i][0],dir[i][1])
+            if result[0] != -1
+                encontrado = true
+            else
+                i = i + 1
+            end
+        end
+        return result
+    end
+
+
+    def buscaFCD(n,fila,col,incFila,incCol)
+        # desde fila,col busca n casillas iguales seguidas
+        # en la dirección indicada
+
+        # se busca una casilla que no tenga pieza del mismo jugador
+        encontrado = false
+        result = -1
+        i = 1
+        if @tablero[fila][col] != Nada
+            result = findJugadorChar(@tablero[fila][col])
+            f = fila + incFila
+            c = col + incCol
+            while i < n && enTablero(f,c) && !encontrado
+                if @tablero[f][c] != @jugadores[result].char
+                    encontrado = true
                 else
                     f = f + incFila
                     c = c + incCol
+                    i = i + 1
                 end
             end
-
-            if encontrado
+            if encontrado || i < n
                 result = -1
             end
         end
-        return result
+        return [result,fila,col]
     end
 
-    def ganador
-        # -1 si no hay ganador
 
-        encontrado = false
-
-        # filas
-        i = 0
-        while i < @tablero.length && !encontrado
-            result = ganadorFila(i)
-            if result != -1
-                encontrado = true
-            else
-                i = i + 1
-            end
-        end
-
-        # columnas
-        i = 0
-        while i < @tablero.length && !encontrado
-            result = ganadorColumna(i)
-            if result != -1
-                encontrado = true
-            else
-                i = i + 1
-            end
-        end
-
-        # diagonal
-        if !encontrado
-            result = ganadorDiagonal(0,0,1,1)
-            if result == -1
-                result = ganadorDiagonal(filas-1,0,-1,1)
-            end
-        end
-
-        return result
+    def alguien_gana
+        return @winner[0] != -1
     end
+
 
     def jugar
         turno = rand(@jugadores.length)
-        alguien_gana = false
 
         while !alguien_gana
             puts "---- Juega #{@jugadores[turno].char} -------------"
@@ -218,13 +200,10 @@ class TresEnRaya
                 col = gets.chomp.to_i
                 ha_jugado = mark(turno,fila,col)
             end
+            @winner = busca(SizeSol)
             puts self
             puts
-            if ganador != -1
-                alguien_gana = true
-            else
-                turno = ( turno + 1 ) % @jugadores.length
-            end
+            turno = ( turno + 1 ) % @jugadores.length
         end
     end
 end
@@ -233,6 +212,7 @@ end
 t = TresEnRaya.new(["X","O"])
 t.jugar
 
+=begin
 puts t
 puts
 
@@ -270,3 +250,4 @@ puts t2.mark(1,1,2)
 puts t2.mark(1,2,2)
 puts t2
 puts t2.ganador
+=end
