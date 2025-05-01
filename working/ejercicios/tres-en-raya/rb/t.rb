@@ -1,7 +1,6 @@
 class Jugador
     def initialize(char)
         @char = char
-        @fichas = []
     end
 
     def char
@@ -10,18 +9,27 @@ class Jugador
 end
 
 
-class TresEnRaya
-    Size = 4
-    SizeSol = 2
+class Jugada
+    def initialize(jugador,fila,col)
+        @jugador = jugador
+        @fila = fila
+        @col = col
+    end
+end
+
+
+class Partida
     Nada = ' '
 
 
-    def initialize(jugadores)
+    def initialize(jugadores,size,sizeSol)
         @winner = [-1,-1,-1]
+        @size = size
+        @sizeSol = sizeSol
         @tablero = []
-        Size.times do
+        @size.times do
             @tablero.append([])
-            Size.times do
+            @size.times do
                 @tablero[-1].append(Nada)
             end
         end
@@ -118,7 +126,7 @@ class TresEnRaya
         c = 0
         while enTablero(f,c) && !encontrado
             while enTablero(f,c) && !encontrado
-                result = buscaFC(SizeSol,f,c)
+                result = buscaFC(@sizeSol,f,c)
                 if result[0] != -1
                     encontrado = true
                 else
@@ -163,14 +171,14 @@ class TresEnRaya
         i = 1
         if @tablero[fila][col] != Nada
             result = findJugadorChar(@tablero[fila][col])
-            f = fila + incFila
-            c = col + incCol
+            f = fila + ( incFila * ( n - 1 ) )
+            c = col + ( incCol * ( n - 1 ) )
             while i < n && enTablero(f,c) && !encontrado
                 if @tablero[f][c] != @jugadores[result].char
                     encontrado = true
                 else
-                    f = f + incFila
-                    c = c + incCol
+                    f = f - incFila
+                    c = c - incCol
                     i = i + 1
                 end
             end
@@ -200,7 +208,7 @@ class TresEnRaya
                 col = gets.chomp.to_i
                 ha_jugado = mark(turno,fila,col)
             end
-            @winner = busca(SizeSol)
+            @winner = busca(@sizeSol)
             puts self
             puts
             turno = ( turno + 1 ) % @jugadores.length
@@ -209,45 +217,24 @@ class TresEnRaya
 end
 
 
-t = TresEnRaya.new(["X","O"])
-t.jugar
+puts "------- NUEVA PARTIDA ------------"
+print "Tamaño del tablero: "
+size = gets.chomp.to_i
 
-=begin
-puts t
-puts
+while size > 0
+    print "Casillas seguidas: "
+    sizeSol = gets.chomp.to_i
+    print "Jugadores: "
+    jugadores = gets.chomp.to_i
+    chars = []
+    jugadores.times do
+        print "Símbolo: "
+        chars << gets.chomp.to_s
+    end
+    t = Partida.new(chars,size,sizeSol)
+    t.jugar
 
-puts t.mark(0,1,2)
-puts t
-puts
-
-puts t.mark(1,2,1)
-puts t
-puts
-
-puts t.mark(0,0,1)
-puts t
-puts
-
-puts t.mark(0,0,1)
-puts t
-puts
-
-puts t.ganador
-
-puts t.mark(1,2,2)
-puts t
-puts
-
-puts t.ganador
-
-
-t2 = TresEnRaya.new(["X","O"])
-puts t2.mark(0,0,1)
-puts t2.mark(0,1,1)
-puts t2.mark(1,2,1)
-puts t2.mark(1,0,2)
-puts t2.mark(1,1,2)
-puts t2.mark(1,2,2)
-puts t2
-puts t2.ganador
-=end
+    puts "------- NUEVA PARTIDA ------------"
+    print "Tamaño del tablero: "
+    size = gets.chomp.to_i
+end
