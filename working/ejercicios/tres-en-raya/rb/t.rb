@@ -11,7 +11,7 @@ end
 
 
 class TresEnRaya
-    Size = 4
+    Size = 3
     Nada = ' '
 
     def initialize(jugadores)
@@ -35,6 +35,10 @@ class TresEnRaya
 
     def columnas
         return @tablero[0].length
+    end
+
+    def enTablero(fila,col)
+        return fila < filas && col < columnas && fila >= 0 && col >= 0
     end
 
     def linea
@@ -72,7 +76,7 @@ class TresEnRaya
     end
 
     def mark(player,fila,col)
-        if fila < filas && col < columnas && @tablero[fila][col] == Nada
+        if enTablero(fila,col) && @tablero[fila][col] == Nada
             @tablero[fila][col] = @jugadores[player].char
             result = true
         else
@@ -138,6 +142,30 @@ class TresEnRaya
         return result
     end
 
+    def ganadorDiagonal(filaInicio,colInicio,incFila,incCol)
+        f = filaInicio
+        c = colInicio
+        result = -1
+        if @tablero[filaInicio][colInicio] != Nada
+            result = findJugadorChar(@tablero[filaInicio][colInicio])
+
+            encontrado = false
+            while enTablero(f,c) && !encontrado
+                if findJugadorChar(@tablero[f][c]) != @jugadores[result].char
+                    encontrato = true
+                else
+                    f = f + incFila
+                    c = c + incCol
+                end
+            end
+
+            if encontrado
+                result = -1
+            end
+        end
+        return result
+    end
+
     def ganador
         # -1 si no hay ganador
 
@@ -162,6 +190,14 @@ class TresEnRaya
                 encontrado = true
             else
                 i = i + 1
+            end
+        end
+
+        # diagonal
+        if !encontrado
+            result = ganadorDiagonal(0,0,1,1)
+            if result == -1
+                result = ganadorDiagonal(filas-1,0,-1,1)
             end
         end
 
@@ -194,7 +230,7 @@ class TresEnRaya
 end
 
 
-t = TresEnRaya.new(["X","O","@"])
+t = TresEnRaya.new(["X","O"])
 t.jugar
 
 puts t
