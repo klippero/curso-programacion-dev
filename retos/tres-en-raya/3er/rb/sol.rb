@@ -116,8 +116,8 @@ class Partida
     end
 
 
-    def busca(n)
-        # busca n casillas iguales seguidas en vertical, horizontal o diagonal
+    def busca
+        # busca @sizeSol casillas iguales seguidas en vertical, horizontal o diagonal
         # devuelve [char,fila,col]
         # si no lo encuentra devuelve [-1,-1,-1]
 
@@ -126,7 +126,7 @@ class Partida
         c = 0
         while enTablero(f,c) && !encontrado
             while enTablero(f,c) && !encontrado
-                result = buscaFC(@sizeSol,f,c)
+                result = buscaFC(f,c)
                 if result[0] != -1
                     encontrado = true
                 else
@@ -142,15 +142,15 @@ class Partida
     end
 
 
-    def buscaFC(n,fila,col)
-        # desde fila,col busca n casillas iguales seguidas en cualquier dirección
+    def buscaFC(fila,col)
+        # desde fila,col busca @sizeSol casillas iguales seguidas en cualquier dirección
 
         dir = [[0,1],[1,0],[1,1],[-1,1]]   # fila, columna, diagonal
 
         encontrado = false
         i = 0
         while i < dir.length && !encontrado
-            result = buscaFCD(n,fila,col,dir[i][0],dir[i][1])
+            result = buscaFCD(fila,col,dir[i][0],dir[i][1])
             if result[0] != -1
                 encontrado = true
             else
@@ -161,8 +161,8 @@ class Partida
     end
 
 
-    def buscaFCD(n,fila,col,incFila,incCol)
-        # desde fila,col busca n casillas iguales seguidas
+    def buscaFCD(fila,col,incFila,incCol)
+        # desde fila,col busca @sizeSol casillas iguales seguidas
         # en la dirección indicada
 
         # se busca una casilla que no tenga pieza del mismo jugador
@@ -171,9 +171,9 @@ class Partida
         i = 1
         if @tablero[fila][col] != Nada
             result = findJugadorChar(@tablero[fila][col])
-            f = fila + ( incFila * ( n - 1 ) )
-            c = col + ( incCol * ( n - 1 ) )
-            while i < n && enTablero(f,c) && !encontrado
+            f = fila + ( incFila * ( @sizeSol - 1 ) )
+            c = col + ( incCol * ( @sizeSol - 1 ) )
+            while i < @sizeSol && enTablero(f,c) && !encontrado
                 if @tablero[f][c] != @jugadores[result].char
                     encontrado = true
                 else
@@ -182,7 +182,7 @@ class Partida
                     i = i + 1
                 end
             end
-            if encontrado || i < n
+            if encontrado || i < @sizeSol
                 result = -1
             end
         end
@@ -195,10 +195,40 @@ class Partida
     end
 
 
+    def empate
+        return !quedan_casillas_vacias
+    end
+
+
+    def quedan_casillas_vacias
+        encontrado = false
+        f = 0
+        c = 0
+        while enTablero(f,c) && !encontrado
+            c = 0
+            while enTablero(f,c) && !encontrado
+                if @tablero[f][c] == Nada
+                    encontrado = true
+                else
+                    c = c + 1
+                end
+            end
+            if !encontrado
+                f = f + 1
+            end
+        end
+        return encontrado
+    end
+
+    def fin_de_juego
+        return alguien_gana || empate
+    end
+
+
     def jugar
         turno = rand(@jugadores.length)
 
-        while !alguien_gana
+        while !fin_de_juego
             puts "---- Juega #{@jugadores[turno].char} -------------"
             ha_jugado = false
             while !ha_jugado
@@ -208,7 +238,7 @@ class Partida
                 col = gets.chomp.to_i
                 ha_jugado = mark(turno,fila,col)
             end
-            @winner = busca(@sizeSol)
+            @winner = busca
             puts self
             puts
             turno = ( turno + 1 ) % @jugadores.length
