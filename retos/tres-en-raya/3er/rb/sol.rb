@@ -217,24 +217,28 @@ class Partida
 end
 
 
-puts "------- NUEVA PARTIDA ------------"
-print "Tamaño del tablero: "
-size = gets.chomp.to_i
+class Sesion
+    def jugar
+        puts "------- NUEVA PARTIDA ------------"
+        print "Tamaño del tablero: "
+        size = gets.chomp.to_i
 
-while size > 0
-    print "Casillas seguidas: "
-    sizeSol = gets.chomp.to_i
-    print "Jugadores: "
-    jugadores = gets.chomp.to_i
-    chars = []
-    jugadores.times do
-        print "Símbolo: "
-        chars << gets.chomp.to_s
+        while size > 0
+            print "Casillas seguidas: "
+            sizeSol = gets.chomp.to_i
+            print "Jugadores: "
+            jugadores = gets.chomp.to_i
+            chars = []
+            jugadores.times do
+                print "Símbolo: "
+                chars << gets.chomp.to_s
+            end
+            t = Partida.new(chars,size,sizeSol)
+            t.jugar
+
+            puts "------- NUEVA PARTIDA ------------"
+            print "Tamaño del tablero: "
+            size = gets.chomp.to_i
+        end
     end
-    t = Partida.new(chars,size,sizeSol)
-    t.jugar
-
-    puts "------- NUEVA PARTIDA ------------"
-    print "Tamaño del tablero: "
-    size = gets.chomp.to_i
 end

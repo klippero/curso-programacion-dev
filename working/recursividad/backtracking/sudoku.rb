@@ -1,6 +1,7 @@
 class Sudoku
     N = 9
 
+
     def initialize(posicionesFijas)
         @posicionesFijas = posicionesFijas
 
@@ -14,6 +15,7 @@ class Sudoku
         @soluciones = 0
     end
 
+    
     def to_s
         result = ""
         result += "Tablero:\n"

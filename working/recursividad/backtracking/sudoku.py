@@ -1,130 +1,123 @@
-N = 9
+class Sudoku:
+    Sudoku.N = 9
 
 
-def esUnaSolucion( estado ):
-    return estado['posicionActual'] >= N*N
+    def __init__(self,posicionesFijas):
+        self.__posicionesFijas = posicionesFijas
+
+        self.__estado = []
+        for item in self.__posicionesFijas:
+            self.__estado.append(item)
+
+        self.__posicionActual = 0
+        self.__movimientos = 0
+        self.__noSoluciones = 0
 
 
-def construirCandidatos( estado ):
-    candidatos = []
-    if estado['posicionesFijas'][estado['posicionActual']] != 0:
-        candidatos.append(estado['posicionesFijas'][estado['posicionActual']])
-    else:
-        for i in range(1,N+1):
-            if esValido( estado, i ):
-                candidatos.append(i)
-    return candidatos
+    def __str__(self):
+        result = "Tablero:\n"
+        for i in range(Sudoku.N*Sudoku.N):
+            if i % (Sudoku.N*(Sudoku.N//3)) == 0:
+                for j in range(Sudoku.N):
+                    if j % (Sudoku.N//3) == 0:
+                        result += '-+'
+                    result += '----'
+                result += "-+\n"
+            if i % (Sudoku.N//3) == 0:
+                result += ' |'
+            if self.__estado['posicionesFijas'][i] != 0:
+                result += f' *{self.__estado["tablero"][i]:2d}'
+            else:
+                result += f'  {self.__estado["tablero"][i]:2d}'
+            if i % Sudoku.N == Sudoku.N-1:
+                result += " |\n"
+
+        for j in range(Sudoku.N):
+            if j % (Sudoku.N//3) == 0:
+                result += '-+'
+            result += '----'
+
+        result += "-+\n"
+        result += f'Movimientos: self.__movimientos'
+        result += 'Soluciones: ', self.__noSoluciones'
+        return result
 
 
-def inicializa():
-    estado = {}
-    estado['posicionesFijas'] = [
-        5,3,0,0,0,0,0,0,0,
-        6,0,0,0,0,5,0,0,0,
-        0,9,8,0,0,0,0,6,0,
-        8,0,0,0,6,0,0,0,3,
-        4,0,0,8,0,3,0,0,1,
-        7,0,0,0,2,0,0,0,6,
-        0,6,0,0,0,0,2,8,0,
-        0,0,0,4,1,9,0,0,5,
-        0,0,0,0,8,0,0,7,0
-    ]
-    estado['tablero'] = []
-    for i in range(N*N):
-        estado['tablero'].append(estado['posicionesFijas'][i])
-    estado['posicionActual'] = 0
-    estado['movimientos'] = 0
-    estado['noSoluciones'] = 0
-    return estado
+    def esUnaSolucion(self):
+        return self.__posicionActual >= Sudoku.N*Sudoku.N
 
 
-def procesarSolucion( estado ):
-    print('Tablero:')
-    for i in range(N*N):
-        if i % (N*(N//3)) == 0:
-            for j in range(N):
-                if j % (N//3) == 0:
-                    print('-+',end='')
-                print('----',end='')
-            print('-+')
-        if i % (N//3) == 0:
-            print(' |',end='')
-        if estado['posicionesFijas'][i] != 0:
-            print(f' *{estado["tablero"][i]:2d}',end='')
+    def construirCandidatos(self):
+        candidatos = []
+        if self.__posicionesFijas[self.__posicionActual] != 0:
+            candidatos.append(self.__posicionesFijas[self.__posicionActual])
         else:
-            print(f'  {estado["tablero"][i]:2d}',end='')
-        if i % N == N-1:
-            print( ' |')
-    for j in range(N):
-        if j % (N//3) == 0:
-            print('-+',end='')
-        print('----',end='')
-    print('-+')
-    print( 'Movimientos: ', estado['movimientos'] )
-    print( 'Soluciones: ', estado['noSoluciones'] )
-    print()
+            for i in range(1,Sudoku.N+1):
+                if self.esValido(i):
+                    candidatos.append(i)
+        return candidatos
 
 
-def getFila( posicion, anchuraCuadrado ):
-    return posicion // anchuraCuadrado
+    def getFila(self,posicion,anchuraCuadrado):
+        return posicion // anchuraCuadrado
 
 
-def getColumna( posicion, anchuraCuadrado ):
-    return posicion % anchuraCuadrado
+    def getColumna(self,posicion,anchuraCuadrado):
+        return posicion % anchuraCuadrado
 
 
-def getPosicion( fila, columna, anchuraCuadrado ):
-    return fila * anchuraCuadrado + columna
+    def getPosicion(self,fila,columna,anchuraCuadrado):
+        return fila * anchuraCuadrado + columna
 
 
-def esValido( estado, num ):
+def esValido( self.__estado, num ):
     esta = False
 
     # misma fila
     k = 0
-    while not esta and k < N:
-        esta = estado['tablero'][getPosicion( getFila(estado['posicionActual'],N),k,N )] == num
+    while not esta and k < Sudoku.N:
+        esta = self.__estado[getPosicion( getFila(self.__estado['posicionActual'],Sudoku.N),k,Sudoku.N )] == num
         k += 1
 
     # misma columna
     k = 0
-    while not esta and k < N:
-        esta = estado['tablero'][getPosicion( k, getColumna(estado['posicionActual'],N),N )] == num
+    while not esta and k < Sudoku.N:
+        esta = self.__estado[getPosicion( k, getColumna(self.__estado['posicionActual'],Sudoku.N),Sudoku.N )] == num
         k += 1
 
     # mismo cuadrante
     k = 0
-    refFila = getFila(estado['posicionActual'],N) // (N // 3) * 3
-    refColumna = getColumna(estado['posicionActual'],N) // (N // 3) * 3
-    while not esta and k < N:
-        esta = estado['tablero'][getPosicion( refFila + getFila( k, N // 3 ), refColumna + getColumna( k, N // 3 ), N )] == num
+    refFila = getFila(self.__estado['posicionActual'],Sudoku.N) // (Sudoku.N // 3) * 3
+    refColumna = getColumna(self.__estado['posicionActual'],Sudoku.N) // (Sudoku.N // 3) * 3
+    while not esta and k < Sudoku.N:
+        esta = self.__estado[getPosicion( refFila + getFila( k, Sudoku.N // 3 ), refColumna + getColumna( k, Sudoku.N // 3 ), Sudoku.N )] == num
         k += 1
 
     return not esta
 
 
-def extender( estado, candidato ):
-    estado['tablero'][estado['posicionActual']] = candidato
-    estado['posicionActual'] += 1
+def extender( self.__estado, candidato ):
+    self.__estado[self.__estado['posicionActual']] = candidato
+    self.__estado['posicionActual'] += 1
 
 
-def volver( estado ):
-    estado['posicionActual'] -= 1
-    if estado['posicionesFijas'][estado['posicionActual']] == 0:
-        estado['tablero'][estado['posicionActual']] = 0
+def volver( self.__estado ):
+    self.__estado['posicionActual'] -= 1
+    if self.__estado['posicionesFijas'][self.__estado['posicionActual']] == 0:
+        self.__estado[self.__estado['posicionActual']] = 0
 
 
-def backtrack( estado ):
-    estado['movimientos'] += 1
-    if esUnaSolucion( estado ):
-        estado['noSoluciones'] += 1
-        procesarSolucion( estado )
+def backtrack( self.__estado ):
+    self.__estado['movimientos'] += 1
+    if esUnaSolucion( self.__estado ):
+        self.__estado['noSoluciones'] += 1
+        procesarSolucion( self.__estado )
     else:
-        candidatos = construirCandidatos( estado )
+        candidatos = construirCandidatos( self.__estado )
         for candidato in candidatos:
-            extender( estado, candidato )
-            backtrack( estado );
-            volver( estado );
+            extender( self.__estado, candidato )
+            backtrack( self.__estado );
+            volver( self.__estado );
 
-estado = inicializa()
-backtrack(estado)
+self.__estado = inicializa()
+backtrack(self.__estado)

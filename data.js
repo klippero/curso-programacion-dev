@@ -356,6 +356,7 @@ const retos = {
     'pe1': { label: "¿Palabra encadenada?", recorrido: "POO", tema: 22, coleccion: "palabras-encadenadas"},
     'pe2': { label: "Encadenando palabras", recorrido: "POO", tema: 22, seccion: 1, coleccion: "palabras-encadenadas",prev:'pe1'},
     'pe3': { label: "Juego", recorrido: "POO", tema: 22, seccion: 1, coleccion: "palabras-encadenadas",prev:'pe2'},
+    '3er': { label: "3 en raya", recorrido: "POO", tema: 22, seccion: 5, coleccion: "tres-en-raya"},
 };
 
 for(let retoId in retos)
@@ -398,6 +399,7 @@ const colecciones = {
     'matrices':{label:'Matrices'},
     'toros_y_vacas':{label:'Toros y vacas'},
     'palabras-encadenadas':{label:'Palabras encadenadas'},
+    'tres-en-raya':{label:'Tres en raya'},
     };
 
 function insert(id,content)
