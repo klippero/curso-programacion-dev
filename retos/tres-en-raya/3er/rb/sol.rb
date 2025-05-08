@@ -84,8 +84,12 @@ class Partida
             result = result + self.linea
         end
 
-        if alguien_gana
-            result = result + ">> ganador: #{@jugadores[@winner[0]].char}"
+        if fin_de_juego
+            if @winner[0] == -2
+                result = result + ">> empate"
+            else
+                result = result + ">> ganador: #{@jugadores[@winner[0]].char}"
+            end
         end
         return result
     end
@@ -120,6 +124,7 @@ class Partida
         # busca @sizeSol casillas iguales seguidas en vertical, horizontal o diagonal
         # devuelve [char,fila,col]
         # si no lo encuentra devuelve [-1,-1,-1]
+        # si todas las casillas están ocupadas [-2,-1,-1]
 
         encontrado = false
         f = 0
@@ -138,6 +143,14 @@ class Partida
                 c = 0
             end
         end
+
+        # si no hay ganador se chequea si hay empate
+        if result[0] == -1
+            if !quedan_casillas_vacias
+                result[0] = -2
+            end
+        end
+
         return result
     end
 
@@ -190,22 +203,11 @@ class Partida
     end
 
 
-    def alguien_gana
-        return @winner[0] != -1
-    end
-
-
-    def empate
-        return !quedan_casillas_vacias
-    end
-
-
     def quedan_casillas_vacias
         encontrado = false
         f = 0
         c = 0
         while enTablero(f,c) && !encontrado
-            c = 0
             while enTablero(f,c) && !encontrado
                 if @tablero[f][c] == Nada
                     encontrado = true
@@ -215,13 +217,21 @@ class Partida
             end
             if !encontrado
                 f = f + 1
+                c = 0
             end
         end
         return encontrado
     end
 
+
     def fin_de_juego
-        return alguien_gana || empate
+        return @winner[0] != -1
+    end
+
+
+    def procesa
+        # chequea si hay un ganador o hay empate
+        @winner = busca
     end
 
 
@@ -238,7 +248,7 @@ class Partida
                 col = gets.chomp.to_i
                 ha_jugado = mark(turno,fila,col)
             end
-            @winner = busca
+            procesa
             puts self
             puts
             turno = ( turno + 1 ) % @jugadores.length
