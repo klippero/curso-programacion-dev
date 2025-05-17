@@ -1,0 +1,30 @@
+0) spanish
+1) english0
+wordle 1: AMOR
+debe tener 5 letras
+wordle 1: CALOR
+          xAxxx
+wordle 2: ABEJA
+          AxAAV
+wordle 3: h
+HIJEA JEGUA JETEA JIJEA JUDEA JUJEA JUMEA JUPEA MEJIA TEJIA 
+options: 10
+no: C L O R B 
+sí: A E J 
+wordle 3: JUDEA
+          VVxVV
+wordle 4: h
+JUJEA JUMEA JUPEA 
+options: 3
+no: C L O R B D 
+sí: A E J 
+wordle 4: JUMEA
+          VVxVV
+wordle 5: h
+JUJEA JUPEA 
+options: 2
+no: C L O R B D M 
+sí: A E J 
+wordle 5: JUPEA 
+          VVVVV
+acertaste
