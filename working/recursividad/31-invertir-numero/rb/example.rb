@@ -4,16 +4,16 @@ class Entero
     end
 
     def invertir
-        return invertir_rec(@n).to_i
+        return invertir_rec(@n)
     end
 
     private
 
     def invertir_rec(n)
         if n < 10
-            return n.to_s
+            return n
         else
-            return (n % 10).to_s + invertir_rec(n / 10).to_s
+            return (n % 10) + invertir_rec(n / 10).to_s
         end
     end
 end

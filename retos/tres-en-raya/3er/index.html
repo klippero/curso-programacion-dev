@@ -6,6 +6,29 @@
 
 <p>Aquí puedes <a href="https://www.google.com/search?si=APYL9bsi-8GN4YPGVYF3Ih96eJ7xUxJ2Mo1Ep7FxNETkwG3Zh4ZyeLAel1hJtOaSu-oCE9XS5X_ff3ZD69HIkuK-TeU1Rp2oZg%3D%3D&hl=es-ES&shndl=21&shem=vidc&source=sh/x/fbx/m1/1&kgs=93464c73b2993a80">jugar online</a>.</p>
 
+<h3>Pistas</h3>
+
+<p>Sigue los siguientes pasos para implementar la solución:
+<ul>
+    <li>Crear clase <code>Partida</code> cuyo constructor reciba el tamaño e inicialice el atributo <code>tablero</code> como un array de arrays con espacios <pre>p = Partida.new(3)</pre></li>
+    <li>Implementar el método que muestre el tablero</li>
+    <li>Implementa el método <code>mark</code> que recibe como parámetro el carácter del jugador, la fila y la columna e intenta posicionar en una posición la pieza de un jugador (las filas empiezan a numerarse por 0 y las columnas igual). Devuelve true si ha podido posicionar y false en caso contrario <pre>p.mark('X',2,1)</pre></li>
+    <li>Comprobar si hay ganador o tablas. Implementa el método <code>busca</code> que comprueba si hay ganador o tablas siguiendo la siguiente estrategia:
+    <ul>
+        <li>El método <code>busca</code> recorre todas las casillas del tablero comprobando si empezando en dicha casilla se ha encontrado un ganador. Para hacer la comprobación se llama al método <code>buscaFC</code> (busca a partir de la fila y la columna)</li>
+        <li>El método <code>buscaFC</code> busca un ganador en cada una de las 4 direcciones a partir de la casilla. Representa las direcciones por el incremento en la fila y en la columna, por ejemplo, 0,1 no incrementa la fila y en 1 casilla la columna. Las 4 direcciones son: [[0,1],[1,0],[1,1],[-1,1]]. Llama al método que comprueba si hay ganador desde una casilla y en una dirección específica <code>buscaFCD</code>.</li>
+        <li>El método <code>buscaFCD</code> busca un ganador desde una casilla en una dirección concreta. Debe recibir como parámetro la fila y columna de la posición y el incremento en fila y en columna para marcar la dirección.</li>
+        <li>El método <code>busca</code> debe devolver:
+        <ul>
+            <li>-1 si no hay ganador y quedan casillas vacías</li>
+            <li>-2 si no hay ganador y todas las casillas están ocupadas</li>
+            <li>el carácter del ganador en caso de que lo haya</li>
+        </ul></li>
+    </ul></li>
+</ul>
+</p>
+
+
 <p>El 3 en raya lo juegan 2 jugadores en un tablero de 3 x 3 pero vamos a permitir que el tablero tenga otro tamaño y que jueguen más jugadores. Antes de empezar una partida se debe preguntar al usuario:
 <ul>
     <li>Tamaño del tablero</li>
