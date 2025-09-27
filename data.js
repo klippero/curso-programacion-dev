@@ -298,7 +298,7 @@ const retos = {
     '19n': { label: "¿Es par?", recorrido: "POO", tema: 19, coleccion: "números"},
     '19f': { label: "¿Temperaturas recomendadas?", recorrido: "POO", tema: 19, coleccion: "combi",prev:"17f"},
     '19b': { label: "¿Último viaje?", recorrido: "POO", tema: 19, coleccion: "bonobús",prev:"18b"},
-    '20.4.1.factores': { label: "De scomponer en factores primos (primero para un único factor)", recorrido: "POO", tema: 20, coleccion: "primos",prev:"20n.siguientePrimo"},
+    '20.4.1.factores': { label: "Descomponer en factores primos (primero para un único factor)", recorrido: "POO", tema: 20, coleccion: "primos",prev:"20n.siguientePrimo"},
     '20.4.2.factores': { label: "Descomponer en factores primos (múltiples factores)", recorrido: "POO", tema: 20, coleccion: "primos",prev:"20.4.1.factores"},
     '27.4.3.factores': { label: "Factores", recorrido: "POO", tema: 27, coleccion: "primos",prev:"20.4.2.factores"},
     '27.5.factores-negativos': { label: "Factores negativos", recorrido: "POO", tema: 27, coleccion: "primos",prev:"27.4.3.factores"},
