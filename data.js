@@ -63,7 +63,7 @@ const recorridos = {
                     { label: 'Objetos' }
                 ]
             },
-/*            {
+            {
                 label: 'Excepciones',
                 secciones: [
                     { label: 'Qué son' },
@@ -72,7 +72,7 @@ const recorridos = {
                     { label: 'Cómo se lanzan' },
                 ]
             },
-            {
+/*            {
                 label: 'Visibilidad de atributos (accessors)',
                 secciones: [
                     { label: 'Lectura (getter)' },
