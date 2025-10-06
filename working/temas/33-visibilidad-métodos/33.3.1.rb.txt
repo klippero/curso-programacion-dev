@@ -1,0 +1,5 @@
+33.3.1.rb:16:in `fusiona': private method `saldo' called for an instance of Cuenta (NoMethodError)
+
+        @saldo += otra.saldo
+                      ^^^^^^
+        from 33.3.1.rb:43:in `<main>'

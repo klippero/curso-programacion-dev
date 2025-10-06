@@ -1,0 +1,6 @@
+Saldo: 160.0€
+Traceback (most recent call last):
+  File "33.2.py", line 24, in <module>
+    print(c.__comision(100))
+          ^^^^^^^^^^^^
+AttributeError: 'Cuenta' object has no attribute '__comision'

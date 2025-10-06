@@ -1,0 +1,4 @@
+Saldo: 160.0€
+33.2.rb:32:in `<main>': private method `comision' called for an instance of Cuenta (NoMethodError)
+
+puts c.comision(100)
