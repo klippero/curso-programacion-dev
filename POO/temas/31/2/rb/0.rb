@@ -1,5 +1,5 @@
 begin
     <código a controlar>
 rescue
-    <código a ejecutar en caso de excepción>
+    <código de rescate>
 end

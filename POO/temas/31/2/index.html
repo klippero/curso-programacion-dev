@@ -4,9 +4,9 @@
     <pre data-code="https://raw.githubusercontent.com/klippero/code-snippet-in-web/refs/heads/main/POO/temas/31/2/<lenguaje>/0.<lenguaje>"></pre>
 </div>
 
-<p>Cuando se produce una excepción dentro del <code>código a controlar</code>, se interrumpe la ejecución de ese bloque de código pero la ejecución continúa en el <code>código a ejecutar en caso de excepción</code>.</p>
+<p>Cuando se produce una excepción dentro del <code>código a controlar</code>, se interrumpe la ejecución de ese bloque de código pero la ejecución continúa en el <code>código de rescate</code>.</p>
 
-<p>En el siguiente ejemplo se pide al usuario un número que se usa para dividir 100. Si el número introducido es 0 se producirá una excepción que es capturada para evitar que se interrumpa la ejecución y mostrar el mensaje de error <code>no se puede dividir entre 0</code></p>
+<p>En el siguiente ejemplo se pide al usuario un número que se usa para dividir 100. Si se introduce el 4, se muestra <code>el cociente es 25</code>. Si volvemos a ejecutarlo y se introduce el 0, se produce una excepción que interrumpe la ejecución del bloque (no se muestra el cociente) y se rescata la ejecución continuando en el bloque de rescate y mostrando <code>no se puede dividir entre 0</code>.</p>
 
 <div class="container">
     <pre data-code="https://raw.githubusercontent.com/klippero/code-snippet-in-web/refs/heads/main/POO/temas/31/2/<lenguaje>/1.<lenguaje>"></pre>
