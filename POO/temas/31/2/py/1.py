@@ -1,5 +1,6 @@
 n = int(input("Dame un número: "))
 try:
-    print(100 / n)
+    cociente = 100 // n
+    print( f"el cociente es {cociente}" )
 except:
     print("No se puede dividir entre 0")

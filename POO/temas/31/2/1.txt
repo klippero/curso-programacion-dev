@@ -1,2 +1,7 @@
+Dame un número: 4
+el cociente es 25
+
+--------------------------
+
 Dame un número: 0
-no se puede dividir entre 0
+No se puede dividir entre 0
