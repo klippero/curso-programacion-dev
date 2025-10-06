@@ -6,7 +6,7 @@
     <pre data-code="https://raw.githubusercontent.com/klippero/code-snippet-in-web/refs/heads/main/POO/temas/31/4/<lenguaje>/0.<lenguaje>"></pre>
 </div>
 
-<p>En el siguiente ejemplo se lanza una excepción dentro del método <code>fija_temperatura</code> en caso de que la nueva temperatura sea menor que 0.</p>
+<p>En el siguiente ejemplo se lanza una excepción dentro del método <code>fija_temperatura</code> en caso de que la nueva temperatura sea menor que 0. El método es invocado desde el programa principal por lo que al producirse la excepción se interrumpe la ejecución.</p>
 
 <div class="container">
     <pre data-code="https://raw.githubusercontent.com/klippero/code-snippet-in-web/refs/heads/main/POO/temas/31/4/<lenguaje>/1.<lenguaje>"></pre>
@@ -15,16 +15,14 @@
 
 <p>Las excepciones, si no se capturan, son propagadas hasta detener la ejecución completamente.</p>
 
-<p>En el siguiente ejemplo, la excepción se produce en el método <code>fija_temperatura</code> que es lanzada al constructor y desde el constructor propagada al programa principal donde se interrumpe la ejecución.</p>
+<p>En el siguiente ejemplo se invoca al método <code>fija_temperatura</code> desde el constructor. De esta forma, cuando la excpeción se produce, está es lanzada al constructor que a su vez la propaga hacia el programa principal que interrumpe la ejecución.</p>
 
 <div class="container">
     <pre data-code="https://raw.githubusercontent.com/klippero/code-snippet-in-web/refs/heads/main/POO/temas/31/4/<lenguaje>/2.<lenguaje>"></pre>
     <pre data-code="https://raw.githubusercontent.com/klippero/code-snippet-in-web/refs/heads/main/POO/temas/31/4/<lenguaje>/2.txt"></pre>
 </div>
 
-<p>En el ejemplo anterior, se invoca al método <code>fija_temperatura</code> desde el programa principal y al producirse la excepción, ésta es lanzada al programa principal donde se interrumpe la ejecución.</p>
-
-<p>En el siguiente ejemplo, se añade control de la excepción en el propio constructor fijando la temperatura a 0 en caso de producirse alguna excepción.</p>
+<p>En el siguiente ejemplo, se añade control de la excepción en el propio constructor fijando la temperatura a 0 en caso de producirse alguna excepción en el método <code>fija_temperatura</code>.</p>
 
 <div class="container">
     <pre data-code="https://raw.githubusercontent.com/klippero/code-snippet-in-web/refs/heads/main/POO/temas/31/4/<lenguaje>/3.<lenguaje>"></pre>
