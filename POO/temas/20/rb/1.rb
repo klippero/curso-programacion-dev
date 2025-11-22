@@ -4,4 +4,4 @@ while i < 10
     i = i + 1
 end
 
-puts "al salir i, vale #{i}"
+puts "\nal salir i, vale #{i}"

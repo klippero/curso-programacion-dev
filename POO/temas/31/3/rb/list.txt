@@ -1,6 +1,5 @@
 Categoría                        Excepción
 -------------------------------  ---------------------
-Categoría                        Ruby
 División por cero                ZeroDivisionError
 Variable no definida             NameError
 Método/atributo no existe        NoMethodError
