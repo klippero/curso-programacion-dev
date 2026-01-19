@@ -1,6 +1,8 @@
 class Frigo
     attr_reader :temperatura
     attr_writer :temperatura
+    # attr_accessor :temperatura equivale a los anteriores
+
 
     def initialize(color, temperatura)
         @color = color

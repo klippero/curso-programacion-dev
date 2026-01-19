@@ -72,14 +72,14 @@ const recorridos = {
                     { label: 'Cómo se lanzan' },
                 ]
             },
-/*            {
+            {
                 label: 'Visibilidad de atributos (accessors)',
                 secciones: [
                     { label: 'Lectura (getter)' },
                     { label: 'Escritura (setter)' },
                 ]
             },
-            {
+/*            {
                 label: 'Visibilidad de métodos',
                 secciones: [
                     { label: 'Públicos' },
