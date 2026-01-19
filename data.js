@@ -73,7 +73,7 @@ const recorridos = {
                 ]
             },
             {
-                label: 'Visibilidad de atributos (accessors)',
+                label: 'Visibilidad de atributos',
                 secciones: [
                     { label: 'Lectura (getter)' },
                     { label: 'Escritura (setter)' },
