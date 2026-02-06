@@ -1,0 +1,17 @@
+<p>Los métodos protegidos son métodos que pueden ser accedidos por cualquier instancia del objeto, no necesariamente por la propia instancia. Además, también las instancias de subclases podrán accederlos.</p>
+
+<p>En el ejemplo vamos a implementar un método que permita fusionar dos cuentas. El método <code>fusiona</code> recibe como parámetro una segunda cuenta cuyo saldo será traspasado a la cuenta desde el que se invoca. Para poder consultar y modificar el atributo <code>@saldo</code> implementamos un getter y un setter.</p>
+
+<p>Como vemos a continuación, si los métodos son privados, el código dará un error.</p>
+
+<div class="container">
+    <pre data-code="https://raw.githubusercontent.com/klippero/code-snippet-in-web/refs/heads/main/POO/temas/33/3/<lenguaje>/1.<lenguaje>"></pre>
+    <pre data-code="https://raw.githubusercontent.com/klippero/code-snippet-in-web/refs/heads/main/POO/temas/33/3/<lenguaje>/1.<lenguaje>.txt"></pre>
+</div>
+
+<p>El código da error porque se está intentando acceder a métodos privados desde otra instancia (aunque sea de la misma clase, no se permite para métodos privados). Para poder hacer esto, los métodos han de ser protegidos en lugar de privados.</p>
+
+<div class="container">
+    <pre data-code="https://raw.githubusercontent.com/klippero/code-snippet-in-web/refs/heads/main/POO/temas/33/3/<lenguaje>/2.<lenguaje>"></pre>
+    <pre data-code="https://raw.githubusercontent.com/klippero/code-snippet-in-web/refs/heads/main/POO/temas/33/3/<lenguaje>/2.<lenguaje>.txt"></pre>
+</div>
