@@ -79,7 +79,7 @@ const recorridos = {
                     { label: 'Escritura (setter)' },
                 ]
             },
-/*            {
+            {
                 label: 'Visibilidad de métodos',
                 secciones: [
                     { label: 'Públicos' },
@@ -88,7 +88,7 @@ const recorridos = {
                     { label: 'Visibilidad al final de la clase' },
                 ]
             },
-            { 
+/*            { 
                 label: 'Herencia',
                 secciones: [
                     { label: 'Qué es la herencia' },
